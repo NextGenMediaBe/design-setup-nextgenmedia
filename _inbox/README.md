@@ -21,6 +21,6 @@ Hier houden we bij wat er nog aankomt of nog niet verwerkt is.
 
 | Datum | Materiaal | Status |
 |---|---|---|
-| 2026-07-24 | GSAP 3.15.0 (`gsap-public.zip`, alle plugins) | verwerkt → `04-snippets/gsap/` |
-| 2026-07-24 | Vengeance UI — https://www.vengenceui.com/components | in behandeling |
-| 2026-07-24 | `NextGenMediaBe/impeccable` repo | in behandeling |
+| 2026-07-24 | GSAP 3.15.0 (`gsap-public.zip`, alle plugins) | ✅ → [`04-snippets/gsap/`](../04-snippets/gsap/) |
+| 2026-07-24 | Vengeance UI — vengenceui.com | ✅ → [`04-snippets/vengeance-ui.md`](../04-snippets/vengeance-ui.md) — ⚠️ geen licentie, zie het bestand |
+| 2026-07-24 | `NextGenMediaBe/impeccable` (fork van pbakaus/impeccable) | ✅ → DESIGN-template, quality-review, theme-toggle |
