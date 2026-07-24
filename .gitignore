@@ -1,0 +1,26 @@
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.cache/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.log
+npm-debug.log*
+yarn-error.log*
+
+.claude/settings.local.json
+
+# Raw archives dropped in the inbox — extract, file the contents, delete the archive.
+_inbox/*.zip
+_inbox/*.rar
+_inbox/*.7z
+_inbox/*.tar.gz
