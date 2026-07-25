@@ -1,71 +1,94 @@
 # Brand
 
-Huisstijlen. Eén map per merk, met daarin een `DESIGN.md` volgens
-[`../02-design-system/DESIGN-template.md`](../02-design-system/DESIGN-template.md),
-de tokens, en de assets.
+Hoe je per project tot een merksysteem komt. **Hier staan geen merken opgeslagen** — geen
+klantlogo's, geen huisstijlen, geen assets. Die horen in het project zelf, niet in deze kit.
 
-```
-06-brand/
-├── nextgenmedia/          ← ons eigen merk
-│   ├── DESIGN.md
-│   ├── tokens.css
-│   └── assets/            (logo's in SVG, favicons, OG-afbeelding)
-└── <klantnaam>/
-    ├── DESIGN.md
-    ├── tokens.css
-    └── assets/
-```
+Wat hier wél staat: het proces om een merk in te lezen als het bestaat, of er één te bouwen
+als het niet bestaat.
 
-## NextGenMedia
+## Route A — de klant heeft een huisstijl
 
-> **NEEDS INPUT** — hier hoort onze eigen huisstijl te staan. Nodig:
->
-> - **Logo** in SVG: volledig, alleen het beeldmerk, en een variant voor donkere
->   achtergrond. Geen PNG als er een SVG bestaat.
-> - **Kleuren** — de exacte waarden, niet "ongeveer dit blauw". Als er alleen hex is,
->   zetten we die om naar OKLCH.
-> - **Fonts** — welke, welke gewichten, en of de licentie webgebruik dekt.
-> - **Toon** — hoe we onszelf beschrijven in één alinea.
-> - Bestaande drukwerk, visitekaartjes of een brandbook als die er zijn.
->
-> Zet het in `_inbox/` en zeg "verwerk de inbox".
+### Wat je nodig hebt
 
-## Een klantmerk toevoegen
-
-1. Map aanmaken: `06-brand/<klantnaam>/`.
-2. Assets verzamelen. Wat je meestal krijgt: een PNG-logo van 400px en een PDF. Wat je
-   nodig hebt: SVG en de echte kleurwaarden. Vraag daarnaar, en vectoriseer opnieuw als
-   het niet bestaat — een uitgerekt PNG-logo verraadt het hele project.
-3. `DESIGN.md` invullen met het template. Dit is het moment om de beslissingen vast te
-   leggen, niet halverwege het bouwen.
-4. Contrast controleren. Een merkkleur die op papier werkt haalt vaak geen 4.5:1 op wit.
-   Los dat op in de tokens (donkerder maken voor tekst, origineel houden voor vlakken) en
-   noteer waarom — zie [`../02-design-system/color.md`](../02-design-system/color.md).
-5. `tokens.css` afleiden van `../02-design-system/tokens/globals.css`, alleen het
-   BRAND-blok vervangen.
-
-## Als er geen huisstijl is
-
-Bij veel kleinere klanten is er alleen een logo. Dan bouw je er één, en leg je die vast in
-`DESIGN.md` zodat de volgende opdracht consistent blijft:
-
-1. Haal de accent-hue uit het logo.
-2. Genereer de neutrale ramp getint naar die hue —
-   [`../02-design-system/color.md`](../02-design-system/color.md).
-3. Kies een lettercombinatie uit
-   [`../02-design-system/typography.md`](../02-design-system/typography.md) die past bij
-   de sector. Advocaat, restaurant of kliniek: bijna altijd een serif voor de display.
-4. Leg het voor met **twee** richtingen, niet vijf. Vijf opties betekent dat er geen keuze
-   gemaakt is.
-
-## Assets die elk project nodig heeft
-
-| Bestand | Formaat | Waarvoor |
+| Item | Formaat | Wat je meestal krijgt |
 |---|---|---|
-| `logo.svg` | SVG | Header, footer |
-| `logo-mark.svg` | SVG | Favicon-basis, compacte plekken |
-| `logo-light.svg` | SVG | Op donkere achtergrond |
-| `favicon.ico` | 32×32 | Browsertab, legacy |
-| `icon.svg` | SVG | Moderne browsers |
-| `apple-touch-icon.png` | 180×180 | iOS-startscherm |
-| `og-image.png` | 1200×630 | Link-previews. Wordt vaak vergeten en is het eerste dat mensen zien als de link gedeeld wordt |
+| Logo | **SVG** | Een PNG van 400px uit een PowerPoint |
+| Logo op donker | SVG | Bestaat meestal niet |
+| Kleuren | Exacte waarden | "Ons blauw" en een screenshot |
+| Fonts | Naam + weblicentie | Een naam, geen licentie |
+| Brandbook | PDF | Als het bestaat is dit goud waard |
+
+Vraag ernaar voor je begint. Een uitgerekt PNG-logo in de header verraadt het hele project,
+en dat los je niet meer op in CSS. Bestaat de SVG niet, vectoriseer dan opnieuw — dat is
+een half uur werk en het scheelt het verschil tussen amateur en niet.
+
+### Inlezen
+
+1. **Kleuren omzetten naar OKLCH.** Hex is wat je krijgt; OKLCH is waarin je werkt, omdat
+   je er lichtheid in kan aanpassen zonder de kleur te verschuiven. Zie
+   [`../02-design-system/color.md`](../02-design-system/color.md).
+2. **Contrast controleren.** Een merkkleur die op drukwerk werkt haalt vaak geen 4.5:1 op
+   wit. Los dat op in de tokens: een donkerdere variant voor tekst, de originele voor
+   vlakken. Leg vast waarom, anders "corrigeert" de volgende persoon het terug.
+3. **Neutralen aanmaken**, getint naar de merkkleur. Nooit een kale grijstrap naast een
+   warme merkkleur — dat is de goedkoopste manier om een goed logo er slecht uit te laten
+   zien.
+4. **Fonts controleren op weblicentie.** Een desktoplicentie dekt geen webfont. Vind je
+   geen licentie, kies dan een vergelijkbare met een open licentie en meld dat.
+5. **Richting kiezen** die bij het logo past —
+   [`../02-design-system/art-direction.md`](../02-design-system/art-direction.md). Een
+   geometrisch sans-wordmerk staat niet onder een Playfair-titel.
+
+## Route B — er is geen huisstijl
+
+Veel kleinere klanten hebben alleen een logo, of zelfs dat niet. Dan bouw je er één. Dat is
+geen extra werk maar een kans: je bepaalt zelf de richting.
+
+1. **Richting kiezen** op basis van de sector en de doelgroep — dat is stap één, niet de
+   kleur. `art-direction.md`.
+2. **Accent-hue** afleiden uit het logo, of kiezen. Vermijd hue 220–250: dat is elke SaaS-
+   en elke AI-site.
+3. **Palet genereren** volgens `color.md`. Eén accent, neutralen getint naar die hue.
+4. **Lettercombinatie** uit
+   [`../02-design-system/typography.md`](../02-design-system/typography.md). Advocaat,
+   restaurant, kliniek, notaris: bijna altijd een serif voor de display — en bijna nooit
+   wat er standaard uitkomt.
+5. **Vastleggen** in de `DESIGN.md` van het project, met benoemde regels. Zonder dat
+   document loopt het bij de volgende opdracht meteen uiteen.
+
+**Leg twee richtingen voor, geen vijf.** Vijf opties betekent dat er geen keuze gemaakt is,
+en de klant kiest dan op smaak in plaats van op geschiktheid.
+
+## Waar het terechtkomt
+
+In het **project**, niet hier:
+
+```
+<project>/
+├── DESIGN.md              ← het contract, uit 02-design-system/DESIGN-template.md
+├── app/globals.css        ← tokens, uit 02-design-system/tokens/globals.css
+└── public/
+    ├── logo.svg
+    ├── logo-mark.svg
+    ├── logo-light.svg     (voor donkere achtergrond)
+    ├── favicon.ico        32×32
+    ├── icon.svg
+    ├── apple-touch-icon.png   180×180
+    └── og-image.png       1200×630
+```
+
+Die laatste wordt structureel vergeten en is het eerste dat mensen zien wanneer de link
+gedeeld wordt in WhatsApp, Slack of LinkedIn. Maak hem, of genereer hem met `next/og` —
+zie [`../01-standards/seo.md`](../01-standards/seo.md).
+
+## Merk-intake — de vragen
+
+Stel deze bij de kickoff, niet halverwege:
+
+- Bestaat er een logo? In welk formaat? Wie heeft het bronbestand?
+- Zijn er vaste kleuren? Waar komen die waarden vandaan?
+- Welke fonts, en is er een weblicentie?
+- Is er drukwerk of bewegwijzering waar de site bij moet aansluiten?
+- Wat mag er **niet**? Vaak het bruikbaarste antwoord — "geen blauw, dat is onze
+  concurrent" bepaalt meer dan een vage voorkeur.
+- Hoe zien de drie belangrijkste concurrenten eruit?

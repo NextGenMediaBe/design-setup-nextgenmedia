@@ -19,7 +19,7 @@ kunnen staan, zegt hij niets. Schrappen of vervangen.
 
 ## Toon
 
-Voor NextGenMedia en de meeste Vlaamse klanten:
+Voor de meeste Vlaamse klanten:
 
 - **Je/jij, niet u** — tenzij de doelgroep formeel is (notarissen, advocaten, medisch,
   overheid, 55+). Bij twijfel: kijk hoe de klant zelf mailt.

@@ -36,8 +36,8 @@ Een junction is beter dan kopiëren: een `git pull` in de submodule werkt de ski
 
 ## Beschikbaar
 
-> **NEEDS INPUT** — nog geen skills toegevoegd. De losse skills die NextGenMedia al heeft
-> horen hier. Zet ze in `_inbox/` en zeg "verwerk de inbox".
+> **NEEDS INPUT** — nog geen skills toegevoegd. Zet losse skills in `_inbox/` en zeg
+> "verwerk de inbox".
 
 ## Wat een goede skill hier zou zijn
 
