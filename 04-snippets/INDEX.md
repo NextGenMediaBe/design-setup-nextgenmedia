@@ -42,7 +42,7 @@ Twee dingen gelden voor alle drie:
 | Bron | Wat | Licentie | Doc |
 |---|---|---|---|
 | **shadcn/ui** | De basis-primitives. Altijd hier beginnen, dan restylen naar de token-laag **voor** je de eerste component plaatst | MIT | [ui.shadcn.com](https://ui.shadcn.com) |
-| **SmoothUI** | Interactiecomponenten met spring: tabs, accordeons, scrubbers, toggles. Schoonste licentie én de beste reduced-motion-discipline | **MIT** | [`smoothui.md`](./smoothui.md) |
+| **SmoothUI** | 114 componenten: interactie, 29 tekstonthullingen, 17 WebGL-transities. Beste reduced-motion-discipline, zwakste toegankelijkheid | **MIT** | [`smoothui.md`](./smoothui.md) |
 | **Magic UI** | 76 componenten. De grootste bron van bruikbaar gereedschap én van bijna elk visueel cliché. Ongeveer dertig zijn verboden | **MIT** | [`magic-ui.md`](./magic-ui.md) |
 | **Vengeance UI** | 66 geanimeerde componenten. Zeven ervan zijn expliciet verboden | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
 | **GSAP** | Animatie. Alle plugins sinds Webflow gratis | GreenSock standard | [`gsap/README.md`](./gsap/README.md) |
