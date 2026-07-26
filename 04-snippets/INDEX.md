@@ -3,6 +3,33 @@
 Everything reusable, and where it came from. Check here before adding anything new —
 see [`../07-workflows/ingest-material.md`](../07-workflows/ingest-material.md).
 
+## Een catalogus is geen aanbeveling
+
+De bibliotheken hieronder zijn geïnventariseerd, niet goedgekeurd. Ze zijn grotendeels
+gebouwd vóór — en soms in directe tegenspraak met — de regels in
+[`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md). Componenten
+met een gloed, een aurora, een paars verloop of doorlopende achtergrondbeweging staan erin
+omdat ze bestaan, niet omdat je ze mag gebruiken.
+
+Elk component in een catalogus krijgt daarom één van drie oordelen:
+
+| | Betekenis |
+|---|---|
+| ✅ **Bruikbaar** | Breekt geen regel. Nog steeds restylen naar de token-laag |
+| ⚠️ **Met reden** | Breekt een regel die te verdedigen valt. Vereist `slop-check-ok:` plus een regel in `DESIGN.md` onder *Opgeheven verboden* |
+| 🚫 **Verboden** | Een benoemd anti-pattern. De regel staat erbij |
+
+Twee dingen gelden voor alle drie:
+
+1. **Restylen naar de token-laag is niet optioneel.** Deze componenten komen met
+   hardgecodeerde hexwaarden en `dark:`-varianten die Zinc of Slate veronderstellen. Zonder
+   restyle faalt `npm run design:check` en ziet het eruit alsof het ergens anders vandaan
+   komt — wat ook zo is.
+2. **Eén opvallend moment per pagina.** De regel uit
+   [`../02-design-system/motion.md`](../02-design-system/motion.md) verandert niet doordat
+   er nu honderden componenten beschikbaar zijn. Een catalogus van driehonderd effecten
+   verleidt tot tien; het antwoord blijft één.
+
 ## In this repo
 
 | Wat | Pad | Bron | Licentie |
