@@ -42,7 +42,9 @@ Twee dingen gelden voor alle drie:
 | Bron | Wat | Licentie | Doc |
 |---|---|---|---|
 | **shadcn/ui** | De basis-primitives. Altijd hier beginnen, dan restylen naar de token-laag **voor** je de eerste component plaatst | MIT | [ui.shadcn.com](https://ui.shadcn.com) |
-| **Vengeance UI** | 66 geanimeerde componenten. Zeven ervan zijn nu expliciet verboden — lees de kop van het bestand | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
+| **SmoothUI** | Interactiecomponenten met spring: tabs, accordeons, scrubbers, toggles. Schoonste licentie én de beste reduced-motion-discipline | **MIT** | [`smoothui.md`](./smoothui.md) |
+| **Magic UI** | 76 componenten. De grootste bron van bruikbaar gereedschap én van bijna elk visueel cliché. Ongeveer dertig zijn verboden | **MIT** | [`magic-ui.md`](./magic-ui.md) |
+| **Vengeance UI** | 66 geanimeerde componenten. Zeven ervan zijn expliciet verboden | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
 | **GSAP** | Animatie. Alle plugins sinds Webflow gratis | GreenSock standard | [`gsap/README.md`](./gsap/README.md) |
 | **Impeccable** | `npx impeccable detect` — 46 anti-pattern-regels, zero-LLM | Apache-2.0 | [`../07-workflows/quality-review.md`](../07-workflows/quality-review.md) |
 | **Lucide** | Iconen. Eén set per project | ISC | [lucide.dev](https://lucide.dev) |
@@ -54,18 +56,39 @@ Twee dingen gelden voor alle drie:
 Heb ik een basis-component nodig (button, dialog, input, table)?
   → shadcn/ui, daarna restylen naar 02-design-system/tokens/
 
-Heb ik één opvallend moment nodig (hero-effect, hover-reveal, dock)?
-  → Vengeance UI — lees eerst de licentie-waarschuwing
+Heb ik een interactie nodig (tabs, accordeon, slider, toggle, stepper)?
+  → SmoothUI. MIT, en het respecteert reduced motion.
 
-Heb ik scroll-gedreven animatie of tekst-splitting nodig?
+Heb ik een marquee, teller, tekstonthulling of statisch patroon nodig?
+  → Magic UI. MIT. Installeren via de shadcn-CLI, nooit kopieren en plakken.
+
+Heb ik scroll-gedreven animatie, pinning of tekst-splitting nodig?
   → GSAP, 04-snippets/gsap/recipes.md
+
+Heb ik één opvallend moment nodig dat nergens anders staat?
+  → Vengeance UI — lees eerst de licentie-waarschuwing
 
 Is het een hover, focus of open/dicht?
   → CSS transition. Geen library.
 
+Wil ik een geanimeerde achtergrond?
+  → Nee. Zie 02-design-system/anti-patterns.md §1.2 en §5.5.
+
 Bestaat het nog niet?
   → Zelf schrijven, en hier toevoegen met de kop uit ingest-material.md
 ```
+
+## Bij elk component van derden
+
+Ongeacht de bron, drie dingen voor het in een project gaat:
+
+1. **Restylen naar de token-laag.** Deze bibliotheken komen met `bg-white`, `#6b7280`,
+   `emerald-500` en `slate-300`. `npm run design:check` faalt daarop, terecht.
+2. **`prefers-reduced-motion` toevoegen.** Van de ~150 componenten in deze drie catalogi
+   handelt bijna alleen SmoothUI dit af. Gebruik
+   [`utils/motion-guard.tsx`](./utils/motion-guard.tsx).
+3. **De a11y controleren.** Div-als-knop, ontbrekende `aria-live` op iets dat een
+   statuswijziging aankondigt, en iconknoppen zonder naam komen structureel voor.
 
 ## Nog toe te voegen
 
