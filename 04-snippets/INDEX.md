@@ -14,8 +14,8 @@ see [`../07-workflows/ingest-material.md`](../07-workflows/ingest-material.md).
 
 | Bron | Wat | Licentie | Doc |
 |---|---|---|---|
-| **shadcn/ui** | De basis-primitives. Altijd hier beginnen, dan restylen naar de token-laag | MIT | [ui.shadcn.com](https://ui.shadcn.com) |
-| **Vengeance UI** | 66 geanimeerde componenten: buttons, tekst-effecten, carousels, docks, achtergronden | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
+| **shadcn/ui** | De basis-primitives. Altijd hier beginnen, dan restylen naar de token-laag **voor** je de eerste component plaatst | MIT | [ui.shadcn.com](https://ui.shadcn.com) |
+| **Vengeance UI** | 66 geanimeerde componenten. Zeven ervan zijn nu expliciet verboden — lees de kop van het bestand | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
 | **GSAP** | Animatie. Alle plugins sinds Webflow gratis | GreenSock standard | [`gsap/README.md`](./gsap/README.md) |
 | **Impeccable** | `npx impeccable detect` — 46 anti-pattern-regels, zero-LLM | Apache-2.0 | [`../07-workflows/quality-review.md`](../07-workflows/quality-review.md) |
 | **Lucide** | Iconen. Eén set per project | ISC | [lucide.dev](https://lucide.dev) |

@@ -26,18 +26,20 @@
 
 'use strict';
 
+// Order matters: only the first match on a node is reported, so the most specific
+// pattern goes first.
 const PATTERNS = [
-  {
-    id: 'colorTailwindDefault',
-    re: /\b(?:bg|text|from|via|to|border|ring|shadow|fill|stroke)-(?:indigo|violet|purple|fuchsia)-\d{2,3}\b/,
-    message:
-      'Gebruik een semantisch token uit tokens.css, geen Tailwind-defaultkleur ({{match}}).',
-  },
   {
     id: 'gradientPurple',
     re: /\bfrom-(?:purple|violet|indigo|fuchsia)-\d{2,3}\b/,
     message:
       'Paars/blauw verloop is de sterkste AI-tell ({{match}}). Zie 02-design-system/anti-patterns.md.',
+  },
+  {
+    id: 'colorTailwindDefault',
+    re: /\b(?:bg|text|from|via|to|border|ring|shadow|fill|stroke)-(?:indigo|violet|purple|fuchsia)-\d{2,3}\b/,
+    message:
+      'Gebruik een semantisch token uit tokens.css, geen Tailwind-defaultkleur ({{match}}).',
   },
   {
     id: 'radiusBlob',
