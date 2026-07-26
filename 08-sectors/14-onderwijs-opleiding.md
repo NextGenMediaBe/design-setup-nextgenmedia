@@ -154,7 +154,7 @@ want dan wordt hij nooit gezien. De inschrijfknop wordt een sticky balk van 56px
 | Instapdatum plus inschrijvingsdeadline, beide | Alleen een startdatum tonen laat de bezoeker denken dat hij nog tijd heeft | Feitenblok, bovenaan, met dagen-teller als de deadline binnen 30 dagen valt |
 | Volledig kostenoverzicht, inclusief boeken en materiaal | Verborgen kosten zijn de meest genoemde klacht in de sector | Eigen sectie op de opleidingspagina, als tabel |
 | KMO-portefeuille, opleidingscheques of betaald educatief verlof | Halveert de gepercipieerde prijs; wie het niet vermeldt, laat inschrijvingen liggen | Naast de prijs, met het registratienummer |
-| Naam en foto van de lesgever, met zijn werkervaring | Bij private verstrekkers doorslaggevend: men koopt de docent, niet het lokaal |Onder het programma |
+| Naam en foto van de lesgever, met zijn werkervaring | Bij private verstrekkers doorslaggevend: men koopt de docent, niet het lokaal | Onder het programma |
 | Doorstroomcijfers of werkgeversverklaringen, met jaartal | Een cijfer zonder jaartal en bron is een marketingclaim | Onderaan, met bronvermelding |
 | Infomoment met datum en inschrijflink | De veiligste tussenstap voor wie nog niet durft in te schrijven | Als secundaire actie overal waar de primaire CTA staat |
 
