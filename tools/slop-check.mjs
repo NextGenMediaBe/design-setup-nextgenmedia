@@ -259,8 +259,29 @@ function collectFiles(roots, opts) {
 }
 
 function defaultRoots() {
-  const present = PREFERRED_ROOTS.filter((d) => fs.existsSync(path.resolve(d)));
-  return present.length ? present : ['.'];
+  return PREFERRED_ROOTS.filter((d) => fs.existsSync(path.resolve(d)));
+}
+
+/**
+ * Er is bewust GEEN fallback naar '.'.
+ *
+ * Deze scanner beoordeelt de output van een project, niet de bouwkit zelf. Zonder
+ * src/ app/ content/ components/ sta je in de kit — en die staat vol met Engelse
+ * naslag waarin een em-dash en een verbodswoord als voorbeeld hóren te staan.
+ * De hele repo scannen leverde 773 valse hits op. Beter niets scannen dan dat.
+ *
+ * Wil je toch de kit zelf scannen, geef dan expliciet een pad mee:
+ *   node tools/slop-check.mjs 05-copy
+ */
+function noRootsMessage() {
+  return [
+    'Geen doelmappen gevonden (src/, app/, content/, components/).',
+    '',
+    'Draai dit in een projectmap, of geef expliciet een pad mee:',
+    '  node tools/slop-check.mjs pad/naar/map',
+    '',
+    'Om de scanner zelf te testen:  npm run design:test',
+  ].join('\n');
 }
 
 /* ---------------------------------------------------------------- scanning */
@@ -554,6 +575,16 @@ function main(argv) {
 
   const explicit = paths.length > 0;
   const roots = explicit ? paths : defaultRoots();
+
+  if (!roots.length) {
+    if (flags.has('--json')) {
+      console.log(JSON.stringify({ skipped: true, reason: 'no target directories' }, null, 2));
+    } else {
+      console.log(noRootsMessage());
+    }
+    return 0;
+  }
+
   const files = collectFiles(roots, { includeFixtures: explicit });
 
   let changed = [];

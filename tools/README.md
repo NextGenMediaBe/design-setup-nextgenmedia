@@ -26,9 +26,20 @@ node tools/slop-check.mjs --self-test        # prove the scanner still works
 ```
 
 It scans `src/`, `app/`, `content/` and `components/` relative to the working directory,
-skipping any that do not exist. If none exist it falls back to the whole tree, minus
-`node_modules`, `.git`, `.next`, `dist` and friends. Extensions: `.tsx .ts .jsx .js .astro
-.vue .svelte .css .scss .md .mdx .json .html`.
+skipping any that do not exist. Extensions: `.tsx .ts .jsx .js .astro .vue .svelte .css
+.scss .md .mdx .json .html`.
+
+**If none of those directories exist it scans nothing and exits 0**, with a message telling
+you to pass a path explicitly. There is deliberately no fallback to the whole tree: without
+those directories you are standing in the build kit, whose own English reference prose is
+full of em-dashes and banned words *as examples*. Scanning it produced 773 false hits.
+
+To scan something else, pass it:
+
+```bash
+node tools/slop-check.mjs content/nl
+node tools/slop-check.mjs ../klantproject/app
+```
 
 Exit code 1 on any hit, so it drops straight into CI.
 
