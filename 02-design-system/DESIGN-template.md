@@ -95,6 +95,16 @@ breakpoints: { sm: 640, md: 768, lg: 1024, xl: 1280 }
 
 # <Project> — design system
 
+## Brief
+
+| | |
+|---|---|
+| Sector | <playbook uit `08-sectors/`> |
+| De ene taak | <wat één bezoeker doet dat telt als succes> |
+| Concurrenten | <drie URLs> |
+| Referenties mooi | <drie URLs + wat de klant er precies aan bevalt> |
+| Referentie lelijk | <één URL + waarom. Sluit meer uit dan de drie hierboven insluiten> |
+
 ## Direction
 
 <Two or three sentences. What is this supposed to feel like, and what is it explicitly
@@ -106,6 +116,41 @@ not? Naming what it is *not* is often more useful than what it is.>
 - <e.g. One accent — terracotta — carries every action. Nothing else is coloured.>
 - <e.g. Serif display against a neutral sans. Editorial, not startup.>
 - <e.g. Hairline borders instead of shadows. Almost no elevation.>
+
+## Palet — herkomst per kleur
+
+**Verplicht.** Een kleur waarvan je de herkomst niet kunt benoemen, is een kleur waar je
+naar teruggevallen bent. Zie [`anti-patterns.md`](./anti-patterns.md) §1.8.
+
+| Token | Waarde | Waar het vandaan komt |
+|---|---|---|
+| `--color-action` | `#…` | <"het oranje van hun werkkledij op de foto's">
+| `--color-surface` | `#…` | <"de kalkzandsteen van de gevel"> |
+| … | | |
+
+## Signature-element
+
+> **Zonder ingevuld signature-element mag er niet gebouwd worden.**
+
+<Het ene ding waaraan een bezoeker deze site onthoudt. Concreet en bouwbaar.
+Niet "een onderscheidende uitstraling". Wel: "elke realisatie krijgt het bouwjaar en de
+uitvoeringstermijn als getrackte mono-label in de bovenhoek van de foto, altijd op
+dezelfde plek — na drie projecten herken je het patroon".>
+
+## Motion-principe
+
+<Eén zin. Wat beweegt, wanneer, en waarom. Plus de merkcurve als token.>
+
+## Het esthetische risico
+
+<Welk risico is genomen, en de verdediging. De verdediging moet terug te voeren zijn op de
+klant: wat ze doen, wat ze maken, waar ze zitten. "Om het interessanter te maken" is geen
+verdediging.>
+
+## Zelfkritiek — stap 4
+
+<Wat kwam er bij de eerste poging voorspelbaar uit, en wat is er veranderd? Toon het
+voor en na. Als hier niets staat, is stap 4 overgeslagen.>
 
 ## Rules
 
@@ -141,6 +186,12 @@ Give each rule a name. Named rules get followed.
 | Card | <padding, radius, border vs shadow, is it clickable> |
 | Input | <height, focus state> |
 | Section | <padding, container width, background alternation> |
+
+## Opgeheven verboden
+
+<Elk verbod uit anti-patterns.md dat je opheft, met de reden. Leeg is het normale geval.>
+
+- **<regel>** — <reden, en waar het getest is>
 ```
 
 ---

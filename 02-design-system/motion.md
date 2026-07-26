@@ -36,6 +36,7 @@ the user has already decided.
 Never `linear` for movement. Never the browser default `ease`.
 
 ```css
+--ease-brand:    cubic-bezier(0.2, 0.8, 0.2, 1);     /* the project's signature curve */
 --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);      /* entrances, reveals — the workhorse */
 --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);     /* moves between two on-screen states */
 --ease-in:       cubic-bezier(0.7, 0, 0.84, 0);      /* exits, things leaving the screen */
@@ -44,6 +45,23 @@ Never `linear` for movement. Never the browser default `ease`.
 
 Rule: things **entering** ease *out* (fast start, soft landing). Things **leaving** ease
 *in* (soft start, quick departure).
+
+**Pick one `--ease-brand` per project and write it into `DESIGN.md`.**
+`cubic-bezier(.2,.8,.2,1)` reads precise and controlled; `cubic-bezier(.34,1.56,.64,1)`
+reads playful. A curve used consistently across every interaction is a character trait. A
+different curve per component is noise, and `ease` or `linear` is no character at all.
+
+Concrete pairing of duration to purpose:
+
+| Purpose | Duration | Curve |
+|---|---|---|
+| Micro-interaction — hover, press, toggle | **120–200ms** | `--ease-brand` |
+| Entrance — panel, reveal, modal | **300–500ms** | `--ease-brand` |
+| Exit | ~70% of the entrance | `--ease-in` |
+
+**Never `transition: all`.** Name the properties. `transition: all` animates layout
+properties you did not intend and is enforced against by
+[`../tools/slop-check.mjs`](../tools/slop-check.mjs).
 
 ## Restraint
 

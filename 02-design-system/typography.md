@@ -7,21 +7,69 @@ is a mistake unless it is a monospace for code.
 
 The display face carries the personality. The text face should be invisible.
 
-### Pairings that work
+### Three roles, not two
 
-| Display | Text | Reads as |
-|---|---|---|
-| Instrument Serif | Inter | Editorial, premium, calm |
-| Fraunces | Söhne / Inter | Warm, crafted, human |
-| Satoshi | Inter | Modern, neutral, safe |
-| General Sans | General Sans | Clean, single-family discipline |
-| Bricolage Grotesque | Inter | Expressive, contemporary |
-| Playfair Display | Source Sans 3 | Classic, luxury, hospitality |
-| Space Grotesk | IBM Plex Sans | Technical, product-led |
-| GT Sectra / Newsreader | Geist | Considered, editorial |
+- **Display** — carries the personality. Used sparingly, at size.
+- **Body** — readable and invisible. You should not notice it.
+- **Utility** — a monospace or a narrow sans for data, labels, prices, dates, metadata.
+
+The third role is what most systems skip, and it is the cheapest way to make numbers and
+labels look designed rather than left over.
+
+### Burned out — do not use as a display face
+
+Inter · Instrument Sans · Geist · General Sans · Plus Jakarta Sans · Space Grotesk ·
+Poppins · Montserrat · Outfit · DM Sans · Satoshi
+
+All of them are good typefaces. All of them are exhausted: they are the defaults in every
+framework, template and generated output, and they are recognised on sight. **Inter may
+stay as a body face** if it genuinely fits the project — but then never also as the
+heading. Enforced by `[font-overused]` in
+[`../tools/slop-check.mjs`](../tools/slop-check.mjs); lifting it needs a written reason.
+
+### Pairings by mood
+
+All open-licensed and self-hostable. Pick by what the sector needs, not by what is current.
+
+| Mood | Display | Body | Utility |
+|---|---|---|---|
+| Editorial, authoritative | Newsreader · Source Serif 4 · Spectral · Literata | Public Sans · Archivo | Archivo Narrow |
+| Warm, crafted | Fraunces · Petrona | Karla · Hanken Grotesk | Karla |
+| Technical, precise | Familjen Grotesk · Schibsted Grotesk | Schibsted Grotesk | IBM Plex Mono |
+| Quiet luxury | EB Garamond · Zodiak | Cabinet Grotesk | Cabinet Grotesk |
+| Bold, direct | Bricolage Grotesque · Anybody | Switzer | Switzer |
+| Data-heavy | IBM Plex Sans | IBM Plex Sans | IBM Plex Mono (`tnum`) |
 
 If the client is a law firm, a restaurant or a clinic, a serif display face is almost
 always the stronger choice — and almost never what gets picked by default.
+
+Sector-specific direction: [`../08-sectors/`](../08-sectors/).
+
+### Variable axes — the detail no generator adds
+
+If the face is variable, use a real axis for something real:
+
+```css
+h1 { font-variation-settings: "opsz" 48, "wght" 500; }
+p  { font-variation-settings: "opsz" 16, "wght" 400; }
+
+@media (max-width: 640px) {
+  h1 { font-variation-settings: "opsz" 32, "wght" 550; } /* small sizes need more weight */
+}
+```
+
+An optical-size axis stepped per breakpoint, or a width axis narrowing on mobile instead of
+shrinking, reads immediately as considered. It costs three lines.
+
+### Feature settings, deliberately
+
+```css
+.price, .stat, table { font-feature-settings: "tnum" 1; }  /* digits align */
+.display            { font-feature-settings: "ss01" 1; }   /* only if the alternate earns it */
+```
+
+`tnum` on anything where numbers stack vertically. `ss01` only where the stylistic set adds
+character — not by reflex.
 
 ### Loading
 

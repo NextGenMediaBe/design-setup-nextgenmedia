@@ -146,20 +146,30 @@ navigation component from here, verify keyboard operability, focus trapping and
 `line-hover-link` — **11** underline variants · `folder-preview` — **9** opening folder
 variants · `animated-tooltip` — **7** SVG bubble shapes
 
-### Backgrounds
-`animated-rays` · `aurora-hero` · `fluid-morph-bg` · `twisting-ribbon` (canvas 2D) ·
-`perspective-grid` · `light-lines` · `wave-grid-background` (three) · `liquid-ocean` ⚠️
-(three, undeclared)
+### Backgrounds — mostly banned
 
-**Read this before using any of them.** Animated backgrounds are on the anti-pattern list
-in [`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md) for a
-reason: they are the fastest way to make a site look generated. If you use one:
+**🚫 VERBODEN.** These are named anti-patterns in
+[`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md) §1.2 and
+§5.5. They are the loudest AI tell there is, and they cost the LCP budget on top of it:
 
-- one per site, in the hero only, never behind body text
-- restyled to the project palette — the shipped colours are all purple/cyan and will fight
-  the brand
-- `prefers-reduced-motion` must stop it, which none of them handle out of the box
-- static fallback under `md`
+| Component | Rule broken |
+|---|---|
+| `aurora-hero` | §1.2 Aurora backgrounds — this is the literal thing the rule names |
+| `animated-rays` | §1.2 — aurora by another name |
+| `fluid-morph-bg` | §1.2 + §5.5 — seven morphing SVG blobs |
+| `liquid-gradient` | §1.1 purple-blue gradient + §5.5 ambient motion |
+| `glow-border-card` | §1.3 Glow — a rotating conic aurora border |
+| `wave-grid-background` | §5.5 ambient motion, plus 150kb+ of Three.js |
+| `liquid-ocean` | §5.5, plus 150kb+ of Three.js and an undeclared dependency |
+
+**Conditionally allowed**, with `slop-check-ok:` and a written reason in `DESIGN.md`:
+`twisting-ribbon` (canvas 2D, cheap), `perspective-grid` (static, no motion),
+`light-lines` (static gradient).
+
+If you use one of the three: one per site, hero only, never behind body text, restyled to
+the project palette (the shipped colours are all purple/cyan and will fight the brand),
+`prefers-reduced-motion` stops it (none handle this out of the box), and a static fallback
+under `md`.
 
 ### Not on the site, only in `registry.json`
 `border-beam` · `cyber-glitch-text` · `interactive-hover-button` · `liquid-gradient` ·
@@ -168,6 +178,17 @@ reason: they are the fastest way to make a site look generated. If you use one:
 
 The registry also re-hosts the whole shadcn/ui base set. Install those from shadcn
 directly, not from here.
+
+## Before you install anything from here
+
+This catalogue predates the anti-slop rules. A lot of what is listed above breaks them.
+Check every component against
+[`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md) before it
+goes in a project, and expect `npm run design:check` to fail on several of them —
+`rounded-2xl`, `shadow-xl`, `backdrop-blur` and `transition-all` appear throughout.
+
+Restyling to the token layer is not optional here. These components ship with hardcoded
+hex values, purple/cyan palettes and `dark:` variants that assume Zinc.
 
 ## How to use this well
 

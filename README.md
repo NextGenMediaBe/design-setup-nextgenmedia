@@ -45,17 +45,44 @@ budgetten op.
 | Map | Inhoud |
 |---|---|
 | `00-start/` | Wat je uitvraagt voor er één regel code geschreven wordt |
-| `01-standards/` | Stack, projectstructuur, accessibility, performance, SEO |
-| `02-design-system/` | **Art direction**, principes, anti-patterns, kleur, typografie, spacing, motion, craft, tokens |
+| `01-standards/` | Stack, projectstructuur, accessibility, performance, SEO, kwaliteitsvloer |
+| `02-design-system/` | **Art direction**, **anti-patterns**, principes, kleur, typografie, spacing, motion, craft, beeld, tokens |
 | `03-patterns/` | Blauwdrukken per sectie: hero, features, pricing, navigatie, footer |
 | `04-snippets/` | GSAP-recepten, utilities, en een catalogus van externe bronnen |
-| `05-copy/` | Tone of voice en copywriting-frameworks (NL) |
+| `05-copy/` | Tone of voice en NL micro-typografie |
 | `06-brand/` | Hoe je per project een merksysteem inleest of bouwt — geen opgeslagen merken |
-| `07-workflows/` | Bouwen, reviewen, en nieuw materiaal verwerken |
-| `skills/` | Claude Code skills |
+| `07-workflows/` | Het verplichte proces, de audit, en materiaal verwerken |
+| `08-sectors/` | **16 sectorplaybooks** — wat de bezoeker echt komt doen, per branche |
+| `tools/` | `slop-check`, ESLint-regel, stylelint-config, screenshot-audit |
+| `skills/` | `anti-slop-design` — de skill die het proces afdwingt |
 | `_inbox/` | Dropzone voor materiaal dat nog gesorteerd moet worden |
 
 `CLAUDE.md` in de root is het instapdocument: leesvolgorde en de harde regels.
+
+## Het proces is verplicht
+
+Acht stappen, waarvan er twee een poort zijn: **er wordt geen componentcode geschreven voor
+het designplan en de zelfkritiek er zijn.** Dat staat in
+[`07-workflows/build-website.md`](07-workflows/build-website.md), en de skill
+`anti-slop-design` dwingt het af.
+
+## De regels worden gehandhaafd, niet gehoopt
+
+```bash
+npm run design:check
+```
+
+Faalt de build op paars-blauwe verlopen, `indigo-600`, `#6366F1`, `rounded-2xl`,
+`transition: all`, Inter als displayfont, em-dashes in NL-tekst, rechte apostrofs,
+verboden woorden, emoji in koppen, en een ontbrekend `lang="nl"`. Elke hit toont het
+bestand, de regel en de suggestie uit `02-design-system/anti-patterns.md`.
+
+```bash
+npm run design:audit
+```
+
+Screenshots op 390, 768 en 1440px, plus een contrastcontrole en een check op koppen die op
+mobiel over meer dan drie regels breken.
 
 ## Nieuw materiaal toevoegen
 

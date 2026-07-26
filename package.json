@@ -1,0 +1,18 @@
+{
+  "name": "design-setup",
+  "private": true,
+  "type": "module",
+  "description": "Build kit. Carries the design-enforcement toolchain only; see tools/README.md.",
+  "scripts": {
+    "design:check": "node tools/slop-check.mjs",
+    "design:fix": "node tools/slop-check.mjs --fix",
+    "design:audit": "node tools/audit-screenshot.mjs",
+    "design:test": "node tools/slop-check.mjs --self-test"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

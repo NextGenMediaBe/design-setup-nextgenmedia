@@ -23,6 +23,19 @@ Most AI-built interfaces fail in the same three ways, and they are all avoidable
 
 Correctness is the floor. This kit exists for what sits above it.
 
+## The process is mandatory
+
+Follow [`07-workflows/build-website.md`](07-workflows/build-website.md) literally, on every
+project. Two of its eight steps are **gates**:
+
+> **No component code exists before the design plan (step 3) and the self-critique
+> (step 4) have been delivered.**
+
+If asked to start building immediately, deliver both first in the same turn, then build.
+It costs three minutes and it decides the entire result.
+
+The skill that enforces this is [`skills/anti-slop-design/`](skills/anti-slop-design/).
+
 ## Reading order
 
 **Before writing any UI code:**
@@ -30,46 +43,52 @@ Correctness is the floor. This kit exists for what sits above it.
 | Step | Read | Why |
 |---|---|---|
 | 1 | `00-start/project-kickoff.md` | What to resolve before building |
-| 2 | `02-design-system/art-direction.md` | **Choose the direction. Do not skip this.** |
-| 3 | `02-design-system/principles.md` | The rules that make output look designed |
-| 4 | `02-design-system/anti-patterns.md` | The tells that make output look generated |
-| 5 | `01-standards/stack.md` | Default stack, and when to deviate |
-| 6 | `03-patterns/` | Section blueprints for the pages you need |
+| 2 | `08-sectors/<sector>.md` | What the visitor actually came to do — usually not what the client thinks |
+| 3 | `02-design-system/art-direction.md` | **Choose the direction. Do not skip this.** |
+| 4 | `02-design-system/anti-patterns.md` | The tells that make output look generated, and why |
+| 5 | `02-design-system/principles.md` | The rules that make output look designed |
+| 6 | `01-standards/stack.md` | Default stack, and when to deviate |
+| 7 | `03-patterns/` | Section blueprints for the pages you need |
 
 Then, while building: [`02-design-system/craft.md`](02-design-system/craft.md) and the
 relevant standards. Everything else is reference — pull it in when the task touches it.
 Do not read the whole repo up front.
-
-The end-to-end process is [`07-workflows/build-website.md`](07-workflows/build-website.md).
 
 ## Non-negotiable rules
 
 1. **A visual direction is chosen and written down** in the project's `DESIGN.md` before
    any component is built. See
    [`02-design-system/DESIGN-template.md`](02-design-system/DESIGN-template.md).
-2. **No default framework palette.** Never ship `blue-500`, `gray-100`, `slate-900` as
-   brand colours. Colours come from the token layer in `02-design-system/tokens/`,
-   generated per project via `02-design-system/color.md`.
-3. **Type scale before layout.** Set the typographic scale first, then build sections.
-   Layout follows type, not the other way around.
-4. **One accent colour.** A second needs an explicit, written reason.
-5. **Motion is opt-in per element and respects `prefers-reduced-motion`.** One or two
-   moments of motion per page, not one per section. See `02-design-system/motion.md`.
-6. **Every interactive element has a visible focus state.** No `outline: none` without a
-   replacement.
-7. **Real or realistic content.** Never "Lorem ipsum", "Feature One", invented statistics
-   or fabricated testimonials. See `05-copy/copywriting.md`.
-8. **Mobile layout is designed, not inherited.** Every section spec in `03-patterns/`
-   states its mobile behaviour. Implement that; do not just let flex wrap.
-9. **Performance is a design constraint.** LCP < 2.5s, INP < 200ms, CLS < 0.1 on a
-   mid-range phone. A visual effect that costs the budget does not ship. A Lighthouse
-   accessibility score below 100 is a defect, the same as a failing typecheck.
+2. **A signature element is named** in `DESIGN.md` — the one thing a visitor remembers this
+   site by, concrete and buildable. Without it, building does not start.
+3. **Every brand colour's origin is recorded.** Derived from something physical the client
+   owns: material, product, packaging, facade, workwear. A colour you cannot justify out
+   loud is a colour you defaulted to.
+4. **No default framework palette.** Never `blue-500`, `indigo-600`, `slate-900`,
+   `#6366F1`, `#0F172A`. Colours come from the token layer in `02-design-system/tokens/`.
+5. **No burned-out display faces.** Not Inter, Geist, Poppins, Space Grotesk, Satoshi or
+   the rest of the list in `02-design-system/typography.md`.
+6. **One accent colour**, appearing at most twice per viewport. A second accent needs a
+   written reason.
+7. **Motion is opt-in per element and respects `prefers-reduced-motion`.** One or two
+   moments per page, not one per section. Never `transition: all`.
+8. **Every interactive element has hover, active, focus-visible, disabled, loading and
+   error.** Missing states are a bigger tell than any colour choice.
+9. **Real content.** Never "Lorem ipsum", "Feature One", invented statistics, fabricated
+   testimonials or stock photography. Flag the absence instead of substituting.
+10. **Mobile layout is designed, not inherited.** Every section spec in `03-patterns/`
+    states its mobile behaviour. Implement that; do not just let flex wrap.
+11. **Performance is a design constraint.** LCP < 2.5s, INP < 200ms, CLS < 0.1 on a
+    mid-range phone. A visual effect that costs the budget does not ship. A Lighthouse
+    accessibility score below 100 is a defect, the same as a failing typecheck.
+12. **`npm run design:check` passes.** A failure gets fixed, not suppressed. Suppressing
+    needs `slop-check-ok:` with a written reason plus an entry in `DESIGN.md`.
 
 ## Conventions
 
-- Standards, patterns and code are in **English**. The copy guidance in `05-copy/` is in
-  **Dutch**, because that is the market it is written for; the frameworks in it apply to
-  any language.
+- Standards, patterns and code are in **English**. `05-copy/` and `08-sectors/` are in
+  **Dutch**, because both are market-specific — Dutch micro-typography and Flemish sector
+  knowledge do not translate. The frameworks in them apply to any language.
 - `> **NEEDS INPUT**` marks a placeholder waiting on real material. Do not invent content
   for those — ask, or flag it.
 - Code blocks are reference implementations. Adapt them to the project's actual stack.

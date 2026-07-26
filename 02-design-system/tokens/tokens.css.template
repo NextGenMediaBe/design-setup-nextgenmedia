@@ -1,0 +1,406 @@
+/* ===========================================================================
+   TOKEN SKELETON — copy this file per project as app/globals.css
+   ---------------------------------------------------------------------------
+   Three layers, one direction of reference. See ./README.md.
+
+     LAYER 1  primitives  raw values, referenced ONLY by layer 2
+     LAYER 2  semantic    roles, the ONLY layer components may reference
+     LAYER 3  component   per-component knobs, resolved from layer 2
+
+   A component that references a layer-1 primitive is a bug.
+
+   Fill in LAYER 1 from the project's DESIGN.md. Leave LAYER 2 alone unless the
+   project genuinely needs a new role. Record where every brand value came from
+   in the HERKOMST slot next to it. Six months from now that comment is the only
+   remaining record of why the colour is what it is.
+
+   For a filled-in example of what this looks like finished, read globals.css
+   in this same folder.
+   =========================================================================== */
+
+/* ===========================================================================
+   LAYER 1 — PRIMITIVES
+   Raw values. No meaning. Names say what the value IS, not what it is FOR.
+   =========================================================================== */
+
+:root {
+  /* ---- Hues -------------------------------------------------------------
+     Accent hue: avoid 220–250. That band is every SaaS site ever built.
+     Neutral hue: set it to the accent hue (or within ~30 of it) and keep a
+     little chroma. Tinted neutrals are what stop a palette reading as
+     default grey. See ../color.md.                                        */
+
+  --hue-accent:  /* TODO */;   /* HERKOMST:                                */
+  --hue-neutral: /* TODO */;   /* HERKOMST: afgeleid van --hue-accent      */
+
+  /* ---- Neutral ramp -----------------------------------------------------
+     Lightness steps are perceptual (oklch L), not linear. 50 is the page,
+     950 is the deepest ink. Chroma rises slightly toward the middle of the
+     ramp — flat chroma across a ramp looks synthetic.                     */
+
+  --n-50:  oklch(/* L */% 0.005 var(--hue-neutral));
+  --n-100: oklch(/* L */% 0.007 var(--hue-neutral));
+  --n-200: oklch(/* L */% 0.009 var(--hue-neutral));
+  --n-300: oklch(/* L */% 0.011 var(--hue-neutral));
+  --n-400: oklch(/* L */% 0.013 var(--hue-neutral));
+  --n-500: oklch(/* L */% 0.014 var(--hue-neutral));
+  --n-600: oklch(/* L */% 0.015 var(--hue-neutral));
+  --n-700: oklch(/* L */% 0.015 var(--hue-neutral));
+  --n-800: oklch(/* L */% 0.015 var(--hue-neutral));
+  --n-900: oklch(/* L */% 0.014 var(--hue-neutral));
+  --n-950: oklch(/* L */% 0.013 var(--hue-neutral));
+
+  /* ---- Accent ramp ------------------------------------------------------
+     ONE accent. A second needs a written reason in DESIGN.md.
+     500 is the base. 600 is the hover (darker, same hue). 100 is the tint
+     behind badges and subtle fills. 800 is text-on-tint.                  */
+
+  --a-100: oklch(/* L */% 0.04 var(--hue-accent));  /* HERKOMST:           */
+  --a-300: oklch(/* L */% 0.12 var(--hue-accent));  /* HERKOMST:           */
+  --a-500: oklch(/* L */% 0.19 var(--hue-accent));  /* HERKOMST: <bron van de merkkleur — logo-PDF, Pantone, huisstijlgids, datum> */
+  --a-600: oklch(/* L */% 0.19 var(--hue-accent));  /* HERKOMST: --a-500, L −7 */
+  --a-800: oklch(/* L */% 0.14 var(--hue-accent));  /* HERKOMST: --a-500, L −25 */
+
+  /* ---- Status -----------------------------------------------------------
+     Nudge these toward the brand hue so they do not look bolted on, but
+     keep green readable as green and red readable as red.                 */
+
+  --status-success: oklch(62% 0.16 150);  /* HERKOMST:                     */
+  --status-warning: oklch(75% 0.15 80);   /* HERKOMST:                     */
+  --status-danger:  oklch(58% 0.20 25);   /* HERKOMST:                     */
+  --status-info:    oklch(62% 0.14 240);  /* HERKOMST:                     */
+
+  /* ---- Spacing steps ----------------------------------------------------
+     4px base. Components and inline spacing use these. Section rhythm does
+     NOT — see the section scale in layer 2.                               */
+
+  --step-1:  0.25rem;   /*   4px */
+  --step-2:  0.5rem;    /*   8px */
+  --step-3:  0.75rem;   /*  12px */
+  --step-4:  1rem;      /*  16px */
+  --step-5:  1.25rem;   /*  20px */
+  --step-6:  1.5rem;    /*  24px */
+  --step-8:  2rem;      /*  32px */
+  --step-10: 2.5rem;    /*  40px */
+  --step-12: 3rem;      /*  48px */
+  --step-16: 4rem;      /*  64px */
+
+  /* ---- Radius steps -----------------------------------------------------
+     Pick ONE radius language and commit. 0–2px editorial, 6–10px neutral,
+     14–24px friendly, pill playful. See ../craft.md.                      */
+
+  --r-none: 0;
+  --r-xs:   0.25rem;
+  --r-sm:   0.375rem;
+  --r-md:   0.625rem;
+  --r-lg:   0.875rem;
+  --r-xl:   1.25rem;
+  --r-2xl:  1.75rem;
+  --r-full: 9999px;
+
+  /* ---- Raw durations and curves ----------------------------------------- */
+
+  --dur-60:  60ms;
+  --dur-150: 150ms;
+  --dur-220: 220ms;
+  --dur-380: 380ms;
+  --dur-600: 600ms;
+
+  --curve-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --curve-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --curve-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --curve-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Raw font stacks --------------------------------------------------- */
+
+  --stack-display: /* TODO */, ui-serif, Georgia, serif;      /* HERKOMST:  */
+  --stack-text:    /* TODO */, ui-sans-serif, system-ui, sans-serif; /* HERKOMST: */
+  --stack-mono:    ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+/* ===========================================================================
+   LAYER 2 — SEMANTIC
+   Roles. The ONLY layer components are allowed to reference.
+   Every value here is a pointer at a layer-1 primitive and nothing else.
+   =========================================================================== */
+
+:root {
+  /* ---- Surfaces and text ------------------------------------------------ */
+
+  --bg:                  var(--n-50);
+  --surface:             oklch(100% 0 0);
+  --surface-muted:       var(--n-100);
+  --surface-raised:      oklch(100% 0 0);   /* dropdowns, modals */
+  --surface-inverse:     var(--n-950);
+
+  --text-heading:        var(--n-900);
+  --text-body:           var(--n-800);
+  --text-muted:          var(--n-500);
+  --text-placeholder:    var(--n-400);
+  --text-inverse:        var(--n-50);
+  --text-on-action:      oklch(100% 0 0);
+
+  /* ---- Borders — always alpha, never solid (see ../craft.md) ------------ */
+
+  --border:              oklch(from var(--n-900) l c h / 10%);
+  --border-strong:       oklch(from var(--n-900) l c h / 18%);
+  --border-subtle:       oklch(from var(--n-900) l c h / 6%);
+
+  /* ---- Action ----------------------------------------------------------- */
+
+  --action:              var(--a-500);
+  --action-hover:        var(--a-600);
+  --action-subtle:       var(--a-100);
+  --action-on-subtle:    var(--a-800);
+
+  --ring:                var(--a-500);
+  --ring-offset:         var(--bg);
+
+  /* ---- Status ----------------------------------------------------------- */
+
+  --success:             var(--status-success);
+  --warning:             var(--status-warning);
+  --danger:              var(--status-danger);
+  --info:                var(--status-info);
+
+  /* ---- Shadows — tinted with the neutral hue, never pure black ---------- */
+
+  --shadow-sm:
+    0 1px 2px oklch(20% 0.02 var(--hue-neutral) / 0.05);
+  --shadow-md:
+    0 1px 2px  oklch(20% 0.02 var(--hue-neutral) / 0.05),
+    0 4px 12px oklch(20% 0.02 var(--hue-neutral) / 0.07);
+  --shadow-lg:
+    0 2px 4px   oklch(20% 0.02 var(--hue-neutral) / 0.05),
+    0 12px 32px oklch(20% 0.02 var(--hue-neutral) / 0.09);
+  --shadow-xl:
+    0 4px 8px   oklch(20% 0.02 var(--hue-neutral) / 0.05),
+    0 24px 64px oklch(20% 0.02 var(--hue-neutral) / 0.12);
+
+  /* ---- Radius roles ----------------------------------------------------- */
+
+  --radius-control:  var(--r-md);   /* buttons, inputs, selects — these MATCH */
+  --radius-card:     var(--r-lg);
+  --radius-panel:    var(--r-xl);   /* modals, sheets, large containers */
+  --radius-badge:    var(--r-full);
+
+  /* ---- Inline / component spacing --------------------------------------- */
+
+  --space-inline:    var(--step-2);   /* icon to label */
+  --space-stack:     var(--step-4);   /* paragraph to paragraph */
+  --space-card:      var(--step-6);   /* card padding */
+  --space-group:     var(--step-12);  /* block to unrelated block */
+
+  /* ---- SECTION RHYTHM ---------------------------------------------------
+     Deliberately NOT the 4px step scale continued upward.
+
+     Section spacing is its own scale for two reasons. First, at this size
+     4px precision is meaningless: nobody sees the difference between 128px
+     and 132px. Second, and more importantly, a linear top end makes every
+     page breathe identically — a dense pricing table and a single-statement
+     hero would get the same rhythm. The ratios below step up by roughly
+     1.4–1.7×, so the four options are visibly different from each other and
+     you are choosing a rhythm rather than nudging a number.
+
+     Values are clamped so mobile and desktop are one decision, not two.
+     Mobile floor is the section padding minimum from ../spacing-layout.md.  */
+
+  --space-section-s:  clamp(3.5rem,  7vw,  5rem);    /*  56 →  80  tight, e.g. a nav-adjacent band */
+  --space-section-m:  clamp(4rem,    9vw,  8.5rem);  /*  64 → 136  the default */
+  --space-section-l:  clamp(5rem,   12vw, 12.5rem);  /*  80 → 200  a section that needs air */
+  --space-section-xl: clamp(6rem,   16vw, 17.5rem);  /*  96 → 280  hero, statement, closing CTA */
+
+  /* ---- Containers ------------------------------------------------------- */
+
+  --container-sm:  40rem;
+  --container-md:  48rem;
+  --container-lg:  64rem;
+  --container-xl:  80rem;
+  --container-2xl: 90rem;
+  --gutter:        1.25rem;
+  --gutter-md:     2rem;
+
+  /* ---- Motion -----------------------------------------------------------
+     --ease-brand is the curve that carries the project's personality. It is
+     what every default transition uses, so changing this one line changes
+     how the whole site feels. Crisp and editorial: --curve-out. Soft and
+     consumer: --curve-in-out. Playful: --curve-spring, and accept that
+     everything will overshoot. See ../motion.md.                          */
+
+  --ease-brand:   var(--curve-out);
+  --ease-enter:   var(--curve-out);
+  --ease-exit:    var(--curve-in);
+  --ease-move:    var(--curve-in-out);
+
+  --duration-instant: var(--dur-60);   /* :active, checkbox */
+  --duration-fast:    var(--dur-150);  /* hover, focus */
+  --duration-base:    var(--dur-220);  /* dropdowns, small panels */
+  --duration-slow:    var(--dur-380);  /* modals, large panels */
+  --duration-page:    var(--dur-600);  /* the one statement moment */
+
+  /* ---- Type roles ------------------------------------------------------- */
+
+  --font-display: var(--stack-display);
+  --font-text:    var(--stack-text);
+  --font-mono:    var(--stack-mono);
+}
+
+/* ===========================================================================
+   LAYER 3 — COMPONENT TOKENS
+   Per-component knobs. Every value resolves from LAYER 2, never from LAYER 1.
+   Only add one when a value is used more than twice in a component, or when
+   two components must stay in lockstep.
+   =========================================================================== */
+
+:root {
+  /* Buttons */
+  --button-height-sm:  2.25rem;
+  --button-height-md:  2.75rem;
+  --button-height-lg:  3.25rem;
+  --button-padding-x:  var(--step-5);
+  --button-radius:     var(--radius-control);
+  --button-gap:        var(--space-inline);
+  --button-duration:   var(--duration-fast);
+
+  /* Inputs — height matches the button by definition, so a button next to an
+     input in a form never sits 2px off. This line is why layer 3 exists.   */
+  --input-height:      var(--button-height-md);
+  --input-padding-x:   var(--step-3);
+  --input-radius:      var(--radius-control);
+
+  /* Cards */
+  --card-padding:      var(--space-card);
+  --card-radius:       var(--radius-card);
+  --card-border:       var(--border);
+  --card-shadow:       var(--shadow-sm);
+  /* Nested radius: inner = outer − padding. See ../craft.md.               */
+  --card-inner-radius: calc(var(--card-radius) - var(--card-padding));
+
+  /* Navigation */
+  --nav-height:        4rem;
+  --nav-height-lg:     4.5rem;
+
+  /* Focus ring */
+  --focus-width:       2px;
+  --focus-offset:      2px;
+}
+
+/* ===========================================================================
+   DARK MODE
+   Override LAYER 2 only. Never redefine a primitive here, and never touch
+   layer 3 — if a component looks wrong in dark mode, the semantic token is
+   wrong, not the component.
+
+   Physics change in dark mode: surfaces get LIGHTER as they come forward,
+   they do not get bigger shadows. Borders become white-alpha. Accents need a
+   lightness bump to stay vivid. See ../craft.md.
+
+   Pick ONE selector. `.dark` for a manual toggle, the media query for
+   system-only, or both if the toggle has a system default.
+   =========================================================================== */
+
+.dark {
+  --bg:                var(--n-950);
+  --surface:           var(--n-900);
+  --surface-muted:     var(--n-800);
+  --surface-raised:    var(--n-800);
+  --surface-inverse:   var(--n-50);
+
+  --text-heading:      oklch(97% 0.005 var(--hue-neutral));
+  --text-body:         var(--n-200);
+  --text-muted:        var(--n-400);
+  --text-placeholder:  var(--n-500);
+  --text-inverse:      var(--n-950);
+
+  --border:            oklch(from var(--n-50) l c h / 12%);
+  --border-strong:     oklch(from var(--n-50) l c h / 22%);
+  --border-subtle:     oklch(from var(--n-50) l c h / 7%);
+
+  --action:            oklch(/* L +8 */% 0.18 var(--hue-accent));
+  --action-hover:      oklch(/* L +14 */% 0.17 var(--hue-accent));
+  --action-subtle:     oklch(30% 0.08 var(--hue-accent));
+  --action-on-subtle:  oklch(88% 0.10 var(--hue-accent));
+
+  /* Depth only, no detail. Plus a 1px top highlight — the cheapest thing
+     that makes a dark card look physical.                                  */
+  --shadow-sm: 0 1px 2px  oklch(0% 0 0 / 0.30);
+  --shadow-md: 0 4px 12px oklch(0% 0 0 / 0.40);
+  --shadow-lg: 0 12px 32px oklch(0% 0 0 / 0.50);
+  --shadow-xl: 0 24px 64px oklch(0% 0 0 / 0.60);
+  --highlight: inset 0 1px 0 oklch(100% 0 0 / 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    /* Repeat the .dark block here, or use :is(.dark, :root:not(.light)) as a
+       single selector above. Do not maintain two divergent copies.         */
+  }
+}
+
+/* ===========================================================================
+   OPTIONAL — TAILWIND BRIDGE
+   Delete this block entirely on a project that does not use Tailwind.
+
+   v4: uncomment below. `--namespace-*: initial` wipes the defaults so
+       bg-indigo-600 fails to compile. `inline` is required so the dark-mode
+       overrides above actually reach the utilities.
+   v3: delete this block and use tailwind.config.template.ts instead.
+   =========================================================================== */
+
+/*
+@import "tailwindcss";
+
+@theme inline {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-bg:              var(--bg);
+  --color-surface:         var(--surface);
+  --color-surface-muted:   var(--surface-muted);
+  --color-surface-raised:  var(--surface-raised);
+  --color-heading:         var(--text-heading);
+  --color-body:            var(--text-body);
+  --color-muted:           var(--text-muted);
+  --color-border:          var(--border);
+  --color-border-strong:   var(--border-strong);
+  --color-action:          var(--action);
+  --color-action-hover:    var(--action-hover);
+  --color-action-subtle:   var(--action-subtle);
+  --color-on-action:       var(--text-on-action);
+  --color-success:         var(--success);
+  --color-warning:         var(--warning);
+  --color-danger:          var(--danger);
+  --color-info:            var(--info);
+
+  --radius-*: initial;
+  --radius-control: var(--radius-control);
+  --radius-card:    var(--radius-card);
+  --radius-panel:   var(--radius-panel);
+  --radius-badge:   var(--radius-badge);
+
+  --font-*: initial;
+  --font-display: var(--font-display);
+  --font-sans:    var(--font-text);
+  --font-mono:    var(--font-mono);
+
+  --shadow-*: initial;
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+
+  --ease-*: initial;
+  --ease-brand: var(--ease-brand);
+  --ease-enter: var(--ease-enter);
+  --ease-exit:  var(--ease-exit);
+  --ease-move:  var(--ease-move);
+
+  --spacing-section-s:  var(--space-section-s);
+  --spacing-section-m:  var(--space-section-m);
+  --spacing-section-l:  var(--space-section-l);
+  --spacing-section-xl: var(--space-section-xl);
+}
+*/

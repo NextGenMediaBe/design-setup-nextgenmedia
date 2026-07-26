@@ -59,15 +59,30 @@ feature grid. Everything at `max-w-7xl` is the monotony described in
 
 ## Section rhythm
 
+The spacing scale above is linear at the small end, where you need fine control. **Section
+padding must not be.** A page where every section has the same `padding-block` reads as
+machine-made, and it is one of the most reliable tells there is.
+
+```css
+--space-section-s:  4rem;    /* 64  — thin sections: logo strip, breadcrumb band */
+--space-section-m:  6rem;    /* 96  — the default */
+--space-section-l:  8rem;    /* 128 — the section carrying the main argument */
+--space-section-xl: 11rem;   /* 176 — one statement section per page, at most */
+```
+
+Deliberately not a clean multiple at the top end. **Choose per section**, and give the
+section that matters most visibly more air than its neighbours. If you cannot say which
+section is the most important, that is the real problem.
+
 ```html
-<section class="py-24 md:py-32">
+<section class="py-16 md:py-[var(--space-section-l)]">
   <div class="mx-auto max-w-5xl px-5 md:px-8">
     ...
   </div>
 </section>
 ```
 
-- Desktop section padding: **96–160px**. Mobile: 64–96px.
+- Desktop section padding: **96–176px**. Mobile: 64–96px.
 - Consecutive sections with the same background should not both have full padding —
   merge them or change the background.
 - A dark full-bleed section between two light ones creates a beat. Use it once per page,

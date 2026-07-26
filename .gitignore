@@ -5,6 +5,9 @@ build/
 .turbo/
 .cache/
 
+# Screenshot-audit output — regenereerbaar, hoort niet in git
+.audit/
+
 .env
 .env.*
 !.env.example

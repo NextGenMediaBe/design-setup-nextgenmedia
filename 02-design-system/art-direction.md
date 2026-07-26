@@ -25,6 +25,21 @@ Three inputs, in this order:
 
 Then commit. A direction executed fully beats a safer one executed halfway.
 
+## Three directions that need an explicit brief
+
+These have become defaults, which means picking one without a reason is indistinguishable
+from not deciding. See [`anti-patterns.md`](./anti-patterns.md) §1.7.
+
+| Cluster look | Which direction below it maps to |
+|---|---|
+| Cream + high-contrast serif + terracotta | **Warm minimal**, and partly **Editorial** |
+| Near-black + one acid accent + mono labels | **Technical / instrument** |
+| Hairlines, radius 0, dense columns, mono everywhere | **Technical**, and partly **Swiss** |
+
+They are all legitimate. But if you land on one, write in `DESIGN.md` which input from the
+brief led there. If you cannot point at one, you defaulted with extra steps — go back and
+pick again.
+
 ---
 
 ## The directions
