@@ -1,16 +1,16 @@
 # SmoothUI
 
-**114 componenten** plus 10 blokcategorieën. De site zegt zelf "50+" — dat cijfer is jaren
+**114 componenten** plus 10 blokcategorieën. De site zegt zelf "50+". Dat cijfer is jaren
 oud. Interactie en beweging zijn het onderwerp: tabs, accordeons, scrubbers, toggles,
 kaartstapels, 29 tekstonthullingen en 17 WebGL-paginatransities.
 
 - Site: https://smoothui.dev
-- Repo: https://github.com/educlopez/smoothui — actief onderhouden, 861 sterren
+- Repo: https://github.com/educlopez/smoothui (actief onderhouden, 861 sterren)
 - Licentie: **MIT**, © 2024 Eduardo Calvo. **Geen betaalde laag.** Alle 114 gratis
 - Onderhouder: Eduardo Calvo (`educlopez`)
 
 Van de drie catalogi in deze map is dit de enige die `prefers-reduced-motion` structureel
-respecteert — en tegelijk de enige waar toegankelijkheid het zwakste punt is. Die twee
+respecteert, en tegelijk de enige waar toegankelijkheid het zwakste punt is. Die twee
 staan niet in tegenspraak: motion-discipline is één ding, toetsenbordbediening een ander.
 
 Oordelen volgens het schema in [`INDEX.md`](./INDEX.md).
@@ -31,7 +31,7 @@ Let op: de registry-index is `/r/registry.json`, niet `/registry.json`.
 
 | | |
 |---|---|
-| React | **19+ verplicht** — `basic-accordion` gebruikt `inert` |
+| React | **19+ verplicht**: `basic-accordion` gebruikt `inert` |
 | Tailwind | **v4 alleen.** `@theme inline`, `@custom-variant`, OKLCH. Geen v3-pad |
 | Motion | `motion`, import uit `motion/react` |
 | GSAP | Voor precies één component (`gooey-popover`) |
@@ -40,7 +40,7 @@ Let op: de registry-index is `/r/registry.json`, niet `/registry.json`.
 ## Vijf dingen die stukgaan
 
 **1. `apple-invites` declareert een pakket dat niet bestaat.** `@smoothui/data` staat niet
-op npm — de hele scope bestaat niet. `npm install` faalt. De broncode importeert het
+op npm. De hele scope bestaat niet. `npm install` faalt. De broncode importeert het
 overigens ook nergens. Dit is de slechtste registry-entry van de drie catalogi.
 
 **2. Een gedeeld bestand wordt nergens gedeclareerd.** Veel componenten importeren
@@ -66,7 +66,7 @@ Verder ontbreken: `react-dom` bij vijf portal-componenten, `vaul` bij `drawer`, 
 **4. CSS-klassen zonder meegeleverde keyframes.** `number-flow`, `price-flow` en
 `power-off-slide` sturen op `slide-in-up` / `slide-out-up` / `slide-in-down` /
 `slide-out-down` en `loading-shimmer`. Die staan alleen in de stylesheet van de docs-app.
-Kopieer je het component alleen, dan rendert het statisch — zonder foutmelding.
+Kopieer je het component alleen, dan rendert het statisch, zonder foutmelding.
 
 Ze staan bovendien **twee keer, verschillend** in de repo: één versie met transform en
 opacity, één met `filter: blur(5px)` en 50px verplaatsing. Welke wint hangt af van
@@ -84,7 +84,7 @@ laadvolgorde. Neem deze, want transform en opacity zijn goedkoper dan een blur-r
 .slide-in-up    { animation: slide-in-up    .3s cubic-bezier(.22,1,.36,1) forwards }
 .slide-in-down  { animation: slide-in-down  .3s cubic-bezier(.22,1,.36,1) forwards }
 
-/* Verplicht bij ons — deze drie componenten checken het zelf niet. */
+/* Verplicht bij ons: deze drie componenten checken het zelf niet. */
 @media (prefers-reduced-motion: reduce) {
   .slide-out-up, .slide-out-down, .slide-in-up, .slide-in-down { animation: none }
 }
@@ -98,7 +98,7 @@ alleen in WebKit en Blink; Firefox krijgt niets. Herschrijven of laten.
 
 ## Kleur
 
-`--color-brand` is `oklch(0.72 0.2 352.53)` — een felle magenta-roze, hardgecodeerd als
+`--color-brand` is `oklch(0.72 0.2 352.53)`: een felle magenta-roze, hardgecodeerd als
 `bg-brand` en `text-brand` door de hele bibliotheek. Bij ons wordt dat `--primary` uit
 [`../02-design-system/tokens/globals.css`](../02-design-system/tokens/globals.css).
 
@@ -106,12 +106,12 @@ Goed nieuws: het systeem gaat uit van **precies één accent**, wat overeenkomt 
 uit [`../CLAUDE.md`](../CLAUDE.md). Eén variabele overschrijven volstaat.
 
 De `--color-smooth-*` ramp is een volledig ontzadigde grijstrap (`oklch(L 0 0)`) die in
-donkere modus in zijn geheel omklapt. Technisch netjes, maar nul tint — dat is precies de
+donkere modus in zijn geheel omklapt. Technisch netjes, maar nul tint. Dat is precies de
 "kleur van geen keuze" uit [`../02-design-system/color.md`](../02-design-system/color.md).
 Vervang door neutralen getint naar de merkhue.
 
 **Twee componenten hebben hardgecodeerde kleur die de scanner afkeurt:** `animated-input`
-gebruikt `#6b7280`, en `animated-progress-bar` heeft `#6366F1` als standaardvulling — die
+gebruikt `#6b7280`, en `animated-progress-bar` heeft `#6366F1` als standaardvulling. Die
 staat letterlijk op de zwarte lijst in
 [`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md) §1.4.
 
@@ -130,18 +130,18 @@ Dat is een verdedigbare huiscurve. Vergelijk met `--ease-brand` in `motion.md` e
 
 ## De catalogus
 
-### Basic UI (24) — het sterkste deel
+### Basic UI (24): het sterkste deel
 
 `accordion` ✅ · `animated-tabs` ✅ · `animated-toggle` ✅ · `animated-input` ⚠️ ·
 `animated-stepper` ✅ · `animated-progress-bar` ⚠️ · `animated-tooltip` ✅ ·
 `animated-file-upload` ✅ · `checkbox` ✅ · `radio-group` ✅ · `skeleton-loader` ✅ ·
 `form` ⚠️ · `basic-modal` ⚠️ · `basic-toast` ⚠️ · `tweet-card` ⚠️ · `notification-badge` ⚠️ ·
 `select` · `combobox` · `context-menu` · `dropdown-menu` · `basic-dropdown` ·
-`searchable-dropdown` · `dialog` · `drawer` — zie de waarschuwing hieronder
+`searchable-dropdown` · `dialog` · `drawer` (zie de waarschuwing hieronder)
 
 **De aanraders.** `animated-tabs` heeft volledige roving tabindex met pijltjes, Home en
 End, en één indicator die via `layoutId` meeschuift. `accordion` gebruikt `inert` op
-ingeklapte inhoud in plaats van te unmounten — dat houdt de breedte stabiel én haalt het
+ingeklapte inhoud in plaats van te unmounten. Dat houdt de breedte stabiel én haalt het
 uit de tab-volgorde. `checkbox` tekent het vinkje via `pathLength` in plaats van het in te
 faden. `skeleton-loader` rendert de echte children `invisible` zodat de layout exact klopt.
 
@@ -149,16 +149,16 @@ faden. `skeleton-loader` rendert de echte children `invisible` zodat de layout e
 `basic-dropdown` en `searchable-dropdown` zit een `motion.div` **tussen de menucontainer en
 de items**. Dat breekt de roving focus en de typeahead van Radix, omdat de items geen
 directe kinderen meer zijn. Het menu opent en animeert prima; pijltjestoetsen en
-letternavigatie doen het niet. Dat is niet cosmetisch — controleer dit voor je er een
+letternavigatie doen het niet. Dat is niet cosmetisch. Controleer dit voor je er een
 navigatie of formulier op bouwt.
 
 `form` heeft twee echte bugs: een module-brede `fieldCounter` waardoor stagger-indexen
 lekken tussen gelijktijdig gemonteerde formulieren, en `key={shakeKey}` dat de hele
-veldsubtree hermonteert bij een fout — waarmee focus en niet-gecontroleerde invoer weg zijn.
+veldsubtree hermonteert bij een fout, waarmee focus en niet-gecontroleerde invoer weg zijn.
 
 `basic-toast` is **geen stack**: elk toast is `fixed top-4 right-4`, twee tegelijk
 overlappen exact. Geen `role="status"`, geen `aria-live`, sluitknop zonder naam,
-auto-dismiss op 3s zonder pauze bij hover — dat laatste is een WCAG 2.2.1-schending. Palet
+auto-dismiss op 3s zonder pauze bij hover. Dat laatste is een WCAG 2.2.1-schending. Palet
 hardgecodeerd op `emerald/red/amber/blue`.
 
 `basic-modal` genereert zijn `titleId` met `Math.random()` tijdens render: hydration-mismatch
@@ -166,20 +166,20 @@ onder SSR.
 
 ### Navigatie (2)
 
-`breadcrumb` ✅ · `pagination` ✅ — beide correct toegankelijk, met `aria-current="page"` en
+`breadcrumb` ✅ · `pagination` ✅: beide correct toegankelijk, met `aria-current="page"` en
 `aria-hidden` op de scheidingstekens.
 
 ### Knoppen (5)
 
 | Component | Oordeel | Notitie |
 |---|---|---|
-| `smooth-button` | ✅ | De basis. CVA-varianten, `aria-busy` bij laden, druk naar 0.97. De `candy`-variant is een verloop — die niet |
+| `smooth-button` | ✅ | De basis. CVA-varianten, `aria-busy` bij laden, druk naar 0.97. De `candy`-variant is een verloop. Die niet |
 | `button-copy` | ✅ | Drietrapsmorph Copy → Loader → Check. **Raakt `navigator.clipboard` niet aan**, je levert `onCopy` zelf |
-| `magnetic-button` | 🚫 | §4.6 — verplaatst het doelwit terwijl de gebruiker erop mikt, en staat op zoveel sites dat het als default leest. Technisch netjes gebouwd (uit op niet-hover-apparaten), maar niet shippen. Zie recept 6 in [`gsap/recipes.md`](./gsap/recipes.md) |
+| `magnetic-button` | 🚫 | §4.6: verplaatst het doelwit terwijl de gebruiker erop mikt, en staat op zoveel sites dat het als default leest. Technisch netjes gebouwd (uit op niet-hover-apparaten), maar niet shippen. Zie recept 6 in [`gsap/recipes.md`](./gsap/recipes.md) |
 | `clip-corners-button` | ⚠️ | Hoekdriehoekjes springen 4px naar buiten |
 | `dot-morph-button` | ⚠️ | Punt morpht naar een pil |
 
-### Tekst (29) — allemaal hetzelfde probleem
+### Tekst (29): allemaal hetzelfde probleem
 
 Negenentwintig varianten op "tekst verschijnt". Ze zijn technisch net en respecteren
 allemaal `useReducedMotion`, maar de regel uit `motion.md` blijft: **één of twee momenten
@@ -187,16 +187,16 @@ per pagina.** Negenentwintig opties maken de verleiding groter, niet de regel lo
 
 **De rustigste, en daarom de bruikbaarste:** `per-word-crossfade` (alleen 8px y),
 `micro-scale-fade` (alleen scale 0.96→1), `shared-axis-y` (pure opacity-cascade van 78ms,
-geen transform, geen easing — editorieel en ongewoon ingetogen), `reveal-text` (0.25s,
+geen transform, geen easing: editorieel en ongewoon ingetogen), `reveal-text` (0.25s,
 snappy en gewoon).
 
-**Met reden:** `mask-reveal-up` (regels komen achter een masker vandaan — dit is de
+**Met reden:** `mask-reveal-up` (regels komen achter een masker vandaan: dit is de
 gemaskeerde hero-onthulling uit `hero.md`), `scroll-reveal-paragraph`,
 `stagger-from-center` / `stagger-from-edges` (identiek op de delay-formule na),
 `scramble-hover` (geen animatiebibliotheek, en netjes afgeschermd voor touch),
 `shine-text`, `blur-out-up`, `soft-blur-in`, `focus-blur-resolve`.
 
-**Verboden:** `wave-text` (🚫 §5.5 — oneindige lus op mount).
+**Verboden:** `wave-text` (🚫 §5.5: oneindige lus op mount).
 
 **Let op de namen.** Vier kloppen niet met wat het component doet:
 
@@ -207,13 +207,13 @@ gemaskeerde hero-onthulling uit `hero.md`), `scroll-reveal-paragraph`,
 | `short-slide-right` | Komt binnen **vanaf links** |
 | `typewriter-text` | Rendert geen cursor |
 
-### Transities (17) — verboden
+### Transities (17): verboden
 
 WebGL-paginatransities met handgeschreven GLSL. Technisch indrukwekkend: het zijn twee
 engines (`shader-reveal-transition`, `sdf-blob-transition`) met twaalf dunne wrappers
 eromheen, die in de zijbalk andere namen krijgen zodat de gedeelde afkomst onzichtbaar is.
 
-🚫 op alle zeventien. §5.2 — ze zetten een canvas tussen de bezoeker en de inhoud, met een
+🚫 op alle zeventien. §5.2: ze zetten een canvas tussen de bezoeker en de inhoud, met een
 overgang van meer dan een seconde. Geen `aria-live`, geen `aria-hidden` op de overlay, geen
 focusafhandeling over de wissel. Voor een portfolio of een releasepagina valt er iets voor
 te zeggen; dan met `slop-check-ok:` en een reden.
@@ -226,7 +226,7 @@ te zeggen; dan met `slop-check-ok:` en een reden.
 | `ai-branch` | ✅ | Gespreksvertakking met wraparound |
 | `ai-input` | ⚠️ | Dock morpht naar een formulier. Importeert `SiriOrb` en een lokale hook die het niet declareert |
 
-### Overig (34) — de interessantste groep
+### Overig (34): de interessantste groep
 
 **Aanraders:** `infinite-slider` (hertimet de *resterende* afstand bij hover, dus geen
 sprong) · `photo-stack` ⚠️ · `scrubber` ✅ · `expandable-cards` ⚠️ · `contribution-graph` ⚠️ ·
@@ -236,13 +236,13 @@ sprong) · `photo-stack` ⚠️ · `scrubber` ✅ · `expandable-cards` ⚠️ �
 
 **Verboden:** `siri-orb` 🚫 (§1.3 gloed, §5.5) · `glow-hover-card` 🚫 (§1.3) ·
 `cursor-follow` 🚫 (vervangt de systeemcursor) · `gooey-popover` 🚫 (§5.5, en de enige
-GSAP-component zonder reduced-motion-pad) · `apple-invites` 🚫 (WCAG 2.2.2 — draait elke 3s
+GSAP-component zonder reduced-motion-pad) · `apple-invites` 🚫 (WCAG 2.2.2: draait elke 3s
 door zonder pauzeknop, én de ontbrekende npm-scope)
 
 **Kapot, niet verboden:** `price-flow` 🚫. `padStart(2, "0")` en lezen van index 0 en 1
 betekent twee cijfers. Geef er 100 aan en het toont "10", 250 wordt "25". Stil fout voor
-elke waarde vanaf 100. Gebruik `number-flow` met een eigen `Intl.NumberFormat` op `nl-BE`
-— zie [`../05-copy/micro-typografie-nl.md`](../05-copy/micro-typografie-nl.md).
+elke waarde vanaf 100. Gebruik `number-flow` met een eigen `Intl.NumberFormat` op `nl-BE`,
+zie [`../05-copy/micro-typografie-nl.md`](../05-copy/micro-typografie-nl.md).
 
 `switchboard-card` roept `Math.random()` aan in `useMemo`: hydration-mismatch onder SSR.
 `reviews-carousel` kaapt ArrowLeft en ArrowRight op `window`, ongeacht focus, en heeft
@@ -252,10 +252,10 @@ elke waarde vanaf 100. Gebruik `number-flow` met een eigen `Intl.NumberFormat` o
 
 CTA, FAQs, Features, Footer, Hero, Logo Clouds, Pricing, Stats, Team Sections, Testimonial.
 De site claimt 20+ varianten maar somt ze nergens op, en `/api/v1/blocks` geeft een lege
-array terug. Niet bruikbaar tot dat opgelost is — en let op dat dit precies de
+array terug. Niet bruikbaar tot dat opgelost is, en let op dat dit precies de
 standaardvolgorde uit §3.1 is.
 
-## Toegankelijkheid — lees dit voor je kiest
+## Toegankelijkheid: lees dit voor je kiest
 
 Ongeveer **7 van de 114** componenten zijn behoorlijk toegankelijk: `breadcrumb`,
 `pagination`, `photo-stack`, `scrubber`, `button-copy`, `agent-avatar`, `expandable-cards`.
@@ -267,10 +267,10 @@ De terugkerende problemen:
 - **Bedieningselementen zonder waarde**: `exposure-slider` is een slider zonder
   `role="slider"`, zonder `aria-value*` en zonder pijltjestoetsen. `animated-progress-bar`
   heeft geen `role="progressbar"`. `power-off-slide` heeft een focusbare knop zonder rol en
-  zonder toetsafhandeling — focusbaar, maar onmogelijk te activeren.
+  zonder toetsafhandeling: focusbaar, maar onmogelijk te activeren.
 - **Niets wordt aangekondigd**: `basic-toast`, `number-flow`, `notification-badge` en
   `grid-loader` wijzigen waarden zonder live region.
-- **`role="application"` misbruikt** in `cursor-follow` en `scrollable-card-stack` — dat
+- **`role="application"` misbruikt** in `cursor-follow` en `scrollable-card-stack`: dat
   claimt een interactiemodel dat er niet is, wat erger is dan geen rol.
 - **`contribution-graph`** is hover-only met een onderdrukte lint-waarschuwing bovenop het
   probleem en geen `aria-label` per cel. De hele dataset is onleesbaar voor hulpsoftware.
@@ -278,8 +278,8 @@ De terugkerende problemen:
 Regel 11 uit `CLAUDE.md` zegt: Lighthouse onder 100 is een defect. Reken op herstelwerk bij
 alles wat de bezoeker echt bedient.
 
-**Krediet waar het hoort:** `useReducedMotion()` wordt consequent en correct toegepast —
-elk component valt terug op `duration: 0`, op `gooey-popover` en de handgreep van `drawer`
+**Krediet waar het hoort:** `useReducedMotion()` wordt consequent en correct toegepast.
+Elk component valt terug op `duration: 0`, op `gooey-popover` en de handgreep van `drawer`
 na. Dat is beter dan Magic UI en Vengeance UI samen.
 
 ## De patronen die het waard zijn los te trekken

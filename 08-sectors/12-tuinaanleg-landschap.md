@@ -10,7 +10,7 @@
 
 ## De emotionele opdracht
 
-Een tuin is de grootste aankoop die iemand doet zonder enig referentiekader. Hij weet wat een keuken kost, hij weet niet wat een terras kost, en hij vermoedt dat het meer wordt dan hij denkt. Daarbovenop is het een aankoop die pas na drie groeiseizoenen zijn definitieve vorm krijgt: hij koopt iets dat hij niet kan zien. De opdracht is dus dubbel: de site moet zijn verbeelding voeden met beelden die specifiek genoeg zijn om zich in te herkennen, en tegelijk de aankoop hanteerbaar maken met budgetten, doorlooptijden en een uitgeschreven werkwijze. Het geheel mag traag en gegroeid aanvoelen — nooit gehaast, nooit commercieel. Seizoen, materiaal en tijd zijn de dragende thema's, niet snelheid.
+Een tuin is de grootste aankoop die iemand doet zonder enig referentiekader. Hij weet wat een keuken kost, hij weet niet wat een terras kost, en hij vermoedt dat het meer wordt dan hij denkt. Daarbovenop is het een aankoop die pas na drie groeiseizoenen zijn definitieve vorm krijgt: hij koopt iets dat hij niet kan zien. De opdracht is dus dubbel: de site moet zijn verbeelding voeden met beelden die specifiek genoeg zijn om zich in te herkennen, en tegelijk de aankoop hanteerbaar maken met budgetten, doorlooptijden en een uitgeschreven werkwijze. Het geheel mag traag en gegroeid aanvoelen. Nooit gehaast, nooit commercieel. Seizoen, materiaal en tijd zijn de dragende thema's, niet snelheid.
 
 ## Typografie
 
@@ -35,7 +35,7 @@ Uit planten en steen, niet uit een swatchgenerator.
 | Vochtige teelaarde | `#5E452F` | Pas omgespitte grond in maart. Tekstaccent, kaders rond beeld. |
 | Oude gebakken klinker | `#B5562E` | Een verweerde Boomse steen in een oud terras. Het enige accent: primaire CTA, actieve filter, hover. |
 
-Verboden: `#22C55E` en elke Tailwind `emerald-*`, `green-*` of `lime-*` als merkkleur. Die groenen bestaan niet in een tuin. Ze komen uit een schermpalet, zijn te verzadigd en te koel, en ze verraden onmiddellijk dat er geen plant is aangekeken bij het maken van de site. Vermijd ook: elk verloop van groen naar blauw, houtnerf-achtergrondtexturen, en `#FFFFFF` als grond — de warme `#CFC6B2` laat groen in de foto's er beter uitzien.
+Verboden: `#22C55E` en elke Tailwind `emerald-*`, `green-*` of `lime-*` als merkkleur. Die groenen bestaan niet in een tuin. Ze komen uit een schermpalet, zijn te verzadigd en te koel, en ze verraden onmiddellijk dat er geen plant is aangekeken bij het maken van de site. Vermijd ook: elk verloop van groen naar blauw, houtnerf-achtergrondtexturen, en `#FFFFFF` als grond. De warme `#CFC6B2` laat groen in de foto's er beter uitzien.
 
 ## Layoutprincipe
 
@@ -50,10 +50,10 @@ Een portfolio dat zichzelf ordent naar seizoen en materiaal, met het budget er n
 │  │  ÉÉN FOTO, VOLLE BREEDTE, EIGEN WERK                │  │
 │  │  Tuinen die er na vijf jaar beter uitzien           │  │
 │  │  dan bij oplevering.                                │  │
-│  │  Ontwerp, aanleg en onderhoud — Hasselt en omgeving │  │
+│  │  Ontwerp, aanleg en onderhoud: Hasselt en omgeving  │  │
 │  └─────────────────────────────────────────────────────┘  │
 ├───────────────────────────────────────────────────────────┤
-│  REALISATIES — raster 2 kolommen, groot beeld              │
+│  REALISATIES: raster 2 kolommen, groot beeld               │
 │  ┌───────────────────────┐ ┌───────────────────────┐       │
 │  │  foto                 │ │  foto                 │       │
 │  │  BILZEN · 2022        │ │  ALKEN · 2019         │       │
@@ -62,28 +62,28 @@ Een portfolio dat zichzelf ordent naar seizoen en materiaal, met het budget er n
 │  └───────────────────────┘ └───────────────────────┘       │
 │  Filters: type · oppervlakte · budget · aanlegjaar         │
 ├───────────────────────────────────────────────────────────┤
-│  WERKWIJZE — 5 stappen in doorlopende tekst, met de         │
+│  WERKWIJZE: 5 stappen in doorlopende tekst, met de          │
 │  doorlooptijd per stap en wat het ontwerp kost              │
 ├───────────────────────────────────────────────────────────┤
-│  MATERIALEN — 6 foto's van dichtbij: hardsteen, cortenstaal │
+│  MATERIALEN. 6 foto's van dichtbij: hardsteen, cortenstaal  │
 │  padouk, dolomiet, gebakken klinker, gepolierd beton        │
 ├───────────────────────────────────────────────────────────┤
-│  DEZELFDE TUIN IN VIER SEIZOENEN — één project, 4 foto's    │
+│  DEZELFDE TUIN IN VIER SEIZOENEN: één project, 4 foto's     │
 ├───────────────────────────────────────────────────────────┤
 │  WACHTTIJD, WERKGEBIED, TEAM, ADRES                        │
 └───────────────────────────────────────────────────────────┘
 ```
 
-Ritme: beeld domineert, tekst is de uitzondering. Secties met foto's staan strak tegen elkaar (`gap-2`), tekstsecties krijgen juist lucht (`py-32`) en een smalle maat van 62 tekens. Geen enkele card, geen enkele schaduw: scheiding gebeurt door de foto's zelf en door 1px hairlines in `#8E9295`. Radius 0 op alle beeld — een rechthoekige foto oogt als een afdruk, een afgeronde als een widget.
+Ritme: beeld domineert, tekst is de uitzondering. Secties met foto's staan strak tegen elkaar (`gap-2`), tekstsecties krijgen juist lucht (`py-32`) en een smalle maat van 62 tekens. Geen enkele card, geen enkele schaduw: scheiding gebeurt door de foto's zelf en door 1px hairlines in `#8E9295`. Radius 0 op alle beeld. Een rechthoekige foto oogt als een afdruk, een afgeronde als een widget.
 
-Mobiel: het realisatieraster wordt één kolom met foto's op volle schermbreedte, en de metadata (gemeente, oppervlakte, budget) staat eronder in drie regels, niet over de foto heen. De filters vallen samen in één knop `Filter` die een bottom sheet opent met de vier assen. De vier seizoensfoto's worden een horizontale swipe met een zichtbare positie-indicator (`2 / 4`), niet een verticale stapel — het seizoensverschil moet naast elkaar leesbaar blijven.
+Mobiel: het realisatieraster wordt één kolom met foto's op volle schermbreedte, en de metadata (gemeente, oppervlakte, budget) staat eronder in drie regels, niet over de foto heen. De filters vallen samen in één knop `Filter` die een bottom sheet opent met de vier assen. De vier seizoensfoto's worden een horizontale swipe met een zichtbare positie-indicator (`2 / 4`), niet een verticale stapel. Het seizoensverschil moet naast elkaar leesbaar blijven.
 
 ## Signature-ideeën
 
 1. **Budgetrange op elke projectkaart.** Elk project draagt een bereik in stappen: `€ 25.000 – € 40.000`, `€ 40.000 – € 60.000`, `€ 60.000 – € 90.000`, `€ 90.000+`. Zet er in het projectdetail bij wat het bedrag bevatte (grondwerk, verharding, beplanting, verlichting, water) en wat niet. Vrijwel niemand in de sector doet dit; het is de meest gestelde onuitgesproken vraag en het filtert je aanvragen meteen op ernst. Voeg boven het raster een filter op budget toe, met een teller: `7 projecten in € 40.000 – € 60.000`.
 2. **Hetzelfde project in vier seizoenen.** Kies één tuin die je al vijf jaar onderhoudt en fotografeer hem vanaf exact hetzelfde standpunt in februari, mei, augustus en november. Vier foto's naast elkaar, met de maand als micro-label. Dit is het enige beeldidee dat jouw beplantingskennis bewijst en dat een concurrent zonder onderhoudscontracten niet kan namaken.
 3. **De materialenpagina met detailfoto's op ware textuur.** Zes tot tien materialen die je werkelijk verwerkt, elk met een close-up van minstens 1600px breed, de correcte benaming, de indicatieve prijs per m², het onderhoud dat het vraagt en hoe het na vijf jaar verkleurt. Cortenstaal, gezoete blauwe hardsteen, padouk, gepolierd beton, gebroken dolomiet, gebakken klinker. Dit trekt de bezoeker die al weet wat hij wil en zoekt wie het kan.
-4. **De wachttijd zichtbaar bovenaan.** Eén regel, permanent bijgewerkt: `Ontwerpen: vanaf september. Aanleg: eerste vrije periode maart 2027.` Het lijkt tegen je te werken en doet het omgekeerde — het bewijst dat je vol zit, en het voorkomt de teleurstellende telefoontjes van wie volgende maand een terras wil.
+4. **De wachttijd zichtbaar bovenaan.** Eén regel, permanent bijgewerkt: `Ontwerpen: vanaf september. Aanleg: eerste vrije periode maart 2027.` Het lijkt tegen je te werken en doet het omgekeerde: het bewijst dat je vol zit, en het voorkomt de teleurstellende telefoontjes van wie volgende maand een terras wil.
 
 ## Vertrouwenselementen die er echt toe doen
 
@@ -113,16 +113,16 @@ Mobiel: het realisatieraster wordt één kolom met foto's op volle schermbreedte
 
 ## Conversie
 
-**Primair doel:** een plaatsbezoek of een kennismakingsgesprek. Niet een offerte — een tuinofferte zonder plaatsbezoek is waardeloos, en het aanbieden ervan trekt precies de prijsvergelijkers aan die je niet wil.
+**Primair doel:** een plaatsbezoek of een kennismakingsgesprek. Niet een offerte: een tuinofferte zonder plaatsbezoek is waardeloos, en het aanbieden ervan trekt precies de prijsvergelijkers aan die je niet wil.
 
-**Primaire CTA:** `Plan een kennismaking`. Het formulier heeft vijf velden: gemeente, geschatte oppervlakte, wat je wil laten doen (volledige tuin, terras, beplanting, zwemvijver, onderhoud), je budgetrange als keuzelijst met dezelfde stappen als in het portfolio, en contactgegevens. Voeg een uploadveld toe voor een foto of een screenshot van het perceel — dat verhoogt de kwaliteit van elke aanvraag. Bevestig met een realistische termijn: `We nemen binnen vijf werkdagen contact op om een plaatsbezoek in te plannen.`
+**Primaire CTA:** `Plan een kennismaking`. Het formulier heeft vijf velden: gemeente, geschatte oppervlakte, wat je wil laten doen (volledige tuin, terras, beplanting, zwemvijver, onderhoud), je budgetrange als keuzelijst met dezelfde stappen als in het portfolio, en contactgegevens. Voeg een uploadveld toe voor een foto of een screenshot van het perceel. Dat verhoogt de kwaliteit van elke aanvraag. Bevestig met een realistische termijn: `We nemen binnen vijf werkdagen contact op om een plaatsbezoek in te plannen.`
 
 **Secundaire acties:** `Bekijk de realisaties →` als tekstlink met pijl, en een `Vraag de materialengids aan`-download voor wie nog in de oriëntatiefase zit. Voor bestaande tuinen: `Onderhoud aanvragen` als aparte, lichtere ingang.
 
-**Waar de CTA staat:** rechtsboven in de header, in `#B5562E`, permanent zichtbaar. Onderaan elk projectdetail met het projecttype al voorgevuld (`Een tuin als deze bespreken →`). Onderaan de werkwijzepagina, direct na de stap waarin de kostenopbouw uitgelegd wordt. En één keer helemaal onderaan de homepage, na de wachttijd — wie tot daar leest heeft de wachttijd aanvaard en is de beste aanvraag die je krijgt. Nooit een pop-up en nooit een zwevende bubbel: het tempo van deze site is de helft van het argument.
+**Waar de CTA staat:** rechtsboven in de header, in `#B5562E`, permanent zichtbaar. Onderaan elk projectdetail met het projecttype al voorgevuld (`Een tuin als deze bespreken →`). Onderaan de werkwijzepagina, direct na de stap waarin de kostenopbouw uitgelegd wordt. En één keer helemaal onderaan de homepage, na de wachttijd. Wie tot daar leest heeft de wachttijd aanvaard en is de beste aanvraag die je krijgt. Nooit een pop-up en nooit een zwevende bubbel: het tempo van deze site is de helft van het argument.
 
 ## Referenties
 
-- **https://www.oudolf.com** — De projecten zijn opgesplitst in 24 publieke en 8 private tuinen, elk als een tegel met alleen een foto, de tuinnaam en een landcode. Er staat geen enkele verkoopzin op de site; het portfolio is het volledige argument, en het adres in Hummelo staat gewoon in de voettekst.
-- **https://bolstertuinen.be** — De navigatie splitst meteen in particuliere tuinen en publieke ruimte, en de referenties zijn filterbaar op tuintype ("eigentijdse stadstuin", "luxetuin") in plaats van chronologisch. Zo landt elke bezoeker in het deel van het portfolio dat op zijn eigen situatie lijkt.
-- **https://puurtuinarchitectuur.be** — Elke realisatie draagt de gemeente als label (Aalst, Haaltert, Ninove, Denderleeuw) en het type werk ("Totaalconcept", "Aanleg van natuurlijke vijver"). De gemeentenaam bij elk project doet dubbel werk: hij bewijst het werkgebied en hij maakt de referentie controleerbaar voor een buur.
+- **https://www.oudolf.com**: De projecten zijn opgesplitst in 24 publieke en 8 private tuinen, elk als een tegel met alleen een foto, de tuinnaam en een landcode. Er staat geen enkele verkoopzin op de site; het portfolio is het volledige argument, en het adres in Hummelo staat gewoon in de voettekst.
+- **https://bolstertuinen.be**: De navigatie splitst meteen in particuliere tuinen en publieke ruimte, en de referenties zijn filterbaar op tuintype ("eigentijdse stadstuin", "luxetuin") in plaats van chronologisch. Zo landt elke bezoeker in het deel van het portfolio dat op zijn eigen situatie lijkt.
+- **https://puurtuinarchitectuur.be**: Elke realisatie draagt de gemeente als label (Aalst, Haaltert, Ninove, Denderleeuw) en het type werk ("Totaalconcept", "Aanleg van natuurlijke vijver"). De gemeentenaam bij elk project doet dubbel werk: hij bewijst het werkgebied en hij maakt de referentie controleerbaar voor een buur.

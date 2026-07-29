@@ -1,8 +1,8 @@
 # Design Setup
 
 Een bouwkit die je meegeeft aan Claude bij het bouwen van een website of app. Eén doel:
-dat wat eruit komt eruitziet alsof een professionele designer het gemaakt heeft — en snel
-is — in plaats van gegenereerd.
+dat wat eruit komt eruitziet alsof een professionele designer het gemaakt heeft (en snel
+is) in plaats van gegenereerd.
 
 De repo is **algemeen**. Er staan geen merken, klanten of huisstijlen in. Alles hier werkt
 voor elk project.
@@ -11,8 +11,8 @@ voor elk project.
 
 Geef de link mee in de chat:
 
-> Baseer het design op https://github.com/NextGenMediaBe/design-setup-nextgenmedia
-> — lees `CLAUDE.md` en volg de leesvolgorde daarin.
+> Baseer het design op https://github.com/NextGenMediaBe/design-setup-nextgenmedia.
+> Lees `CLAUDE.md` en volg de leesvolgorde daarin.
 
 Of hang hem in het project, dan leest Claude hem automatisch mee:
 
@@ -50,11 +50,11 @@ budgetten op.
 | `03-patterns/` | Blauwdrukken per sectie: hero, features, pricing, navigatie, footer |
 | `04-snippets/` | GSAP-recepten, utilities, en een catalogus van externe bronnen |
 | `05-copy/` | Tone of voice en NL micro-typografie |
-| `06-brand/` | Hoe je per project een merksysteem inleest of bouwt — geen opgeslagen merken |
+| `06-brand/` | Hoe je per project een merksysteem inleest of bouwt. Geen opgeslagen merken |
 | `07-workflows/` | Het verplichte proces, de audit, en materiaal verwerken |
-| `08-sectors/` | **16 sectorplaybooks** — wat de bezoeker echt komt doen, per branche |
+| `08-sectors/` | **16 sectorplaybooks**: wat de bezoeker echt komt doen, per branche |
 | `tools/` | `slop-check`, ESLint-regel, stylelint-config, screenshot-audit |
-| `skills/` | `anti-slop-design` — de skill die het proces afdwingt |
+| `skills/` | `anti-slop-design`: de skill die het proces afdwingt |
 | `_inbox/` | Dropzone voor materiaal dat nog gesorteerd moet worden |
 
 `CLAUDE.md` in de root is het instapdocument: leesvolgorde en de harde regels.
@@ -102,6 +102,6 @@ vijfhonderd waarvan je de helft niet durft te gebruiken.
 
 ## Taal
 
-Standaarden, patterns en code staan in het **Engels** — dat werkt beter als de repo in een
+Standaarden, patterns en code staan in het **Engels**. Dat werkt beter als de repo in een
 willekeurig project belandt, en het is vooral code. De copy-richtlijnen staan in het
 **Nederlands**, want dat is de markt; de frameworks erin gelden voor elke taal.

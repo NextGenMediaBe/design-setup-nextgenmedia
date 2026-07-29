@@ -14,7 +14,7 @@ je voor je hebt.
 | Beslissingstermijn | Maanden, met ouders erbij | Dagen tot twee weken, vaak alleen |
 | Wat overtuigt | Studiefiche, ECTS, doorstroom, erkenning, studentenverhalen | Prijs, duur, avondlessen, KMO-portefeuille, werkgeversverklaringen |
 | Volume | 40–300 opleidingen, filteren is de kernfunctie | 10–60 opleidingen, vergelijken is de kernfunctie |
-| Toon | Institutioneel, neutraal, feitelijk | Direct, resultaatgericht — maar nog steeds feitelijk |
+| Toon | Institutioneel, neutraal, feitelijk | Direct, resultaatgericht, maar nog steeds feitelijk |
 | Grootste risico | Informatiearchitectuur zakt in elkaar bij 200+ items | De site glijdt af naar verkooppagina zonder inhoud |
 
 De rest van dit playbook geldt voor beide, met de verschillen expliciet benoemd.
@@ -49,8 +49,8 @@ exact te beschrijven**. "Je hebt geen voorkennis nodig. Lessen op dinsdag- en do
 | Rol | Voorstel | Waarom |
 |---|---|---|
 | Display | **Tiempos Headline** 600, `clamp(2.25rem, 4.5vw, 3.5rem)`, `tracking: -0.015em`, `line-height: 1.08` | Een schreef geeft institutioneel gewicht zonder ouderwets te worden. Gratis alternatief: **Newsreader** 600 met `optical-size` op 40 |
-| Sectiekop | **Instrument Sans** 600, 24–30px, `tracking: -0.005em` | Sans voor structuur, schreef voor stem — het onderscheid houdt lange pagina's leesbaar |
-| Body — lange tekst | **Instrument Sans** 400, **18px**, `line-height: 1.7`, max **68ch** | Opleidingsteksten zijn 800–1500 woorden. 18px/1.7 is het verschil tussen doorlezen en scannen. Ga niet onder 17px |
+| Sectiekop | **Instrument Sans** 600, 24–30px, `tracking: -0.005em` | Sans voor structuur, schreef voor stem. Het onderscheid houdt lange pagina's leesbaar |
+| Body: lange tekst | **Instrument Sans** 400, **18px**, `line-height: 1.7`, max **68ch** | Opleidingsteksten zijn 800–1500 woorden. 18px/1.7 is het verschil tussen doorlezen en scannen. Ga niet onder 17px |
 | Studiefiche-tabellen | **Instrument Sans** 400, 15px, `line-height: 1.45` | Compacter dan body, want het is naslag, geen lectuur |
 | Studiepunten, uren, prijzen, data | **IBM Plex Mono** 500, 14px, `font-variant-numeric: tabular-nums` | Een kolom met 3, 6 en 12 studiepunten moet uitlijnen. Mono maakt cijfers ook herkenbaar als harde feiten |
 | Micro-label (NIVEAU, TAAL, LOCATIE) | **Instrument Sans** 600 uppercase, 11px, `tracking: 0.1em`, kleur `#5C6472` | Labels moeten wegvallen zodat de waarde ernaast opvalt |
@@ -70,7 +70,7 @@ stopt men met lezen op regel drie. Zet de studiefiche-tabel buiten die kolom, vo
 | `#2F6B4F` | Groen van een schoolbordrand | **Functionele statuskleur, geen tweede accent:** uitsluitend "Inschrijvingen open". De tegenhanger voor gesloten is `#5C6472`, niet rood |
 
 **Vermijd:** het volledige regenboogpalet dat onderwijssites gebruiken om studierichtingen te
-coderen — na acht kleuren betekent kleur niets meer en faalt de contrastcheck. Codeer
+coderen. Na acht kleuren betekent kleur niets meer en faalt de contrastcheck. Codeer
 studiegebieden met tekstlabels en één kleur. Vermijd ook geel op wit (haalt nooit 4,5:1),
 verlopen achter koppen, en foto's van juichende studenten met een blauw kleurfilter erover.
 
@@ -82,7 +82,7 @@ Eén rustige leeskolom, met daarnaast een sticky feitenblok dat nooit meescrolt 
 ┌──────────────────────────────────────────────────────────────┐
 │ LOGO      Opleidingen  Toelating  Praktisch  Over  [ INFO ]  │
 ├──────────────────────────────────────────────────────────────┤
-│  HERO — geen beeld nodig                                     │
+│  HERO: geen beeld nodig                                      │
 │  Zoek een opleiding                                          │
 │  ┌──────────────────────────────────────────────┐            │
 │  │ 🔍 zoek op trefwoord, niet op onze benaming  │            │
@@ -92,7 +92,7 @@ Eén rustige leeskolom, met daarnaast een sticky feitenblok dat nooit meescrolt 
 │  FILTERS (sticky, 56px)                                      │
 │  Domein ▾  Niveau ▾  Lesmoment ▾  Locatie ▾  Start ▾  Wis    │
 ├──────────────────────────────────────────────────────────────┤
-│  RESULTATEN — rijen, geen kaartenraster                      │
+│  RESULTATEN: rijen, geen kaartenraster                       │
 │  ┌────────────────────────────────────────────────────────┐  │
 │  │ Bachelor Verpleegkunde                                 │  │
 │  │ 180 SP · 3 jaar · dag · Antwerpen · start 14 sep 26     │  │
@@ -104,7 +104,7 @@ Eén rustige leeskolom, met daarnaast een sticky feitenblok dat nooit meescrolt 
 ├──────────────────────────────────────────────────────────────┤
 │  OPLEIDINGSPAGINA                                            │
 │  ┌────────────────────────────┐ ┌──────────────────────────┐ │
-│  │ Wat leer je (lange tekst,  │ │ FEITENBLOK — sticky      │ │
+│  │ Wat leer je (lange tekst,  │ │ FEITENBLOK: sticky       │ │
 │  │ 68ch, 18px/1.7)            │ │ Studiepunten   180 SP    │ │
 │  │                            │ │ Duur           3 jaar    │ │
 │  │ Voor wie                   │ │ Lesmoment      dag       │ │
@@ -121,14 +121,14 @@ Eén rustige leeskolom, met daarnaast een sticky feitenblok dat nooit meescrolt 
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Ritme.** Secties `py-20`, niet `py-32` — dit is een informatiesite, te veel lucht maakt de
+**Ritme.** Secties `py-20`, niet `py-32`. Dit is een informatiesite, te veel lucht maakt de
 pagina eindeloos. Binnen de leeskolom: `h2` krijgt `margin-top: 3rem` en een 1px `#E3DCCB`
 lijn erboven. Die lijn is de enige scheiding die je nodig hebt.
 
 **Mobiel.** Filters worden één knop `Filter (3)` die een bottom sheet opent met de filters
 als lijst en een vaste balk onderaan met `Toon 41 resultaten`. Resultaatrijen worden 96px
 hoge blokken; de metadata gaat naar twee regels van 13px. Het feitenblok gaat naar de top van
-de opleidingspagina, direct onder de titel, als een tabel van zes rijen — niet naar onderen,
+de opleidingspagina, direct onder de titel, als een tabel van zes rijen, niet naar onderen,
 want dan wordt hij nooit gezien. De inschrijfknop wordt een sticky balk van 56px onderaan.
 
 ## Signature-ideeën
@@ -174,7 +174,7 @@ want dan wordt hij nooit gezien. De inschrijfknop wordt een sticky balk van 56px
 
 ## Conversie
 
-**Doel.** Niet één, maar een ladder — bouw ze alle drie:
+**Doel.** Niet één, maar een ladder. Bouw ze alle drie:
 1. Studiefiche bekeken of gedownload (micro-conversie, meet dit)
 2. Inschrijving op een infomoment of proefles
 3. Inschrijving in de opleiding
@@ -182,7 +182,7 @@ want dan wordt hij nooit gezien. De inschrijfknop wordt een sticky balk van 56px
 **Primaire CTA.** Per situatie exact deze woorden:
 - Hogeschool, inschrijvingen lopen: `Schrijf je in`
 - Hogeschool, buiten de periode: `Ontvang de brochure`
-- Private verstrekker: `Schrijf je in voor 22 sep` — met de datum in de knop
+- Private verstrekker: `Schrijf je in voor 22 sep`, met de datum in de knop
 - Op de opleidingspagina zonder open inschrijving: `Hou me op de hoogte`
 
 Gevuld, `#B0451C`, 48px hoog, vol breed in het feitenblok.
@@ -191,7 +191,7 @@ Gevuld, `#B0451C`, 48px hoog, vol breed in het feitenblok.
 onder de knop. Vermeld altijd bestandstype en grootte.
 
 **Plaatsing.** In het sticky feitenblok, dus permanent zichtbaar tijdens het lezen. Herhaal
-onderaan de pagina na het kostenoverzicht — dat is het moment waarop iemand beslist. Zet géén
+onderaan de pagina na het kostenoverzicht. Dat is het moment waarop iemand beslist. Zet géén
 CTA in de hero van de homepage: daar hoort het zoekveld, want de bezoeker weet nog niet
 waarvoor hij zou inschrijven.
 
@@ -200,16 +200,16 @@ diploma. Zes velden is hier acceptabel omdat de intentie hoog is. Infomoment: dr
 
 ## Referenties
 
-- **[onderwijsaanbod.kuleuven.be/opleidingen/n](https://onderwijsaanbod.kuleuven.be/opleidingen/n)**
-  — elke opleiding heeft een permanente URL met een vast nummer (`SC_55557822.htm`) en elk
+- **[onderwijsaanbod.kuleuven.be/opleidingen/n](https://onderwijsaanbod.kuleuven.be/opleidingen/n)**:
+  elke opleiding heeft een permanente URL met een vast nummer (`SC_55557822.htm`) en elk
   opleidingsonderdeel een eigen ECTS-fiche, zodat een studiefiche jarenlang linkbaar blijft
   vanuit studiekeuzesites en e-mails van studiebegeleiders.
-- **[syntra-ab.be/opleidingen](https://www.syntra-ab.be/opleidingen)** — het aanbod opent met het
+- **[syntra-ab.be/opleidingen](https://www.syntra-ab.be/opleidingen)**: het aanbod opent met het
   aantal opleidingen als eerste feit ("900+ opleidingen beschikbaar") in plaats van met een
   slogan, waardoor je meteen weet dat je moet filteren en niet moet bladeren.
-- **[vdab.be/opleidingen](https://www.vdab.be/opleidingen)** — het aanbod is opgedeeld in
+- **[vdab.be/opleidingen](https://www.vdab.be/opleidingen)**: het aanbod is opgedeeld in
   negentien opleidingsdomeinen als eerste ingang, zodat iemand die zijn opleiding niet bij naam
   kent toch binnen twee klikken in de juiste sectie zit.
-- **[onderwijsaanbod.thomasmore.be/opleidingen/n](https://onderwijsaanbod.thomasmore.be/opleidingen/n)**
-  — splitst de navigatie in "Opleidingen" en "Opleidingsonderdelen", zodat een kandidaat-student
+- **[onderwijsaanbod.thomasmore.be/opleidingen/n](https://onderwijsaanbod.thomasmore.be/opleidingen/n)**:
+  splitst de navigatie in "Opleidingen" en "Opleidingsonderdelen", zodat een kandidaat-student
   en een ingeschreven student die een vakfiche zoekt niet door dezelfde boom moeten.

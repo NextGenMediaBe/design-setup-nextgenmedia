@@ -6,7 +6,7 @@ see [`../07-workflows/ingest-material.md`](../07-workflows/ingest-material.md).
 ## Een catalogus is geen aanbeveling
 
 De bibliotheken hieronder zijn geïnventariseerd, niet goedgekeurd. Ze zijn grotendeels
-gebouwd vóór — en soms in directe tegenspraak met — de regels in
+gebouwd vóór (en soms in directe tegenspraak met) de regels in
 [`../02-design-system/anti-patterns.md`](../02-design-system/anti-patterns.md). Componenten
 met een gloed, een aurora, een paars verloop of doorlopende achtergrondbeweging staan erin
 omdat ze bestaan, niet omdat je ze mag gebruiken.
@@ -24,7 +24,7 @@ Twee dingen gelden voor alle drie:
 1. **Restylen naar de token-laag is niet optioneel.** Deze componenten komen met
    hardgecodeerde hexwaarden en `dark:`-varianten die Zinc of Slate veronderstellen. Zonder
    restyle faalt `npm run design:check` en ziet het eruit alsof het ergens anders vandaan
-   komt — wat ook zo is.
+   komt, wat ook zo is.
 2. **Eén opvallend moment per pagina.** De regel uit
    [`../02-design-system/motion.md`](../02-design-system/motion.md) verandert niet doordat
    er nu honderden componenten beschikbaar zijn. Een catalogus van driehonderd effecten
@@ -34,10 +34,10 @@ Twee dingen gelden voor alle drie:
 
 | Wat | Pad | Bron | Licentie |
 |---|---|---|---|
-| GSAP setup voor Next.js + 12 recepten | [`gsap/`](./gsap/) | GSAP 3.15.0 (npm) | GreenSock standard — gratis, ook commercieel |
+| GSAP setup voor Next.js + 12 recepten | [`gsap/`](./gsap/) | GSAP 3.15.0 (npm) | GreenSock standard: gratis, ook commercieel |
 | Drieweg thema-switcher + FOUC-guard | [`utils/theme-toggle.ts`](./utils/theme-toggle.ts) | Impeccable | Apache-2.0 |
 
-## Externe bronnen — installeren op aanvraag, niet gevendord
+## Externe bronnen: installeren op aanvraag, niet gevendord
 
 | Bron | Wat | Licentie | Doc |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Twee dingen gelden voor alle drie:
 | **Magic UI** | 76 componenten. De grootste bron van bruikbaar gereedschap én van bijna elk visueel cliché. Ongeveer dertig zijn verboden | **MIT** | [`magic-ui.md`](./magic-ui.md) |
 | **Vengeance UI** | 66 geanimeerde componenten. Zeven ervan zijn expliciet verboden | ⚠️ **Geen licentie** | [`vengeance-ui.md`](./vengeance-ui.md) |
 | **GSAP** | Animatie. Alle plugins sinds Webflow gratis | GreenSock standard | [`gsap/README.md`](./gsap/README.md) |
-| **Impeccable** | `npx impeccable detect` — 46 anti-pattern-regels, zero-LLM | Apache-2.0 | [`../07-workflows/quality-review.md`](../07-workflows/quality-review.md) |
+| **Impeccable** | `npx impeccable detect`: 46 anti-pattern-regels, zero-LLM | Apache-2.0 | [`../07-workflows/quality-review.md`](../07-workflows/quality-review.md) |
 | **Lucide** | Iconen. Eén set per project | ISC | [lucide.dev](https://lucide.dev) |
 | **Motion** | React-animatie voor mount/unmount en layout | MIT | [motion.dev](https://motion.dev) |
 
@@ -66,7 +66,7 @@ Heb ik scroll-gedreven animatie, pinning of tekst-splitting nodig?
   → GSAP, 04-snippets/gsap/recipes.md
 
 Heb ik één opvallend moment nodig dat nergens anders staat?
-  → Vengeance UI — lees eerst de licentie-waarschuwing
+  → Vengeance UI: lees eerst de licentie-waarschuwing
 
 Is het een hover, focus of open/dicht?
   → CSS transition. Geen library.
@@ -94,7 +94,7 @@ Ongeacht de bron, drie dingen voor het in een project gaat:
 
 Wat we missen en waar we naar op zoek zijn:
 
-- [ ] Formulier-patterns — validatie, meerstaps, bestand-upload
+- [ ] Formulier-patterns: validatie, meerstaps, bestand-upload
 - [ ] Tabel- en datagrid-patterns voor dashboards
 - [ ] Auth-schermen (login, registratie, wachtwoord vergeten)
 - [ ] E-mailtemplates (React Email)

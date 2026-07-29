@@ -16,7 +16,7 @@
 
 ## De emotionele opdracht
 
-Wegnemen: de vrees om verkeerd te kiezen — te duur, te stijf, te luidruchtig, of net te
+Wegnemen: de vrees om verkeerd te kiezen: te duur, te stijf, te luidruchtig, of net te
 alledaags voor een gelegenheid die telt. Opwekken: de honger en het beeld van jezelf aan die
 tafel. De site is geen brochure maar een venster: één blik door het raam moet volstaan om te
 weten hoe het er ruikt en klinkt. Warmte zonder gezelligheidsretoriek. Als de bezoeker na tien
@@ -51,7 +51,7 @@ schaduwen. Draai die grade over álle foodfoto's, ook die van de zaal en het ter
 foto's met één grade lezen als één restaurant; twintig foto's van drie fotografen lezen als
 een Google-zoekresultaat.
 
-**Vermijd:** zwart met `#D4AF37` goud — het universele "fine dining"-cliché dat elke zaak van
+**Vermijd:** zwart met `#D4AF37` goud, het universele "fine dining"-cliché dat elke zaak van
 een frituur tot een sterrenzaak gebruikt en dat dus niets meer differentieert. Ook vermijden:
 verzadigd rood-wit-groen zodra er iets Italiaans op de kaart staat.
 
@@ -66,13 +66,13 @@ zien wat hij kan eten.
 ├──────────────────────────────────────────────────────────────┤
 │ WO–ZA 18:30–22:00 · ZO+MA GESLOTEN · 09 123 45 67            │ utility-strip, 12px caps
 ├──────────────────────────────────────────────────────────────┤
-│  [ FOTO — één gerecht of de zaal, 3:2, full-bleed, scrim ]    │
+│  [ FOTO: één gerecht of de zaal, 3:2, full-bleed, scrim ]     │
 │                                                              │
 │   Naam van de zaak                                           │
 │   Vis van de dagvangst, houtskool, en twintig couverts.      │
 │   [ Reserveer een tafel ]        Bekijk de kaart ↓            │
 ├──────────────────────────────────────────────────────────────┤
-│  DE KAART — week van 27 juli            ◀ binnen één scroll   │
+│  DE KAART: week van 27 juli            ◀ binnen één scroll    │
 │  VOOR                                                        │
 │  Rauwe haring, appel, mierikswortel                    14    │
 │  Gegrilde prei, hazelnoot, oude Comté                  16    │
@@ -88,7 +88,7 @@ zien wat hij kan eten.
 └──────────────────────────────────────────────────────────────┘
 ```
 
-Ritme: hero `min-h: 78vh` (niet 100vh — de kaart moet aan de onderrand aftekenen), daarna
+Ritme: hero `min-h: 78vh` (niet 100vh: de kaart moet aan de onderrand aftekenen), daarna
 secties van `py-24`. Tussen kaart en fotoblok staat één hairline in `#C08046` op 20% alpha,
 verder geen scheidingen: ruimte doet het werk.
 Op mobiel wisselt de volgorde: utility-strip, hero op 62vh, **kaart onmiddellijk**, dan pas
@@ -98,7 +98,7 @@ selecteerbaar en doorzoekbaar zijn, en een pdf-viewer op mobiel is onbruikbaar.
 
 ## Signature-ideeën
 
-1. **De kaart met een datumstempel.** Boven de kaart één regel: "Week van 27 juli — de kaart
+1. **De kaart met een datumstempel.** Boven de kaart één regel: "Week van 27 juli. De kaart
    wijzigt elke maandag." Dat ene zinnetje maakt van een statische pagina een levend
    restaurant en geeft de bezoeker een reden om terug te komen kijken.
 2. **Eén stilstaand beeld dat traag ademt.** Geen carrousel: één foto van de pas of het vuur,
@@ -140,7 +140,7 @@ selecteerbaar en doorzoekbaar zijn, en een pdf-viewer op mobiel is onbruikbaar.
 
 **Primair doel:** een bevestigde reservatie in het boekingssysteem.
 
-**Primaire CTA:** `Reserveer een tafel` — voluit, niet "Reserveer" alleen, want het object
+**Primaire CTA:** `Reserveer een tafel`, voluit, niet "Reserveer" alleen, want het object
 maakt de handeling concreet en verlaagt de drempel.
 Nooit: "Boek nu", "Ontdek", "Contacteer ons".
 
@@ -149,21 +149,21 @@ Voor zaken zonder online systeem is de secundaire actie `Bel 09 123 45 67`, met 
 
 **Waar de CTA staat:** rechts in de sticky header vanaf de eerste pixel; in de hero onder de
 subhead; direct onder de kaart, waar de honger het hoogst is; in de vaste mobiele onderbalk;
-en in de footer naast de openingsuren. De knop onder de kaart is de belangrijkste van de site
-— daar is de beslissing al gevallen en mag er geen navigatie meer tussen zitten.
+en in de footer naast de openingsuren. De knop onder de kaart is de belangrijkste van de site:
+daar is de beslissing al gevallen en mag er geen navigatie meer tussen zitten.
 
 ## Referenties
 
-- **[thejaneantwerp.com](https://www.thejaneantwerp.com)** — de navigatie draagt naast
+- **[thejaneantwerp.com](https://www.thejaneantwerp.com)**: de navigatie draagt naast
   "Reservations" een tweede knop voor last-minute beschikbaarheid, zodat een afgewezen
   bezoeker niet wegklikt maar naar een tweede kans wordt geleid; de openingsdagen
   (woensdag t/m zaterdag) staan letterlijk uitgeschreven in de footer in plaats van als
   algemene "openingsuren"-link.
-- **[zilte.be](https://www.zilte.be)** — de footer vermeldt de service-uren als exacte
+- **[zilte.be](https://www.zilte.be)**: de footer vermeldt de service-uren als exacte
   vensters (lunch 12:00–13:00, diner 19:00–20:30) in plaats van "open van … tot …", waardoor
   een bezoeker meteen weet dat hij op een aankomsttijdstip boekt en niet op een tijdslot;
   "De kaart" en "Reserveren" staan als twee losse items naast elkaar in de hoofdnavigatie.
-- **[elders.gent](https://elders.gent)** — adres en telefoonnummer staan als tekst in het
+- **[elders.gent](https://elders.gent)**: adres en telefoonnummer staan als tekst in het
   eerste scherm, direct onder de naam, nog voor enige sfeerfoto; de kaart noteert per menu de
   prijs per persoon (lunch 42, diner 72) met vegetarische en vegan markeringen per gerecht,
   zodat prijs en dieet in dezelfde blik worden opgelost.

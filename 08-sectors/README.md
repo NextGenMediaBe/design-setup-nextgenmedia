@@ -8,11 +8,11 @@ Zestien startpunten. Elk playbook benoemt de spanning die de sector definieert, 
 | 02 | Horeca en restaurant | [02-horeca-restaurant.md](02-horeca-restaurant.md) | Sfeer verkopen terwijl de kaart met prijzen de drukst bezochte pagina is |
 | 03 | Tandarts, huisarts en praktijk | [03-medische-praktijk.md](03-medische-praktijk.md) | Rust uitstralen terwijl zeven op de tien bezoekers met pijn een afspraak zoeken |
 | 04 | Advocaat, notaris en boekhouder | [04-juridisch-financieel.md](04-juridisch-financieel.md) | Autoriteit zonder abstractie: hij zoekt zijn probleem, niet je rechtstak |
-| 05 | Vastgoed en immo | [05-vastgoed-immo.md](05-vastgoed-immo.md) | Binnen dertig seconden filteren, anders is hij weg — en de verkoper wil iets anders |
+| 05 | Vastgoed en immo | [05-vastgoed-immo.md](05-vastgoed-immo.md) | Binnen dertig seconden filteren, anders is hij weg, en de verkoper wil iets anders |
 | 06 | Fitness, personal training en sportclub | [06-fitness-sport.md](06-fitness-sport.md) | Energie tonen terwijl de bezoeker vreest dat hij de enige beginner is |
 | 07 | Beauty, kapper en wellness | [07-beauty-wellness.md](07-beauty-wellness.md) | Je werk wordt als portfolio beoordeeld, je boekingssysteem als hindernis |
 | 08 | E-commerce en fashion | [08-ecommerce-fashion.md](08-ecommerce-fashion.md) | Ze scant een raster en herkent een vorm; elke seconde art direction kost omzet |
-| 09 | B2B industrie, productie en techniek | [09-b2b-industrie.md](09-b2b-industrie.md) | Hij zoekt een getal en een datasheet, geen belofte — maar de inkoper tekent |
+| 09 | B2B industrie, productie en techniek | [09-b2b-industrie.md](09-b2b-industrie.md) | Hij zoekt een getal en een datasheet, geen belofte, maar de inkoper tekent |
 | 10 | SaaS en tech | [10-saas-tech.md](10-saas-tech.md) | De zwaarst besmette categorie: alles wat werkt, is al sjabloon geworden |
 | 11 | Garage en automotive | [11-garage-automotive.md](11-garage-automotive.md) | Een afspraak zonder te bellen, en een prijsbereik voor de sleutels overgaan |
 | 12 | Tuinaanleg en landschap | [12-tuinaanleg-landschap.md](12-tuinaanleg-landschap.md) | Een eindresultaat verkopen dat pas drie seizoenen later bestaat, met een budget dat hij nooit vraagt |

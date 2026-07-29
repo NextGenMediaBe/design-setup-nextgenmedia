@@ -41,7 +41,7 @@ toepassing ervan.
 
 Voor de meeste Vlaamse klanten:
 
-- **Je/jij, niet u** — tenzij de doelgroep formeel is (notarissen, advocaten, medisch,
+- **Je/jij, niet u**: tenzij de doelgroep formeel is (notarissen, advocaten, medisch,
   overheid, 55+). Bij twijfel: kijk hoe de klant zelf mailt.
 - **Actieve zinnen.** "Wij bouwen je site in drie weken", niet "Uw site wordt gebouwd".
 - **Korte zinnen.** Gemiddeld onder de 15 woorden. Wissel lang en kort af, anders wordt het
@@ -205,7 +205,7 @@ Eén idee per titel. Geen vraagvorm tenzij het echt een vraag is die de bezoeker
 - Niet: "Waarom kiezen voor ons?" → Wel: "Drie redenen waarom klanten blijven"
 - Niet: "Ons proces" → Wel: "Van eerste gesprek tot online in 4 weken"
 
-## Frameworks — voor als je vastzit
+## Frameworks: voor als je vastzit
 
 ### PAS (Probleem → Agitatie → Oplossing)
 Voor landingspagina's en advertenties. Werkt bij een duidelijke pijn.
@@ -286,7 +286,7 @@ ongeluk meeliften naar productie.
 
 ## Wat we nooit schrijven
 
-- Lorem ipsum. Ook niet tijdelijk — het blijft staan.
+- Lorem ipsum. Ook niet tijdelijk: het blijft staan.
 - Verzonnen cijfers, klantenaantallen of testimonials.
 - "Wij zijn een jong en dynamisch team."
 - "Kwaliteit staat bij ons voorop."

@@ -7,7 +7,7 @@
   Wie zijn dossier niet in de expertiselijst herkent, klikt weg.
 - **De persoon zoeken, niet het kantoor.** Men mandateert een naam. De bezoeker wil weten wie
   het dossier doet, hoe lang die het al doet, en waar hij over publiceert.
-- **De kostenlogica begrijpen.** Niet het bedrag — dat kan je niet geven — maar het mechanisme:
+- **De kostenlogica begrijpen.** Niet het bedrag (dat kan je niet geven) maar het mechanisme:
   uurtarief, forfait, abonnement, kantoorkosten, provisie. Onduidelijkheid over erelonen is de
   belangrijkste reden waarom mensen een gesprek uitstellen.
 - **Discretie inschatten.** Wie hier langskomt, heeft vaak een probleem dat hij aan niemand
@@ -32,7 +32,7 @@ verkeerd geplaatste animatie kost meer geloofwaardigheid dan een ontbrekende pag
 | Kop 2/3 | **Spectral** 500, 26/20px, `line-height: 1.3` | Kleine sprongen. Grote sprongen zijn theatraal, en theater is hier verlies |
 | Body | **Source Serif 4** 400, 18px/1.72, `max-width: 62ch` | Schreef op schreef, maar met een lagere contrastgraad: leest 900 woorden lang comfortabel |
 | Labels / nav / metadata | **Public Sans** 500, 12px, `letter-spacing: 0.12em`, uppercase | De enige sans op de site. Draagt datums, rechtsgebieden en balie-informatie |
-| Bedragen en tarieven | **Public Sans** 500, 15px, `font-variant-numeric: tabular-nums` | Een tarievenschema dat niet uitlijnt, leest als slordig — en slordig is dodelijk in deze sector |
+| Bedragen en tarieven | **Public Sans** 500, 15px, `font-variant-numeric: tabular-nums` | Een tarievenschema dat niet uitlijnt, leest als slordig, en slordig is dodelijk in deze sector |
 
 Maximaal twee families. Body is nooit breder dan 62ch, ook niet op een 1920px-scherm: de
 kolom blijft smal en de rest is marge. Dat is het hele layoutargument.
@@ -88,8 +88,8 @@ door wat het weglaat.
 │              VENNOOT   VENNOOT   ADVOCAAT                     │
 ├──────────────────────────────────────────────────────────────┤
 │  PUBLICATIES                                                 │
-│  12.06.2026  Titel van de bijdrage        — één zin       →  │
-│  03.04.2026  Titel van de bijdrage        — één zin       →  │
+│  12.06.2026  Titel van de bijdrage        · één zin       →  │
+│  03.04.2026  Titel van de bijdrage        · één zin       →  │
 ├──────────────────────────────────────────────────────────────┤
 │  WAT KOST HET   uurtarief · forfait · abonnement · provisie  │
 ├──────────────────────────────────────────────────────────────┤
@@ -98,7 +98,7 @@ door wat het weglaat.
 ```
 
 Ritme: secties van `py-32` desktop / `py-18` mobiel. Elke sectiekop krijgt een hairline van
-1px `#8C7A5C` erboven op volle kolombreedte — dat is de enige decoratie op de hele site.
+1px `#8C7A5C` erboven op volle kolombreedte: dat is de enige decoratie op de hele site.
 Geen kaarten, geen schaduwen, geen achtergrondvlakken: scheiding gebeurt met ruimte en lijn.
 Op mobiel blijft alles één kolom en verandert er structureel niets; alleen `py` en type
 clampen naar beneden. Het teamraster wordt twee kolommen, niet één, zodat de pagina niet in
@@ -108,8 +108,8 @@ portretten trekt het oog weg van de tekst.
 
 ## Signature-ideeën
 
-1. **Publicaties met datum vooraan, als een register.** Een gezette lijst — datum, titel, één
-   zin — in plaats van kaarten met leesduur en thumbnail. Vijftien echte bijdragen in dat
+1. **Publicaties met datum vooraan, als een register.** Een gezette lijst (datum, titel, één
+   zin) in plaats van kaarten met leesduur en thumbnail. Vijftien echte bijdragen in dat
    formaat zijn het sterkste autoriteitsbewijs dat een kantoor kan tonen, en ze zijn niet na
    te maken.
 2. **Een expliciet blok "Wat kost het".** Geen bedragen, wel het mechanisme: het uurtarief per
@@ -117,9 +117,9 @@ portretten trekt het oog weg van de tekst.
    provisie vraagt, en de zin "u krijgt vooraf een schriftelijke raming". Bijna geen kantoor
    doet dit; wie het wel doet, haalt de grootste drempel weg.
 3. **Zaakschetsen zonder namen.** Vijf blokjes van vier regels: het probleem, de inzet, de
-   afloop, de doorlooptijd — geanonimiseerd, uiteraard. Concreter dan elke expertiselijst en
+   afloop, de doorlooptijd. Geanonimiseerd, uiteraard. Concreter dan elke expertiselijst en
    het respecteert het beroepsgeheim.
-4. **Eén gefotografeerd detail van het kantoor** — een trappenhuis, een dossierkast, een raam —
+4. **Eén gefotografeerd detail van het kantoor** (een trappenhuis, een dossierkast, een raam),
    groot, in dezelfde grade als de portretten, ergens halverwege de pagina. Geen hero, geen
    sfeercarrousel: één beeld dat aantoont dat er een fysiek adres met een geschiedenis is.
 
@@ -137,7 +137,7 @@ portretten trekt het oog weg van de tekst.
 | Oprichtingsjaar en aantal vennoten | Continuïteit. Een kantoor dat 30 jaar bestaat, bestaat er waarschijnlijk nog 5 |
 
 Nooit klantenlogo's van bedrijven die je bijstaat, tenzij met uitdrukkelijke schriftelijke
-toestemming — en zelfs dan zelden. Cliëntenlijsten schenden precies de discretie die de
+toestemming, en zelfs dan zelden. Cliëntenlijsten schenden precies de discretie die de
 bezoeker komt toetsen.
 
 ## Wat hier absoluut niet mag
@@ -146,7 +146,7 @@ bezoeker komt toetsen.
 |---|---|---|
 | Speelse motion: springende iconen, tellers die oplopen, hover-tilt | Leest als een start-up die aandacht koopt. In dit vak is aandacht kopen een zwaktesignaal | Eén fade van 200ms op linkkleur, verder niets |
 | Illustraties: line-art, blob-mensjes, isometrische scènes | Ontkent de ernst van het dossier waarmee de bezoeker komt | Eén gefotografeerd detail, of alleen typografie |
-| Verlopen — in de hero, op knoppen, achter tekst | Voegt niets toe, dateert, en is de duidelijkste tell van een gegenereerde pagina | Vlakke kleur `#5A1E2B` op de enige knop |
+| Verlopen: in de hero, op knoppen, achter tekst | Voegt niets toe, dateert, en is de duidelijkste tell van een gegenereerde pagina | Vlakke kleur `#5A1E2B` op de enige knop |
 | Weegschaal, rechtershamer, Vrouwe Justitia, kolommen | De rechtershamer bestaat in het Belgische recht niet eens. Iconografie van een Amerikaanse serie | Het kantoornaamwoord, gezet in Spectral, en verder niets |
 | Stockfoto van handen boven een contract | Betekenisloos, herkenbaar, en het suggereert dat je geen eigen kantoor hebt om te fotograferen | Echte portretten en één echt interieurbeeld |
 | "Uw partner in juridisch advies" | Elke concurrent schrijft het. Nul onderscheidend vermogen | "Wij voeren bouwgeschillen voor aannemers en bouwheren. Sinds 1994." |
@@ -159,7 +159,7 @@ bezoeker komt toetsen.
 **Primair doel:** een eerste gesprek, telefonisch of op kantoor. Niet een download, niet een
 nieuwsbrief. Het dossier begint pas als iemand het uitspreekt.
 
-**Primaire CTA:** `Plan een eerste gesprek` — "eerste" impliceert dat er nog niets vastligt, en
+**Primaire CTA:** `Plan een eerste gesprek`. "Eerste" impliceert dat er nog niets vastligt, en
 dat verlaagt de drempel meer dan welke prijsvermelding ook. Voor notarissen werkt
 `Maak een afspraak`; voor boekhouders `Vraag een kennismaking`.
 Nooit: "Contacteer ons", "Vraag een offerte", "Ontdek onze diensten".
@@ -169,7 +169,7 @@ per advocaat op de teampagina. Geen tweede gevulde knop, ooit.
 
 **Waar de CTA staat:** één keer in de hero; onderaan elke expertisepagina met de zin "Speelt
 dit bij u? Eerste gesprek van 30 minuten, vrijblijvend."; onderaan elk persoonsprofiel, direct
-onder het e-mailadres van die persoon; en in de footer. **Niet** in de header — een
+onder het e-mailadres van die persoon; en in de footer. **Niet** in de header: een
 permanent zichtbare knop leest hier als verkoop. Het formulier vraagt naam, telefoon,
 e-mailadres en één vrij veld "waarover gaat het". Vier velden. Geen documentupload en geen
 detailvragen: dat hoort in het gesprek, niet in een webformulier dat niemand als vertrouwelijk
@@ -177,18 +177,18 @@ ervaart.
 
 ## Referenties
 
-- **[eubelius.com](https://www.eubelius.com/nl)** — de homepage stuurt bezoekers met twee
+- **[eubelius.com](https://www.eubelius.com/nl)**: de homepage stuurt bezoekers met twee
   gelijkwaardige knoppen naar "Onze advocaten" en "Onze expertise", en verder nergens heen:
   de site erkent dat de bezoeker ofwel een persoon ofwel een rechtsgebied zoekt; de circa 25
   expertisedomeinen staan uitgeschreven van arbeidsrecht tot kapitaalmarkttransacties, zodat
   een bezoeker zijn eigen dossier letterlijk kan aanwijzen.
-- **[liedekerke.com](https://www.liedekerke.com)** — "Find a lawyer" staat als enige dominante
+- **[liedekerke.com](https://www.liedekerke.com)**: "Find a lawyer" staat als enige dominante
   actie meteen onder de baseline, boven alle nieuws en inzichten; de expertise is in drie
-  aparte assen opgedeeld — 17 rechtsgebieden, transversale thema's zoals ESG en cybersecurity,
-  en 12 sectoren — waardoor iemand die zijn probleem niet als rechtsgebied kan benoemen, het
+  aparte assen opgedeeld (17 rechtsgebieden, transversale thema's zoals ESG en cybersecurity,
+  en 12 sectoren), waardoor iemand die zijn probleem niet als rechtsgebied kan benoemen, het
   via zijn sector alsnog terugvindt.
-- **[notaris.be](https://www.notaris.be)** — de kostenvraag wordt niet met een tarievenlijst
+- **[notaris.be](https://www.notaris.be)**: de kostenvraag wordt niet met een tarievenlijst
   maar met rekenmodules per verrichting beantwoord (aankoop, hypotheek, schenking), zodat de
   bezoeker een bedrag voor zijn eigen situatie krijgt in plaats van een tabel die hij moet
-  interpreteren; de hele navigatie is opgebouwd rond levensgebeurtenissen — wonen, relatie,
-  erven en schenken, ondernemen — in plaats van rond akten.
+  interpreteren; de hele navigatie is opgebouwd rond levensgebeurtenissen (wonen, relatie,
+  erven en schenken, ondernemen) in plaats van rond akten.

@@ -73,7 +73,7 @@ export function createThemeToggle(options: Options = {}) {
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", opts.themeColor[theme]);
 
-    // Label beschrijft de *volgende* stap — dat is wat een screenreader nodig heeft.
+    // Label beschrijft de *volgende* stap. Dat is wat een screenreader nodig heeft.
     const label: Record<ThemePref, string> = {
       auto: "Thema: automatisch. Klik voor lichte modus.",
       light: "Thema: licht. Klik voor donkere modus.",

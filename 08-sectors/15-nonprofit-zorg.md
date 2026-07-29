@@ -13,7 +13,7 @@ door een donatiecampagne moet, heb je de organisatie verkeerd om gezet.
 1. Nagaan of dit voor hem is. "Geldt dit ook als ik geen diagnose heb? Als ik geen Nederlands
    spreek? Als het over mijn kind gaat?"
 2. Weten wat het kost. In de zorg is "gratis" of "terugbetaald" het antwoord dat de drempel
-   wegneemt — als het waar is, zet het bovenaan.
+   wegneemt. Als het waar is, zet het bovenaan.
 3. Weten wat er gebeurt na de aanvraag. Wie belt, wanneer, en hoe lang duurt het.
 4. Een telefoonnummer vinden voor het geval het dringend is.
 
@@ -42,7 +42,7 @@ beoordeeld dan bedrijven, en terecht.
 | Rol | Voorstel | Waarom |
 |---|---|---|
 | Display | **Bricolage Grotesque** 600, `clamp(2.25rem, 5vw, 3.75rem)`, `tracking: -0.02em`, `line-height: 1.1` | Een grotesque met onregelmatige details: menselijk zonder kinderlijk te worden. Gratis, variabel |
-| Sectiekop | **Bricolage Grotesque** 500, 26–32px, `tracking: -0.01em` | Zelfde familie, lager gewicht — het verschil doet het werk, niet een tweede font |
+| Sectiekop | **Bricolage Grotesque** 500, 26–32px, `tracking: -0.01em` | Zelfde familie, lager gewicht: het verschil doet het werk, niet een tweede font |
 | Body | **Source Sans 3** 400, **18px**, `line-height: 1.72`, max **66ch** | Deze bezoeker leest slecht: stress, leeftijd, of Nederlands als tweede taal. 18px is de ondergrens, niet de luxe |
 | Citaat / getuigenis | **Newsreader** 400 italic, 22px, `line-height: 1.5`, ingesprongen 32px | Een schreef markeert dat dit iemands woorden zijn en niet die van de organisatie |
 | Cijfers en bedragen | **Source Sans 3** 600, `font-variant-numeric: tabular-nums`, transparantiecijfers op 40–56px | Grote cijfers zijn hier het argument. Tabular-nums zodat een kolom bedragen uitlijnt |
@@ -55,7 +55,7 @@ de disclaimer. Dit is de sector waar dat het meeste kost.
 
 | Hex | Herkomst | Gebruik |
 |---|---|---|
-| `#14403A` | Dof groen van geëmailleerd ziekenhuisplaatstaal — dieper en matter dan het op een scherm lijkt | Koppen, footer, donkere secties |
+| `#14403A` | Dof groen van geëmailleerd ziekenhuisplaatstaal, dieper en matter dan het op een scherm lijkt | Koppen, footer, donkere secties |
 | `#FDFBF7` | Ongebleekt verbandgaas, warm wit | Paginagrond. Nooit `#FFF`: te klinisch, en het maakt foto's van mensen bleek |
 | `#E4622F` | Oranje van een reddingsvest in daglicht | Accent. **Alleen** de doneerknop en de aanmeldknop. Nergens anders |
 | `#6F8079` | Grijsgroen van gewassen katoen | Secundaire tekst, labels, bijschriften |
@@ -63,7 +63,7 @@ de disclaimer. Dit is de sector waar dat het meeste kost.
 | `#2E5E8A` | Blauw van een geëmailleerd wegwijzerbord | **Functionele kleur, geen tweede accent:** uitsluitend voor de hulplijn en de aanmeldroute, zodat die visueel gescheiden blijft van de doneerroute |
 
 **Vermijd:** het lichtblauw-plus-groen dat elke zorgwebsite gebruikt (het is inmiddels
-onzichtbaar geworden), verlopen achter portretten, en rood in welke vorm dan ook — rood leest
+onzichtbaar geworden), verlopen achter portretten, en rood in welke vorm dan ook. Rood leest
 in deze context als alarm of als tekort. Vermijd ook zwart-witfotografie van hulpbehoevenden:
 het estheticeert leed.
 
@@ -76,7 +76,7 @@ niet weggeklikt kan worden.
 ┌──────────────────────────────────────────────────────────────┐
 │ LOGO   Wat we doen  Hulp nodig  Steun ons  Over  [ DONEER ]  │
 ├──────────────────────────────────────────────────────────────┤
-│  HERO — foto van één persoon, oogcontact, aan het werk       │
+│  HERO: foto van één persoon, oogcontact, aan het werk        │
 │  Eén zin die zegt wat de organisatie doet en voor wie.       │
 │  ┌───────────────────────────┐  ┌─────────────────────────┐  │
 │  │ IK HEB HULP NODIG         │  │ IK WIL HELPEN           │  │
@@ -86,11 +86,11 @@ niet weggeklikt kan worden.
 │  └───────────────────────────┘  └─────────────────────────┘  │
 │      blauw #2E5E8A                   oranje #E4622F          │
 ├──────────────────────────────────────────────────────────────┤
-│  WAT WE DOEN — drie zinnen, drie echte cijfers met jaartal   │
+│  WAT WE DOEN: drie zinnen, drie echte cijfers met jaartal    │
 │   1.079          87            €14.474.143                   │
 │   mensen         kinderen      naar onderzoek in 2025        │
 ├──────────────────────────────────────────────────────────────┤
-│  GETUIGENIS — één persoon, naam, leeftijd, foto, citaat      │
+│  GETUIGENIS: één persoon, naam, leeftijd, foto, citaat       │
 │  op #EDE5D8, geen kaart, geen schaduw                        │
 ├──────────────────────────────────────────────────────────────┤
 │  JE GELD GOED BESTEED                                        │
@@ -101,7 +101,7 @@ niet weggeklikt kan worden.
 │  │ Jaarrekening 2025 (pdf, 1,2 MB) →  Balanscentrale →    │  │
 │  └────────────────────────────────────────────────────────┘  │
 ├──────────────────────────────────────────────────────────────┤
-│  DONEERFLOW — STAP 1 VAN 2                                   │
+│  DONEERFLOW: STAP 1 VAN 2                                    │
 │  ○ eenmalig   ● maandelijks                                  │
 │  [ €10 ] [ €25 ] [ €40 ] [ €60 ] [ eigen bedrag ]            │
 │  Vanaf €40 per jaar krijg je een fiscaal attest: een gift    │
@@ -114,10 +114,10 @@ niet weggeklikt kan worden.
 ```
 
 **Ritme.** Secties `py-24`. Wissel `#FDFBF7` en `#EDE5D8` af als sectiescheiding; gebruik geen
-borders en geen schaduwen — deze sector heeft geen kaarten nodig. Getuigenissen krijgen extra
+borders en geen schaduwen. Deze sector heeft geen kaarten nodig. Getuigenissen krijgen extra
 lucht boven en onder (`py-32`), omdat een citaat ademruimte nodig heeft om als citaat te lezen.
 
-**Mobiel.** De twee paden stapelen, en **"Ik heb hulp nodig" staat eerst** — altijd, ook als
+**Mobiel.** De twee paden stapelen, en **"Ik heb hulp nodig" staat eerst**, altijd, ook als
 de donatiecampagne loopt. Elk pad wordt een blok van 160px met de knop vol breed op 52px.
 Het telefoonnummer wordt een `tel:`-link. De transparantiebalk blijft horizontaal maar de
 percentages gaan onder de balk in plaats van erin. De doneerflow blijft twee stappen met een
@@ -130,13 +130,13 @@ zichtbare voortgangsindicator; bedragknoppen worden een raster van 2×3 met 56px
    zichtbaar wordt gemaakt: wij dienen twee publieken en we verstoppen er geen.
 2. **Bedrag vertaald naar iets fysieks, zonder te overdrijven.** Naast elk bedragknopje één
    regel: "€25 = één begeleid gesprek". Alleen als je de rekensom kunt onderbouwen. Verzin
-   deze getallen nooit — vraag ze aan de organisatie en zet het jaartal erbij.
+   deze getallen nooit. Vraag ze aan de organisatie en zet het jaartal erbij.
 3. **De netto-kost naast de bruto-gift.** "Je gift van €40 kost je netto €28 na
    belastingvermindering." Dit is het enige stukje rekenwerk dat aantoonbaar het gemiddelde
    giftbedrag verhoogt, en het is in België feitelijk correct vanaf €40 per kalenderjaar.
 4. **Transparantieblok dat naar de echte bron linkt.** Percentage, jaarrekening als pdf, en
    een link naar de Balanscentrale van de Nationale Bank. Dat laatste is een externe link naar
-   een controle die je niet zelf beheert — precies daarom werkt hij.
+   een controle die je niet zelf beheert. Precies daarom werkt hij.
 
 ## Vertrouwenselementen die er echt toe doen
 
@@ -175,9 +175,9 @@ zichtbare voortgangsindicator; bedragknoppen worden een raster van 2×3 met 56px
 **Primaire CTA, letterlijk:**
 - Steunroute in de header: `Doneer`
 - Steunroute in de flow, stap 1: `Ga verder`, stap 2: `Bevestig mijn gift van €40`
-- Hulproute: `Vraag hulp aan` — nooit "Contacteer ons", want dat suggereert een gesprek met
+- Hulproute: `Vraag hulp aan`, nooit "Contacteer ons", want dat suggereert een gesprek met
   een organisatie in plaats van hulp voor jou
-- Bij een gratis dienst: `Gratis aanvragen` — het woord gratis in de knop verwijdert de
+- Bij een gratis dienst: `Gratis aanvragen`. Het woord gratis in de knop verwijdert de
   grootste twijfel
 
 **Secundaire actie.** `Word vrijwilliger →`, `Lees Lena's verhaal →`, `Bekijk de jaarrekening →`.
@@ -185,7 +185,7 @@ Tekstlinks, `#14403A`, onderstreept met 1px offset. Nooit een tweede gevulde kno
 doneerknop.
 
 **Plaatsing.** Doneerknop in de header vanaf scroll 0, en herhaald direct na het
-transparantieblok — dat is het moment waarop de twijfel is weggenomen. De hulproute krijgt
+transparantieblok. Dat is het moment waarop de twijfel is weggenomen. De hulproute krijgt
 een permanent zichtbaar telefoonnummer in de header op desktop en een sticky balk op mobiel.
 
 **Doneerflow, stap voor stap.** Stap 1: frequentie (eenmalig / maandelijks, maandelijks
@@ -196,18 +196,18 @@ voortgangsindicator en het gekozen bedrag.
 
 ## Referenties
 
-- **[komoptegenkanker.be/over-ons/je-geld-goed-besteed](https://www.komoptegenkanker.be/over-ons/je-geld-goed-besteed)**
-  — de besteding staat er als één begrijpelijke zin ("van elke 10 euro gaat meer dan 8 euro
+- **[komoptegenkanker.be/over-ons/je-geld-goed-besteed](https://www.komoptegenkanker.be/over-ons/je-geld-goed-besteed)**:
+  de besteding staat er als één begrijpelijke zin ("van elke 10 euro gaat meer dan 8 euro
   rechtstreeks naar preventie, onderzoek, zorg en patiëntenrechten") met daarnaast de harde
   bedragen per bestemming en het opgehaalde totaal, in plaats van als een taartdiagram dat je
   moet interpreteren.
-- **[komoptegenkanker.be/fiscale-attesten](https://www.komoptegenkanker.be/fiscale-attesten)** —
+- **[komoptegenkanker.be/fiscale-attesten](https://www.komoptegenkanker.be/fiscale-attesten)**:
   legt op een eigen pagina uit waarom het rijksregisternummer wordt gevraagd en wat er gebeurt
   als je het niet geeft, zodat de meest verdachte vraag in het formulier vooraf al beantwoord is.
-- **[charitywater.org](https://www.charitywater.org/)** — koppelt één ondubbelzinnige belofte
+- **[charitywater.org](https://www.charitywater.org/)**: koppelt één ondubbelzinnige belofte
   ("100% van je gift gaat naar waterprojecten", met private donoren die de werking betalen) aan
   een projectkaart met GPS-coördinaten, zodat de belofte controleerbaar wordt in plaats van
   alleen gesteld.
-- **[bednet.be](https://www.bednet.be/)** — de aanmeldroute domineert de pagina met een knop die
+- **[bednet.be](https://www.bednet.be/)**: de aanmeldroute domineert de pagina met een knop die
   het belangrijkste bezwaar in de knoptekst zelf wegneemt ("Gratis Bednet aanvragen"), en de
   getuigenissen zijn drie herkenbare mensen met naam en situatie in plaats van anonieme citaten.

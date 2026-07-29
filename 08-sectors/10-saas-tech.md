@@ -16,7 +16,7 @@ Je bezoeker heeft dit jaar al vier van deze sites gezien die er identiek uitzage
 
 ## Verboden: de standaardvolgorde
 
-Deze paginavolgorde is verboden. Niet af te raden — verboden. Als je hem bouwt, bouw je een site die niemand van je concurrent kan onderscheiden.
+Deze paginavolgorde is verboden. Niet af te raden, verboden. Als je hem bouwt, bouw je een site die niemand van je concurrent kan onderscheiden.
 
 ```
 hero met belofte
@@ -36,8 +36,8 @@ Ook individueel verboden, ongeacht waar op de pagina:
 
 | Verboden | Waarom |
 |---|---|
-| **Het nep-dashboard in de hero** — een verzonnen interface met verzonnen grafieken, "€ 48.291" en een oplopende lijn | Het is een tekening van een product, geen product. Iedereen die vaker dan eens een SaaS-site zag, ziet dat het niet echt is, en vraagt zich vervolgens af wat er nog meer niet echt is. |
-| **De zwevende pill boven de kop** — "Vertrouwd door 200+ teams", "AI powered", "✨ Nu met AI" | De duidelijkste tell van een gegenereerde pagina. Als hij nergens naartoe linkt is hij decoratie; als het cijfer verzonnen is, is hij een leugen op de eerste regel. |
+| **Het nep-dashboard in de hero**: een verzonnen interface met verzonnen grafieken, "€ 48.291" en een oplopende lijn | Het is een tekening van een product, geen product. Iedereen die vaker dan eens een SaaS-site zag, ziet dat het niet echt is, en vraagt zich vervolgens af wat er nog meer niet echt is. |
+| **De zwevende pill boven de kop**: "Vertrouwd door 200+ teams", "AI powered", "✨ Nu met AI" | De duidelijkste tell van een gegenereerde pagina. Als hij nergens naartoe linkt is hij decoratie; als het cijfer verzonnen is, is hij een leugen op de eerste regel. |
 | **Paars en blauw in welke vorm dan ook** als merkkleur, accent of verloop | `#6366F1`, `#8B5CF6`, `#3B82F6` en hun verlopen zijn de kleur van de categorie geworden, niet van jouw product. Kies ze en je bent onzichtbaar. |
 | **Aurora-achtergronden**, blurred blobs, mesh gradients, glasmorfisme | Kosten renderprestaties, dateren binnen het jaar en dragen nul informatie. Ze zijn er precies omdat er geen visueel idee was. |
 | **Drie feature-kaarten met een lijnicoon per kaart** | De iconen betekenen niets ("een vinkje in een cirkel" = betrouwbaar?) en drie is nooit het echte aantal. |
@@ -69,7 +69,7 @@ Eén van deze drie, geen vierde optie:
 
 Blauw en paars zijn hier volledig van tafel. Drie richtingen die wel werken voor tech, elk met een echte herkomst:
 
-**Richting A — Grafiet en zuurgeel.** Donker, instrumentachtig, werkt voor developer- en infrastructuurproducten.
+**Richting A: Grafiet en zuurgeel.** Donker, instrumentachtig, werkt voor developer- en infrastructuurproducten.
 
 | Kleur | Hex | Herkomst |
 |---|---|---|
@@ -79,7 +79,7 @@ Blauw en paars zijn hier volledig van tafel. Drie richtingen die wel werken voor
 | Gedempte tekst | `#8B8F8B` | Uitgesleten labeltekst op oudere apparatuur. |
 | Accent | `#D7F04A` | Het geel van een reflecterend veiligheidsvest en van oscilloscoop-fosfor. Alleen op de primaire actie en de actieve staat. |
 
-**Richting B — Inkt op papier.** Licht, tekstgedreven, werkt voor producten waar redactie, documentatie of vakkennis het verkoopargument is.
+**Richting B: Inkt op papier.** Licht, tekstgedreven, werkt voor producten waar redactie, documentatie of vakkennis het verkoopargument is.
 
 | Kleur | Hex | Herkomst |
 |---|---|---|
@@ -89,7 +89,7 @@ Blauw en paars zijn hier volledig van tafel. Drie richtingen die wel werken voor
 | Kader | `#DAD4C6` | De vouwlijn van dat papier. Alle scheidingen zijn 1px hairlines. |
 | Accent | `#B4472B` | Menie, en de rode stempelinkt van een goedkeuringsstempel. |
 
-**Richting C — Staal en oker.** Neutraal donker met een warm accent; werkt voor B2B-platformen die niet als speeltje willen ogen.
+**Richting C: Staal en oker.** Neutraal donker met een warm accent; werkt voor B2B-platformen die niet als speeltje willen ogen.
 
 | Kleur | Hex | Herkomst |
 |---|---|---|
@@ -99,7 +99,7 @@ Blauw en paars zijn hier volledig van tafel. Drie richtingen die wel werken voor
 | Kader | `#3B382F` | De naad tussen twee platen. |
 | Accent | `#E0A32E` | Messing, en de okerkleurige markeringsverf op fabrieksvloeren. |
 
-Vermijd, in alle drie de richtingen: elk verloop tussen twee kleurtonen, elke `box-shadow` met pure zwarte kleur (gebruik de grondkleur op 40% alfa), en elke rand in een volle kleur — randen zijn `rgba(255,255,255,0.09)` op donker of `rgba(20,19,15,0.12)` op licht.
+Vermijd, in alle drie de richtingen: elk verloop tussen twee kleurtonen, elke `box-shadow` met pure zwarte kleur (gebruik de grondkleur op 40% alfa), en elke rand in een volle kleur. Randen zijn `rgba(255,255,255,0.09)` op donker of `rgba(20,19,15,0.12)` op licht.
 
 ## Layoutprincipe
 
@@ -114,41 +114,41 @@ De pagina is een demonstratie in vijf bewegingen, niet een brochure met secties.
 │  Eén zin extra met de informatie die de kop niet gaf.      │
 │                                                            │
 │  ┌──────────────────────────────────────────────────┐──── │
-│  │  ECHTE INTERACTIE — typ hier iets in en zie het  │ ▸   │
+│  │  ECHTE INTERACTIE: typ hier iets in en zie het   │ ▸   │
 │  │  resultaat. Of: één echte schermafbeelding die   │ ▸   │
 │  │  rechts buiten de container doorloopt.           │ ▸   │
 │  └──────────────────────────────────────────────────┘──── │
 │  [ Probeer het hier ]   Documentatie →                     │
 ├───────────────────────────────────────────────────────────┤
-│  01 — HET PROBLEEM, in de taal van de bezoeker.           │
+│  01: HET PROBLEEM, in de taal van de bezoeker.            │
 │  Twee alinea's. Geen kaarten. Geen iconen.                 │
 ├───────────────────────────────────────────────────────────┤
-│  02 — DE WERKELIJKE WERKWIJZE, stap voor stap, elk         │
+│  02: DE WERKELIJKE WERKWIJZE, stap voor stap, elk          │
 │  met een schermafbeelding van de échte stap.               │
-│  ┌───────────────┐  Stap 1 — wat je doet                   │
+│  ┌───────────────┐  Stap 1: wat je doet                    │
 │  │  screenshot   │  Wat er dan gebeurt en waarom dat        │
 │  └───────────────┘  anders is dan bij het alternatief.      │
 ├───────────────────────────────────────────────────────────┤
-│  03 — PRIJS met een rekenveld: aantal ▸ € per maand        │
+│  03: PRIJS met een rekenveld (aantal ▸ € per maand)        │
 ├───────────────────────────────────────────────────────────┤
-│  04 — CHANGELOG, laatste 5 regels, met echte datums        │
+│  04: CHANGELOG, laatste 5 regels, met echte datums         │
 ├───────────────────────────────────────────────────────────┤
-│  05 — WIE DIT BOUWT: namen, foto's, adres, statuspagina    │
+│  05: WIE DIT BOUWT, namen, foto's, adres, statuspagina     │
 └───────────────────────────────────────────────────────────┘
 ```
 
-Ritme: de hero is nadrukkelijk **niet** `min-h-screen`. Laat de bovenkant van sectie 01 zichtbaar op 1440×900. Secties wisselen af in dichtheid — een lange leessectie, dan een brede beeldsectie, dan weer tekst. Nooit vier secties na elkaar met dezelfde kaartenopbouw.
+Ritme: de hero is nadrukkelijk **niet** `min-h-screen`. Laat de bovenkant van sectie 01 zichtbaar op 1440×900. Secties wisselen af in dichtheid: een lange leessectie, dan een brede beeldsectie, dan weer tekst. Nooit vier secties na elkaar met dezelfde kaartenopbouw.
 
-Mobiel: de interactieve hero valt terug op een echte schermopname als video (`muted playsinline`, poster vooraf, nooit boven 1,2 MB) of op één screenshot met een `Probeer het` link. Het rekenveld bij de prijs blijft mobiel bestaan — dat is de sectie met de hoogste mobiele intentie. De horizontaal doorlopende screenshot krijgt op mobiel `overflow-x: auto` met zichtbare scrollrand, niet een geschaalde versie waarin niets leesbaar is.
+Mobiel: de interactieve hero valt terug op een echte schermopname als video (`muted playsinline`, poster vooraf, nooit boven 1,2 MB) of op één screenshot met een `Probeer het` link. Het rekenveld bij de prijs blijft mobiel bestaan. Dat is de sectie met de hoogste mobiele intentie. De horizontaal doorlopende screenshot krijgt op mobiel `overflow-x: auto` met zichtbare scrollrand, niet een geschaalde versie waarin niets leesbaar is.
 
 ## Alternatieve paginavolgorde
 
 Kies één van deze twee in plaats van de standaardvolgorde. Beide zijn getest patroon, geen experiment.
 
-**Volgorde 1 — De demonstratie.**
+**Volgorde 1: De demonstratie.**
 `hero met werkende interactie` → `wat er zonet gebeurde, in één alinea uitgelegd` → `de drie momenten in de werkelijke workflow, elk met een echte schermafbeelding` → `wat het niet doet (expliciete afbakening)` → `prijs met rekenveld` → `changelog` → `wie het bouwt, met adres en statuspagina`.
 
-**Volgorde 2 — Het argument.**
+**Volgorde 2: Het argument.**
 `hero met één stelling en één echt beeld` → `het probleem in de taal van de bezoeker, twee alinea's` → `waarom de bestaande oplossingen het niet oplossen, met naam en toenaam` → `hoe dit het wel doet, in doorlopende tekst met beelden ertussen` → `één diepgaande klantcasus met cijfers en een citaat van een genoemd persoon` → `prijs` → `begin hier`.
 
 Wat beide doen en de standaardvolgorde niet: ze verplichten je tot doorlopende tekst. Kaarten laten je toe niets te zeggen; een alinea niet.
@@ -192,7 +192,7 @@ Wat beide doen en de standaardvolgorde niet: ze verplichten je tot doorlopende t
 
 **Primair doel:** een account dat daadwerkelijk gebruikt wordt, niet een aanmelding. Meet daarom niet de registratie maar de eerste betekenisvolle handeling in het product, en ontwerp de hele pagina naar dat moment toe.
 
-**Primaire CTA:** `Probeer het gratis` als er een zelfbedieningsproduct is, of `Bekijk de demo` als de verkoop via een gesprek loopt. Nooit allebei als gevulde knop. Zet direct onder de knop in kleine tekst wat er gebeurt: `Geen kaartgegevens nodig · 14 dagen · opzeggen in één klik`. Die regel doet meer werk dan de knop zelf. Vermijd `Aan de slag` — het zegt niet wat de volgende stap is.
+**Primaire CTA:** `Probeer het gratis` als er een zelfbedieningsproduct is, of `Bekijk de demo` als de verkoop via een gesprek loopt. Nooit allebei als gevulde knop. Zet direct onder de knop in kleine tekst wat er gebeurt: `Geen kaartgegevens nodig · 14 dagen · opzeggen in één klik`. Die regel doet meer werk dan de knop zelf. Vermijd `Aan de slag`. Het zegt niet wat de volgende stap is.
 
 **Secundaire actie:** `Documentatie →` als tekstlink met pijl. Bij een verkoop-gedreven product: `Prijzen bekijken →`. De secundaire actie is nooit een tweede gevulde knop en nooit een chatbubbel.
 
@@ -200,7 +200,7 @@ Wat beide doen en de standaardvolgorde niet: ze verplichten je tot doorlopende t
 
 ## Referenties
 
-- **https://oxide.computer** — De hero laat je wisselen tussen één, twee en drie fysieke racks, en toont daarnaast CLI, API en Console als drie echte interfaces. Er is geen verzonnen grafiek te bekennen: het is fotografie van hardware die bestaat plus schermafbeeldingen van de console die je krijgt.
-- **https://linear.app** — De schermafbeeldingen op de pagina zijn de werkelijke applicatie: issues, tijdlijnen, code-diffs en een pulse-dashboard, niet een geïllustreerde interpretatie ervan. De changelog staat als eigen sectie op de homepage, met datums.
-- **https://tailscale.com** — De use-casesectie is gesplitst naar rol (IT, security, DevOps, engineering) in plaats van naar feature, zodat elke bezoeker zijn eigen ingang vindt. De hero toont de statusinterface op een laptopscherm — het scherm dat je na installatie werkelijk ziet.
-- **https://www.figma.com** — Elke sectie toont echte werkruimtes, componenten en gereedschappen uit de applicatie zelf, tot en met vectorbewerking en codegeneratie. Bruikbaar als bewijs dat een productpagina volledig uit echte interface kan bestaan; hun paarse accent is precies wat dit playbook je verbiedt over te nemen.
+- **https://oxide.computer**. De hero laat je wisselen tussen één, twee en drie fysieke racks, en toont daarnaast CLI, API en Console als drie echte interfaces. Er is geen verzonnen grafiek te bekennen: het is fotografie van hardware die bestaat plus schermafbeeldingen van de console die je krijgt.
+- **https://linear.app**. De schermafbeeldingen op de pagina zijn de werkelijke applicatie: issues, tijdlijnen, code-diffs en een pulse-dashboard, niet een geïllustreerde interpretatie ervan. De changelog staat als eigen sectie op de homepage, met datums.
+- **https://tailscale.com**. De use-casesectie is gesplitst naar rol (IT, security, DevOps, engineering) in plaats van naar feature, zodat elke bezoeker zijn eigen ingang vindt. De hero toont de statusinterface op een laptopscherm, het scherm dat je na installatie werkelijk ziet.
+- **https://www.figma.com**. Elke sectie toont echte werkruimtes, componenten en gereedschappen uit de applicatie zelf, tot en met vectorbewerking en codegeneratie. Bruikbaar als bewijs dat een productpagina volledig uit echte interface kan bestaan; hun paarse accent is precies wat dit playbook je verbiedt over te nemen.

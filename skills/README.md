@@ -9,18 +9,18 @@ skills/
 ```
 
 De `description` in de frontmatter bepaalt wanneer Claude de skill oppikt. Schrijf die als
-een trigger — waar de gebruiker om vraagt — niet als een samenvatting van wat de skill doet.
+een trigger (waar de gebruiker om vraagt), niet als een samenvatting van wat de skill doet.
 
 ## Installeren
 
-**Per project** — kopieer of symlink naar `.claude/skills/`:
+**Per project**, kopieer of symlink naar `.claude/skills/`:
 
 ```bash
 mkdir -p .claude/skills
 cp -r .design/skills/* .claude/skills/
 ```
 
-**Globaal** — beschikbaar in elk project:
+**Globaal**, beschikbaar in elk project:
 
 ```bash
 cp -r skills/* ~/.claude/skills/
@@ -36,7 +36,7 @@ Een junction is beter dan kopiëren: een `git pull` in de submodule werkt de ski
 
 ## Beschikbaar
 
-> **NEEDS INPUT** — nog geen skills toegevoegd. Zet losse skills in `_inbox/` en zeg
+> **NEEDS INPUT**: nog geen skills toegevoegd. Zet losse skills in `_inbox/` en zeg
 > "verwerk de inbox".
 
 ## Wat een goede skill hier zou zijn
@@ -56,5 +56,5 @@ Ideeën, als vertrekpunt:
 - Verwijs naar de bestanden in deze repo in plaats van de inhoud te herhalen. Twee kopieën
   van dezelfde regel lopen uit elkaar.
 - Eén skill doet één ding. Een skill die alles doet wordt nooit getriggerd.
-- Zet de `description` in de taal waarin de gebruiker het zou vragen — hier dus meestal
+- Zet de `description` in de taal waarin de gebruiker het zou vragen, hier dus meestal
   Nederlands.

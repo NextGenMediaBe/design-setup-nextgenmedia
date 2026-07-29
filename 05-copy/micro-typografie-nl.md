@@ -4,6 +4,12 @@ Regels voor Nederlandstalige interface- en websiteteksten. Aanvulling op
 [`copywriting.md`](copywriting.md): dat bestand gaat over wát er staat, dit over hoe het
 gezet staat. Elke regel hieronder is binair te controleren.
 
+> **Aan wie dit bestand later opschoont:** de em-dashes, rechte aanhalingstekens en Title
+> Case die hierin staan zijn **opzettelijk**. Het zijn de tegenvoorbeelden in de
+> fout→goed-tabellen en in de tekentabel. Vervang ze niet. Alle andere Nederlandstalige
+> bestanden in deze repo horen er nul te bevatten; dit bestand is de enige uitzondering,
+> omdat je een fout niet kunt tonen zonder hem te schrijven.
+
 ## 1. Geen em-dash
 
 De em-dash (—) hoort niet in Nederlandse tekst. Nooit. Vervang door een komma, een punt of

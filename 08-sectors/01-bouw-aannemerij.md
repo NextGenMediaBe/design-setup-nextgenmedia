@@ -35,7 +35,7 @@ je niet met een foto of een getal kan staven.
 | Knop | **Archivo** 600, 16px, `letter-spacing: 0.01em`, geen uppercase | Uppercase op een knop van 3 woorden leest als schreeuwen |
 
 Type-contrast is groot: display staat 4,5× boven body. Dat is de Swiss/brutalist-mix uit
-`art-direction.md` — kies die combinatie bewust en houd hem vol.
+`art-direction.md`: kies die combinatie bewust en houd hem vol.
 
 ## Palet
 
@@ -49,7 +49,7 @@ Type-contrast is groot: display staat 4,5× boven body. Dat is de Swiss/brutalis
 | Verzinkt staal | `#3D4A52` | Een gewalst profiel in de regen. Randen en 1px-lijnen |
 
 Randen zijn **altijd alpha** over de achtergrond (`color-mix(in oklch, #3D4A52 22%, transparent)`),
-nooit een volle grijstint — zie `craft.md`.
+nooit een volle grijstint (zie `craft.md`).
 
 **Vermijd:** elke pastel, elk verloop, en vooral `blue-600` als "betrouwbaar blauw". Dat blauw
 is het generieke aannemersblauw van 4.000 templatesites en zegt exact niets. Ook vermijden:
@@ -63,7 +63,7 @@ Het project is de held; alles eromheen is bijschrift.
 ┌──────────────────────────────────────────────────────────────┐
 │ LOGO      PROJECTEN  DIENSTEN  OVER  JOBS      03 456 78 90  │ sticky, tel klikbaar
 ├──────────────────────────────────────────────────────────────┤
-│  [ FOTO — werf in uitvoering, full-bleed, 16:9, geen scrim ]  │
+│  [ FOTO: werf in uitvoering, full-bleed, 16:9, geen scrim ]   │
 │                                                              │
 │  Ruwbouw en sleutel-op-de-deur                               │
 │  in de Kempen sinds 1978                                     │
@@ -92,7 +92,7 @@ Het project is de held; alles eromheen is bijschrift.
 Ritme: secties van `py-28` desktop / `py-16` mobiel, met **één** vol-bleed fotoblok per twee
 tekstblokken. Nooit twee tekstsecties na elkaar zonder foto ertussen.
 Het projectraster is 3 kolommen op ≥1024px, 2 op tablet, en op mobiel **geen carrousel maar
-een verticale stapel van 4 projecten plus "Alle 40 projecten"** — een carrousel verstopt je
+een verticale stapel van 4 projecten plus "Alle 40 projecten"**. Een carrousel verstopt je
 sterkste bewijs achter een swipe.
 De telefoonstrip is op mobiel een vaste balk onderaan (`position: fixed; bottom: 0`) van 56px
 met de knop "Bel 03 456 78 90" links en "Vraag een prijs" rechts.
@@ -125,7 +125,7 @@ Foto's laden met `loading="lazy"` behalve de hero, die krijgt `priority` en `fet
 | Uitvoeringstermijn per project, ook als die uitliep | Termijn is de nummer één bron van conflict. Wie hem publiceert, claimt controle |
 | VCA (VCA* / VCA**) | Doet er alleen toe bij industriële en overheidsopdrachten. Voor particulieren is het ruis |
 
-Keurmerklogo's van sectorfederaties onderaan in grijstinten op `opacity: 0.55` — niet in kleur,
+Keurmerklogo's van sectorfederaties onderaan in grijstinten op `opacity: 0.55`, niet in kleur,
 niet groot. Vier logo's op een rij ziet er wanhopiger uit dan één.
 
 ## Wat hier absoluut niet mag
@@ -137,16 +137,16 @@ niet groot. Vier logo's op een rij ziet er wanhopiger uit dan één.
 | Aurora-, blob- of meshverloop achter de hero | Kost LCP, dateert binnen een jaar en is de duidelijkste tell van een gegenereerde pagina | Een echte werffoto, `priority`, 16:9, ongefilterd |
 | Stockfoto's van een man met helm en tablet | Iedereen herkent ze. Eén stockfoto maakt alle echte foto's verdacht | Vijf eigen foto's is beter dan dertig gekochte |
 | 3D-render als er ook een foto van het gebouwde bestaat | Een render bewijst dat je kan tekenen, niet dat je kan bouwen | Render alleen bij lopende projecten, met label `IN UITVOERING` |
-| "Kwaliteit, service en vakmanschap" als USP-blok | Drie woorden die elke concurrent ook schrijft, dus nul informatie | "Gemiddeld 4 weken tussen offerte en start" — een getal dat een concurrent moet evenaren |
+| "Kwaliteit, service en vakmanschap" als USP-blok | Drie woorden die elke concurrent ook schrijft, dus nul informatie | "Gemiddeld 4 weken tussen offerte en start", een getal dat een concurrent moet evenaren |
 | Een contactformulier van 9 velden als enige weg | De bouwklant belt. Een formulier voelt als een blokkade | Telefoon primair, formulier van 4 velden secundair |
 | Fotogalerij als lightbox-carrousel zonder bijschrift | 40 losse foto's zonder context tonen niets aan | Per project één pagina met werffiche en 6 tot 10 foto's |
 
 ## Conversie
 
-**Primair doel:** een telefonisch of ingepland plaatsbezoek. Niet "een offerte aanvragen" —
+**Primair doel:** een telefonisch of ingepland plaatsbezoek. Niet "een offerte aanvragen":
 in de bouw wordt de opdracht op de werf gewonnen, niet in de mailbox.
 
-**Primaire CTA:** `Vraag een prijs` — kort, concreet, geen belofte die je moet nakomen.
+**Primaire CTA:** `Vraag een prijs`, kort, concreet, geen belofte die je moet nakomen.
 Alternatieven die eveneens werken, kies er één en gebruik hem overal identiek:
 `Plan een plaatsbezoek` of `Bel 03 456 78 90`.
 Nooit: "Contacteer ons", "Meer info", "Ontdek onze diensten".
@@ -161,15 +161,15 @@ Het formulier zelf vraagt: naam, telefoon, gemeente, type werk. Vier velden, mee
 
 ## Referenties
 
-- **[willemen.be](https://www.willemen.be)** — de hero is een roterende reeks projectslides
+- **[willemen.be](https://www.willemen.be)**: de hero is een roterende reeks projectslides
   waarbij elk beeld dezelfde volle breedte krijgt en de titel als link fungeert; nieuws en
   vacatures zitten in twee tabbladen direct onder de vouw, zodat een sollicitant en een
   bouwheer vanaf hetzelfde punt vertrekken.
-- **[democogroup.com/democo](https://democogroup.com/democo)** — het cijferblok "3 landen,
+- **[democogroup.com/democo](https://democogroup.com/democo)**: het cijferblok "3 landen,
   6 kantoren, 43 actieve werven" staat als losse sectie tussen de projecten en het nieuws,
   waardoor de schaal van het bedrijf een gemeten feit wordt in plaats van een claim; elke
   projectslide begint met de stadsnaam als kop en daaronder één zin.
-- **[besix.com](https://www.besix.com)** — de projectcarrousel legt naam én opleverdatum als
+- **[besix.com](https://www.besix.com)**: de projectcarrousel legt naam én opleverdatum als
   tekst over het beeld, zodat je bij elke slide meteen weet of je naar iets afgewerkts of
   iets lopends kijkt; de vijf sectoren staan als één rij van vijf iconen met label, niet als
   vijf kaarten met paragrafen.

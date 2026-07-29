@@ -25,13 +25,13 @@ Samengevat:
 
 | Stap | Wat | Gate |
 |---|---|---|
-| 1 | Brief scherpstellen — sector, doelgroep, de ene taak, drie concurrenten, drie mooie referenties, **één lelijke** | Ontbreekt iets: vragen, niet gokken |
+| 1 | Brief scherpstellen: sector, doelgroep, de ene taak, drie concurrenten, drie mooie referenties, **één lelijke** | Ontbreekt iets: vragen, niet gokken |
 | 2 | Sectorplaybook lezen uit [`08-sectors/`](../../08-sectors/) | |
 | 3 | **Designplan**: palet met herkomst per kleur, type in 2-3 rollen, layoutconcept met ASCII-wireframe, signature-element, motion-principe | **Gate** |
 | 4 | **Zelfkritiek**: "kom ik hier tien van de tien keer uit?" Zo ja: herzien en tonen wat je veranderde | **Gate** |
-| 5 | Bouwen — tokens eerst, dan header/footer, dan hero, dan de rest, dan states, dan motion | |
-| 6 | `npm run design:audit` — screenshots 390/768/1440, dan zelfkritiek als concurrerend bureau | |
-| 7 | `npm run design:check` — faalt hij, repareren, niet onderdrukken | |
+| 5 | Bouwen: tokens eerst, dan header/footer, dan hero, dan de rest, dan states, dan motion | |
+| 6 | `npm run design:audit`, screenshots 390/768/1440, dan zelfkritiek als concurrerend bureau | |
+| 7 | `npm run design:check`. Faalt hij, repareren, niet onderdrukken | |
 | 8 | [`07-workflows/quality-review.md`](../../07-workflows/quality-review.md) invullen en opleveren | |
 
 ## Wat je nooit doet

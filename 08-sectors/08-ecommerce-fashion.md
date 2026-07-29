@@ -20,8 +20,8 @@ een maat die per merk verschilt, van een pasvorm die op een model van 1m78 ander
 haar. Elke twijfel die je niet wegneemt, wordt uitgesteld gedrag: ze bewaart het, en koopt het
 niet. Neem de gok weg met feiten in plaats van met sfeer: samenstelling van de stof, lengte
 van het model plus de maat die het draagt, echte kleur onder neutraal licht, en de retour-
-voorwaarde in dezelfde blik als de prijs. Wat je opwekt is geen begeerte — die brengt ze zelf
-mee — maar de rust om op bestellen te drukken zonder eerst nog vijf minuten te googelen.
+voorwaarde in dezelfde blik als de prijs. Wat je opwekt is geen begeerte (die brengt ze zelf
+mee) maar de rust om op bestellen te drukken zonder eerst nog vijf minuten te googelen.
 
 ## Typografie
 
@@ -35,7 +35,7 @@ mee — maar de rust om op bestellen te drukken zonder eerst nog vijf minuten te
 
 Streepjesprijzen: de oude prijs in 13px, kleur `#8A8378`, met `line-through`; de nieuwe prijs
 in dezelfde 15px als een gewone prijs, in inktrood. Maak de nieuwe prijs nooit groter dan
-gewone prijzen — dan schreeuwt elk gereduceerd item het raster kapot.
+gewone prijzen. Dan schreeuwt elk gereduceerd item het raster kapot.
 
 ## Palet
 
@@ -85,7 +85,7 @@ een ritme dat zo regelmatig is dat afwijking betekenis krijgt.
 ```
 
 Ritme: vier kolommen op ≥1280px, drie op 1024px, twee op mobiel. Kolomafstand 16px, rijafstand
-32px — de extra ruimte tussen rijen laat het oog per rij scannen in plaats van per kolom.
+32px. De extra ruimte tussen rijen laat het oog per rij scannen in plaats van per kolom.
 Crop 3:4 op alles, geen enkele uitzondering; producten met vierkante packshots krijgen een
 3:4-canvas met marge, niet hun eigen ratio. Geen kaartrand, geen schaduw, geen radius op de
 foto: het raster wordt gedragen door de identieke crops.
@@ -93,25 +93,25 @@ foto: het raster wordt gedragen door de identieke crops.
 **Dichtheid.** Twee kolommen op mobiel, niet één. Één kolom voelt genereus en verkoopt
 slechter: de bezoeker scant en heeft vergelijkingsmateriaal in beeld nodig. Op desktop is vier
 de bovengrens voor fashion; ga naar zes en de foto wordt te klein om stof te beoordelen. Laad
-24 items en dan `Toon meer` met een knop — oneindig scrollen breekt de footer, de
+24 items en dan `Toon meer` met een knop. Oneindig scrollen breekt de footer, de
 terugnavigatie en je analytics. Reserveer de fotohoogte met `aspect-ratio: 3/4` vóór het beeld
 laadt, anders schuift het hele raster en haal je de CLS-drempel van 0,1 niet.
 
 **Filters.** Op desktop sticky bovenaan, niet in een linkerkolom die met de pagina wegscrolt.
 Actieve filters staan als verwijderbare pillen onder de balk, met een `Wis alles`. Elke
 filterwaarde toont het aantal resultaten erachter (`Maat 38 (47)`), en waarden met nul
-resultaten worden uitgegrijsd, niet verborgen — verdwijnende opties lezen als een bug. Op
+resultaten worden uitgegrijsd, niet verborgen: verdwijnende opties lezen als een bug. Op
 mobiel: één knop `Filter (2)` links en `Sorteren` rechts in een balk van 52px, die een bottom
 sheet openen met een vaste knop `Toon 47 artikelen` onderaan.
 
-**De PDP** heeft één volgorde en die wijkt nooit af: beeldgalerij links (minstens vijf beelden
-— totaalbeeld, achterkant, detail van de stof, detail van sluiting of zoom, en één beeld
+**De PDP** heeft één volgorde en die wijkt nooit af: beeldgalerij links (minstens vijf beelden:
+totaalbeeld, achterkant, detail van de stof, detail van sluiting of zoom, en één beeld
 gedragen in situatie), rechts merk, naam, prijs, kleurkiezer, maatkiezer met `Maattabel` als
 link ernaast, `In winkelmand`, en direct daaronder drie regels in kartonkleur: levertijd,
 retourtermijn en verzendkosten. Daaronder pas de beschrijving, samenstelling (`80% wol, 20%
 polyamide`), onderhoudsvoorschrift en de zin die de meeste retours voorkomt: `Model is 1m78
 en draagt maat S`. Reviews onderaan, met filter op maat. De maatkiezer toont uitverkochte
-maten als doorstreept en aanwezig, met de optie `Hou me op de hoogte` — dat is voorraadinfo,
+maten als doorstreept en aanwezig, met de optie `Hou me op de hoogte`. Dat is voorraadinfo,
 en het verkoopt later.
 
 **Belgische retourwetgeving.** Bij verkoop op afstand aan consumenten geldt een wettelijk
@@ -119,8 +119,8 @@ herroepingsrecht van 14 kalenderdagen, te tellen vanaf de dag na ontvangst van d
 zonder opgave van reden. Je moet de klant vóór de aankoop informeren over dat recht en een
 modelformulier voor herroeping ter beschikking stellen; doe je dat niet, dan loopt de termijn
 door. Vermeld de termijn dus letterlijk op de PDP en in de winkelmand, niet alleen in een
-voorwaardenpagina. Bied je meer aan dan het minimum — veel Belgische webshops hanteren 30
-dagen en gratis retour in de winkel — zet dat dan bovenaan als strook, want het is een van je
+voorwaardenpagina. Bied je meer aan dan het minimum (veel Belgische webshops hanteren 30
+dagen en gratis retour in de winkel), zet dat dan bovenaan als strook, want het is een van je
 sterkste conversieargumenten. Wie de wettelijke 14 dagen als commerciële troef presenteert,
 verkoopt iets wat de klant sowieso al heeft; wie 30 dagen geeft, verkoopt iets extra.
 
@@ -168,18 +168,18 @@ verkoopt iets wat de klant sowieso al heeft; wie 30 dagen geeft, verkoopt iets e
 ## Conversie
 
 **Primair doel:** een product in de winkelmand met de juiste maat. De maatkeuze is het
-werkelijke conversiepunt — niet de knop, maar de zekerheid die eraan voorafgaat.
+werkelijke conversiepunt: niet de knop, maar de zekerheid die eraan voorafgaat.
 
 **Primaire CTA:** `In winkelmand`. Gevuld in inkt `#1A1714`, tekst in studiopapier, 52px hoog,
 volle breedte van de rechterkolom op de PDP, radius 2px. Is er nog geen maat gekozen, dan
 blijft de knop actief maar scrollt hij bij klikken naar de maatkiezer met een regel eronder:
-`Kies eerst een maat` — nooit een uitgegrijsde knop, want die geeft geen uitleg. In de
+`Kies eerst een maat`. Nooit een uitgegrijsde knop, want die geeft geen uitleg. In de
 winkelmand wordt de knop `Afrekenen`, in de checkout `Bestelling plaatsen`, met het
 totaalbedrag ernaast.
 
 **Secundaire actie:** `Bewaar` met een hartje, als icoonknop rechtsboven op de kaart en als
 tekstlink onder de primaire knop op de PDP. Dat is je remarketinglijst. Daarnaast op de PDP
-`Bekijk de maattabel` als onderlijnde link naast de maatkiezer — hij opent een paneel, geen
+`Bekijk de maattabel` als onderlijnde link naast de maatkiezer. Hij opent een paneel, geen
 nieuwe pagina.
 
 **Plaatsing:** in het raster is de kaart zelf de knop, met de hartjesknop als enige zichtbare
@@ -190,15 +190,15 @@ Morgen in huis bij bestelling voor 22u · 30 dagen retourrecht`.
 
 ## Referenties
 
-- **[torfs.be](https://www.torfs.be/nl)** — de servicevoorwaarden staan als vijf losse
+- **[torfs.be](https://www.torfs.be/nl)**: de servicevoorwaarden staan als vijf losse
   uitspraken direct onder de hero (gratis retour in België, levering morgen bij bestelling
   voor 22u, gratis verzending vanaf € 35, avond- en zaterdaglevering), dus vóór de bezoeker
   ook maar één product opent.
-- **[jbc.be](https://www.jbc.be/nl)** — vier concrete servicebeloftes met echte uren en
+- **[jbc.be](https://www.jbc.be/nl)**: vier concrete servicebeloftes met echte uren en
   bedragen (`voor 21u besteld, morgen in huis`, `gratis levering & retour in je JBC-winkel`,
   `30 dagen bedenktijd`), plus Bancontact als eerste betaallogo en de e-commercekeurmerken in
   de footer.
-- **[aplace.com](https://aplace.com/)** — de navigatie splitst op Sale, New Arrivals, Women,
+- **[aplace.com](https://aplace.com/)**: de navigatie splitst op Sale, New Arrivals, Women,
   Men, Beauty, Goods en Brands, en de homepage bestaat uit vier identiek gecropte
   categorietegels in plaats van een productraster, zodat het winkelgedeelte pas begint zodra
   de bezoeker een richting heeft gekozen.

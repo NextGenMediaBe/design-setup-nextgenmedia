@@ -23,7 +23,7 @@ worden. Op te wekken: rust en het idee dat hier alles al is geregeld en dat hij 
 doen. De site moet klinken als iemand die kalm uitlegt wat er gaat gebeuren, in korte zinnen,
 zonder jargon en zonder verkooptoon. Ruimte is hier geen esthetiek maar een middel: een
 volgestouwde pagina verhoogt letterlijk de hartslag van iemand die al gespannen is. Vriendelijk
-maar volwassen — de bezoeker is geen kind en wil niet als kind toegesproken worden.
+maar volwassen: de bezoeker is geen kind en wil niet als kind toegesproken worden.
 
 ## Typografie
 
@@ -44,18 +44,18 @@ blijft klein: dit is de institutionele richting uit `art-direction.md`, verzacht
 |---|---|---|
 | Ground | `#FCFBF9` | Een gipsmodel van een gebitsafdruk, en gesteriliseerd linnen. Warm gebroken wit, nooit `#FFFFFF` |
 | Inkt | `#1E2A2E` | De inkt in het papieren patiëntendossier. Donker, maar niet zwart: contrast 15:1 zonder hardheid |
-| Accent | `#3E7E77` | De blauwgroene doek van een operatieschort. Die kleur is in OK's gekozen als complement van bloed — ze kalmeert het oog letterlijk |
+| Accent | `#3E7E77` | De blauwgroene doek van een operatieschort. Die kleur is in OK's gekozen als complement van bloed. Ze kalmeert het oog letterlijk |
 | Rustvlakken | `#D9E6E2` | Matglas van een praktijkdeur. Achtergrond van het tarievenblok en het afsprakenkader |
 | Spoedrood | `#B4472F` | De rode band op de spoedkoffer. **Uitsluitend** voor het wachtdienstnummer, nergens anders |
 | Instrumentgrijs | `#7E8B8A` | Geborsteld RVS van een instrumententafel. Secundaire tekst en 1px-randen |
 
 Randen zijn alpha: `color-mix(in oklch, #7E8B8A 30%, transparent)`. Schaduwen zijn zacht,
-gekleurd en laag: `0 1px 2px rgb(30 42 46 / 0.05), 0 8px 24px rgb(30 42 46 / 0.04)` — nooit
+gekleurd en laag: `0 1px 2px rgb(30 42 46 / 0.05), 0 8px 24px rgb(30 42 46 / 0.04)`, nooit
 puur zwart.
 
 **Vermijd:** `#00B4D8` en verwanten, het "medische cyaan" dat op elke tandartstemplate staat;
 tandpasta-mint met wit-glinstering; en elk verloop. Ook vermijden: rood voor iets anders dan de
-spoedlijn — als alles rood mag, betekent rood niets meer.
+spoedlijn: als alles rood mag, betekent rood niets meer.
 
 ## Layoutprincipe
 
@@ -93,23 +93,23 @@ Rust als functie: één handeling per scherm, en de praktische informatie altijd
 └──────────────────────────────────────────────────────────────┘
 ```
 
-Ritme: secties van `py-24` desktop / `py-14` mobiel, gescheiden door witruimte alleen — geen
+Ritme: secties van `py-24` desktop / `py-14` mobiel, gescheiden door witruimte alleen: geen
 lijnen, geen kaarten, geen afwisselende achtergrondkleuren. Eén uitzondering: het tarievenblok
 en het spoedblok krijgen `#D9E6E2` als vlak, omdat ze eruit mogen springen.
 Op mobiel staat het wachtdienstnummer als eerste element boven de logo-balk, in een strook van
 40px op `#B4472F` met witte tekst en een `tel:`-link. Daaronder de hero, dan het team.
 De afspraakknop wordt géén vaste onderbalk: een blijvend zwevende knop verhoogt de spanning.
 Eén keer in de hero en één keer onderaan volstaat.
-Portretten zijn 1:1, allemaal door dezelfde fotograaf, zelfde achtergrond, zelfde ooghoogte —
-zonder die consistentie leest een teampagina als een LinkedIn-collage.
+Portretten zijn 1:1, allemaal door dezelfde fotograaf, zelfde achtergrond, zelfde ooghoogte.
+Zonder die consistentie leest een teampagina als een LinkedIn-collage.
 
 ## Signature-ideeën
 
 1. **Een echte statusregel in de hero:** "Vandaag open tot 18:00 · eerstvolgende vrije plaats:
    dinsdag 29/7". Gegenereerd uit het agendasysteem, met een fallback op statische
    openingsuren. Dit is het enige element dat de vraag beantwoordt waarmee bijna iedereen komt.
-2. **Een tarieventabel met vier kolommen** — behandeling, ereloon, tussenkomst RIZIV, wat u zelf
-   betaalt — inclusief de zin dat het om standaardbehandelingen gaat. Vrijwel geen enkele
+2. **Een tarieventabel met vier kolommen** (behandeling, ereloon, tussenkomst RIZIV, wat u zelf
+   betaalt), inclusief de zin dat het om standaardbehandelingen gaat. Vrijwel geen enkele
    praktijk doet dit; wie het wel doet, wordt onmiddellijk als eerlijk gelezen.
 3. **"Eerste keer hier" als een genummerd verloop van vier stappen**, met tijdsduur per stap:
    aanmelden (2 min) → intakegesprek (10 min) → onderzoek (20 min) → plan en prijs (5 min).
@@ -126,7 +126,7 @@ zonder die consistentie leest een teampagina als een LinkedIn-collage.
 | Vermelding geconventioneerd / niet-geconventioneerd per behandelaar | Bepaalt rechtstreeks wat de patiënt betaalt. Verzwijgen wordt gelezen als "duur" |
 | Wachtdienst- of spoednummer met uren waarop het bemand is | Een nummer zonder uren maakt de paniek erger in plaats van kleiner |
 | Openingsuren per dag, uitgeschreven, plus sluitingsperiodes | Voorkomt de helft van alle telefoons naar het onthaal |
-| Annulatievoorwaarden expliciet vermeld | Klinkt streng, maar leest als een praktijk die haar agenda beheert — en dus stipt is |
+| Annulatievoorwaarden expliciet vermeld | Klinkt streng, maar leest als een praktijk die haar agenda beheert, en dus stipt is |
 | Betaalmiddelen (Bancontact, cash, derdebetaler) | Voorkomt een pijnlijk moment aan de balie. Derdebetalersregeling is voor sommigen doorslaggevend |
 | Wat meebrengen: eID, klevertjes, verwijsbrief, medicatielijst | Concrete geruststelling: de patiënt kan niets fout doen |
 | Erkenning of bijzondere beroepstitel (parodontologie, orthodontie) | Alleen vermelden waar hij echt geldt, per persoon, niet als praktijkclaim |
@@ -152,9 +152,9 @@ grijs, in de footer.
 
 **Primair doel:** een ingeplande afspraak in het agendasysteem, of een gesprek met het onthaal.
 Voor praktijken met een patiëntenstop verschuift het doel naar het beantwoorden van de vraag
-"kan ik hier terecht" zonder telefoon — dat spaart de praktijk meer dan het je kost.
+"kan ik hier terecht" zonder telefoon. Dat spaart de praktijk meer dan het je kost.
 
-**Primaire CTA:** `Maak een afspraak` — de standaardformulering in Vlaanderen, dus meteen
+**Primaire CTA:** `Maak een afspraak`, de standaardformulering in Vlaanderen, dus meteen
 begrepen. Voor praktijken die alleen telefonisch werken: `Bel 03 500 91 00`, met het nummer
 letterlijk in de knop, want een knop met een nummer erin wordt op mobiel direct getikt.
 Nooit: "Contacteer ons", "Start hier", "Boek nu".
@@ -165,22 +165,22 @@ Het wachtdienstnummer is géén CTA maar een permanent zichtbaar gegeven in de h
 **Waar de CTA staat:** in de hero direct onder de statusregel; aan het einde van het teamblok
 (daar is de geruststelling net gelukt); onderaan de tarievenpagina; en in de footer naast de
 openingsuren. Het afspraakformulier vraagt maximaal vier velden: naam, telefoon, reden,
-voorkeursmoment. Geen rijksregisternummer, geen medische voorgeschiedenis, geen bestandsupload
-— dat is bijzondere persoonsgegevensverwerking en hoort in het beveiligde patiëntendossier,
+voorkeursmoment. Geen rijksregisternummer, geen medische voorgeschiedenis, geen bestandsupload.
+Dat is bijzondere persoonsgegevensverwerking en hoort in het beveiligde patiëntendossier,
 niet in een webformulier.
 
 ## Referenties
 
-- **[adenta.eu](https://www.adenta.eu)** — de vier tandartsen én de vier assistenten staan
+- **[adenta.eu](https://www.adenta.eu)**: de vier tandartsen én de vier assistenten staan
   allemaal met foto en voornaam op de site, elk met de specialisaties eronder uitgeschreven,
   zodat de bezoeker vooraf weet wie hij tegenover zich krijgt; het wachtdienstnummer
   (0903 399 69) staat als apart nummer mét het venster 9:00–18:00 vermeld, los van het gewone
   praktijknummer.
-- **[maesveld.be](https://maesveld.be)** — het wachtdienstnummer 011/60 40 60 krijgt een eigen
+- **[maesveld.be](https://maesveld.be)**: het wachtdienstnummer 011/60 40 60 krijgt een eigen
   sectie halverwege de pagina én staat opnieuw in de footer, dus je vindt het zonder navigatie
   vanaf welk scrollpunt ook; "Maak een afspraak" is als enige knoptekst consequent
   doorgetrokken over navigatie en pagina.
-- **[bitewing.be/tarieven](https://www.bitewing.be/tarieven/)** — de tarieven staan in een
+- **[bitewing.be/tarieven](https://www.bitewing.be/tarieven/)**: de tarieven staan in een
   tabel met aparte kolommen voor maximumereloon, RIZIV-tussenkomst, remgeld en supplement, en
   met afzonderlijke rijen voor gewone verzekerden en verhoogde tegemoetkoming; onder de tabel
   staat letterlijk dat de bedragen op standaardbehandelingen slaan en indicatief zijn.

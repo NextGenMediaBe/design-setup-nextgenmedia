@@ -34,7 +34,7 @@ Zet `font-variant-numeric: tabular-nums` globaal op `table`, `.spec`, `.price` e
 | Noodstop-oranje | `#D8471F` | De kap van de noodstopschakelaar en de veiligheidsmarkering. Het enige accent: CTA, actieve filter, gemarkeerde tabelrij. |
 | Perslucht-blauw | `#1D4E63` | Leidingmarkering voor perslucht volgens de kleurcodering in de hal. **Alleen voor datavisualisatie**, nooit voor UI. Dat is de geschreven reden voor deze tweede kleur. |
 
-Vermijd: elk verloop. Verlopen horen niet bij metaal, en een verlopende CTA-knop in deze sector leest als een reclamebureau dat het dossier niet gelezen heeft. Ook vermijden: `#FFFFFF` als paginagrond en pure zwarte schaduwen — gebruik `rgba(22, 24, 26, 0.12)` als je überhaupt een schaduw nodig hebt, en meestal heb je die niet.
+Vermijd: elk verloop. Verlopen horen niet bij metaal, en een verlopende CTA-knop in deze sector leest als een reclamebureau dat het dossier niet gelezen heeft. Ook vermijden: `#FFFFFF` als paginagrond en pure zwarte schaduwen. Gebruik `rgba(22, 24, 26, 0.12)` als je überhaupt een schaduw nodig hebt, en meestal heb je die niet.
 
 ## Layoutprincipe
 
@@ -51,32 +51,32 @@ Een catalogus met een voorpagina, niet een landingspagina met een catalogus erac
 │  [ Vraag een offerte ]  Datasheets ↓        │  in situ │  │
 │                                             └──────────┘  │
 ├──────────────────────────────────────────────────────────┤
-│  PRODUCTGROEPEN — 8 tegels, lijntekening + typenummer     │
+│  PRODUCTGROEPEN: 8 tegels, lijntekening + typenummer      │
 │  ┌────┐ ┌────┐ ┌────┐ ┌────┐                              │
 │  │ ⊟  │ │ ⊞  │ │ ⌸  │ │ ⌷  │  … tekening, geen foto      │
 │  │LA-2│ │LA-4│ │RV-1│ │KS-9│                              │
 │  └────┘ └────┘ └────┘ └────┘                              │
 ├──────────────────────────────────────────────────────────┤
-│  SELECTIETABEL — direct op de homepage, niet verstopt     │
+│  SELECTIETABEL: direct op de homepage, niet verstopt      │
 │  Type   Slag(mm)  Kracht(kN)  Snelh(mm/s)  IP   Datasheet │
 │  LA-24    600        4,0         250       65      ↓      │
 │  LA-42   1200        8,5         180       67      ↓      │
 ├──────────────────────────────────────────────────────────┤
-│  TOEPASSINGEN — 3 cases met sector, probleem, cijfer      │
+│  TOEPASSINGEN: 3 cases met sector, probleem, cijfer       │
 ├──────────────────────────────────────────────────────────┤
 │  NORMEN & CERTIFICATEN   |   TECHNISCHE SUPPORT + foto    │
 │  ISO 9001 · ATEX · CE    |   Naam, functie, doorkiesnr.   │
 └──────────────────────────────────────────────────────────┘
 ```
 
-Ritme: secties zijn kort en dicht op elkaar (`py-20`, niet `py-40`). Witruimte overtuigt hier niemand — informatiedichtheid wel, zolang ze geordend is. Scheiding gebeurt met 1px hairlines in `#B6BBC0`, nooit met schaduwen of cards. Elke sectie krijgt een genummerd micro-label linksboven (`01 — PRODUCTGROEPEN`) zodat de pagina zich leest als een documentstructuur.
+Ritme: secties zijn kort en dicht op elkaar (`py-20`, niet `py-40`). Witruimte overtuigt hier niemand. Informatiedichtheid wel, zolang ze geordend is. Scheiding gebeurt met 1px hairlines in `#B6BBC0`, nooit met schaduwen of cards. Elke sectie krijgt een genummerd micro-label linksboven (`01 – PRODUCTGROEPEN`) zodat de pagina zich leest als een documentstructuur.
 
 Mobiel: de selectietabel wordt geen kaartenstapel. Ze blijft een tabel in een `overflow-x: auto` container met een sticky eerste kolom (het typenummer) en een zichtbare scrollschaduw rechts. Filters klappen in één bottom sheet met een `Toon 24 resultaten`-knop onderaan. De telefoonnummer-CTA staat mobiel in een vaste balk onderaan, want een technicus op de werf belt.
 
 ## Signature-ideeën
 
 1. **De selectietabel als hero-element.** Zet de vergelijkingstabel van de hoofdproductlijn direct onder de fold op de homepage, met werkende sortering op elke kolom. De bezoeker moet nul klikken doen om te zien of je maten kloppen. Elke rij eindigt op een download-icoon dat direct de PDF opent, niet een tussenpagina.
-2. **Filteren op parameters, niet op categorieën.** De productcatalogus krijgt sliders en numerieke bereikvelden voor de vier of vijf grootheden die er in jouw vak toe doen — slag, kracht, debiet, drukklasse, boring, aansluitmaat. Elke filterwijziging schrijft naar de URL (`?slag=600-1200&ip=67`) zodat een aankoper zijn selectie in een mail naar zijn collega kan plakken. Toon boven de resultaten altijd `24 van 312 artikelen` in tabular figures. Filters die nul resultaten geven worden uitgegrijsd met de teller erbij (`ATEX (0)`), niet verborgen — dat vertelt hem meteen dat je het niet hebt.
+2. **Filteren op parameters, niet op categorieën.** De productcatalogus krijgt sliders en numerieke bereikvelden voor de vier of vijf grootheden die er in jouw vak toe doen: slag, kracht, debiet, drukklasse, boring, aansluitmaat. Elke filterwijziging schrijft naar de URL (`?slag=600-1200&ip=67`) zodat een aankoper zijn selectie in een mail naar zijn collega kan plakken. Toon boven de resultaten altijd `24 van 312 artikelen` in tabular figures. Filters die nul resultaten geven worden uitgegrijsd met de teller erbij (`ATEX (0)`), niet verborgen. Dat vertelt hem meteen dat je het niet hebt.
 3. **Technische tekening in plaats van renderfoto.** Elk artikeldetail opent op een 2D-maattekening met maatlijnen, niet op een glanzende 3D-render. Lijnen in `#16181A` op `#F3F1ED`, maatvoering in IBM Plex Mono 11px. Daaronder een tabbladrij: `Maattekening · Foto · 3D-model · Datasheet`. De tekening eerst, altijd.
 4. **Downloadcentrum met versiedatum en revisienummer.** Eén pagina met elke datasheet, handleiding, EU-conformiteitsverklaring en CAD-bestand, in een tabel met kolommen `Document · Type · Taal · Rev. · Datum · Grootte`. Revisienummer en datum zichtbaar maken kost niets en is het sterkste vertrouwenssignaal in deze sector: het bewijst dat het document onderhouden wordt.
 
@@ -116,6 +116,6 @@ Mobiel: de selectietabel wordt geen kaartenstapel. Ze blijft een tabel in een `o
 
 ## Referenties
 
-- **https://www.mcmaster.com** — De homepage is de catalogus: 27 categorietegels met lijntekeningen als icoon en verder niets. Geen hero, geen slogan, geen mission statement. Het bewijst dat een technische bezoeker liever direct in de boomstructuur landt dan in een positioneringszin.
-- **https://www.igus.eu** — Naast de catalogus staan configuratoren en een levensduurberekening als eigen navigatie-item, en er is een apart CAD-downloadportaal. Rekentools op gelijke voet met producten zetten is de juiste hiërarchie voor deze sector.
-- **https://www.trumpf.com/en_INT/** — Machines zijn geordend op bewerkingsproces (2D- en 3D-lasersnijden, lassen, buigen, ponsen) in plaats van op productnaam, en naast elke machine staat een "Calculate now"-actie. De bezoeker vindt zo op wat hij doet, niet op wat het heet.
+- **https://www.mcmaster.com**. De homepage is de catalogus: 27 categorietegels met lijntekeningen als icoon en verder niets. Geen hero, geen slogan, geen mission statement. Het bewijst dat een technische bezoeker liever direct in de boomstructuur landt dan in een positioneringszin.
+- **https://www.igus.eu**. Naast de catalogus staan configuratoren en een levensduurberekening als eigen navigatie-item, en er is een apart CAD-downloadportaal. Rekentools op gelijke voet met producten zetten is de juiste hiërarchie voor deze sector.
+- **https://www.trumpf.com/en_INT/**. Machines zijn geordend op bewerkingsproces (2D- en 3D-lasersnijden, lassen, buigen, ponsen) in plaats van op productnaam, en naast elke machine staat een "Calculate now"-actie. De bezoeker vindt zo op wat hij doet, niet op wat het heet.

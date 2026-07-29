@@ -17,7 +17,7 @@ Deze bezoeker heeft ooit een factuur gekregen die dubbel zo hoog was als afgespr
 
 | Rol | Voorstel | Waarom |
 |---|---|---|
-| Display | **Archivo**, wght 800, width 112 (Expanded), `letter-spacing: -0.015em`, `line-height: 1.0` | Zwaar, breed en vlak — het gewicht van een motorblok. Op 56px+ leest het als belettering op een werkplaatsdeur, niet als een merkbelofte. |
+| Display | **Archivo**, wght 800, width 112 (Expanded), `letter-spacing: -0.015em`, `line-height: 1.0` | Zwaar, breed en vlak: het gewicht van een motorblok. Op 56px+ leest het als belettering op een werkplaatsdeur, niet als een merkbelofte. |
 | Alternatief display | **Saira Condensed**, 700, uppercase, `letter-spacing: 0.01em` | Als het merk meer racing-DNA heeft. Condensed werkt hier omdat het uit de motorsportbelettering komt, niet omdat het smal moet. |
 | Body | **Barlow**, 400/500, 17px, `line-height: 1.6` | Licht semi-condensed karakter uit verkeersborden en voertuigbelettering. Blijft leesbaar bij lange servicebeschrijvingen. |
 | Prijzen en cijfers | **Barlow**, 600, `font-variant-numeric: tabular-nums` | Prijzen, kilometerstanden en bouwjaren moeten in kolommen uitlijnen op de occasielijst. |
@@ -31,10 +31,10 @@ Deze bezoeker heeft ooit een factuur gekregen die dubbel zo hoog was als afgespr
 | Plaatstaal | `#2A2D31` | Koudgewalst plaatstaal aan de onderzijde van een motorkap. Panelen en tabellen. |
 | Poetsdoek | `#E9E5DF` | De ongebleekte katoenen poetsdoek aan de werkbank. Tekst op donker en lichte secties. |
 | Remklauw-rood | `#C8102E` | Een gelakte remklauw achter een spaakvelg. Het enige accent: primaire CTA, actieve staat, prijsaccenten. |
-| Hefbrug-geel | `#F2A81D` | De waarschuwingsmarkering op de armen van de hefbrug en de kabel van de looplamp. Alleen voor waarschuwings- en attentiestaten (keuring verlopen, afspraak bevestigd), nooit als tweede merkkleur — dat is de geschreven reden. |
+| Hefbrug-geel | `#F2A81D` | De waarschuwingsmarkering op de armen van de hefbrug en de kabel van de looplamp. Alleen voor waarschuwings- en attentiestaten (keuring verlopen, afspraak bevestigd), nooit als tweede merkkleur. Dat is de geschreven reden. |
 | Verweerd gietstaal | `#6E7377` | Het oppervlak van een gebruikte remschijf. Randen, secundaire tekst, uitgeschakelde staten. |
 
-Vermijd: elk verloop, elk paars of turquoise, en het lichtblauw dat vrijwel elke garagesite in België gebruikt omdat het "proper" oogt. Blauw op wit is de kleur van de verzekeraar, niet van de werkplaats. Vermijd ook `#FFFFFF` als paginagrond — `#E9E5DF` heeft de temperatuur van de ruimte.
+Vermijd: elk verloop, elk paars of turquoise, en het lichtblauw dat vrijwel elke garagesite in België gebruikt omdat het "proper" oogt. Blauw op wit is de kleur van de verzekeraar, niet van de werkplaats. Vermijd ook `#FFFFFF` als paginagrond. `#E9E5DF` heeft de temperatuur van de ruimte.
 
 ## Layoutprincipe
 
@@ -53,7 +53,7 @@ Een werkplaatsbalie: alles wat je nodig hebt ligt op de toog, in blokken met har
 │                                 └──────────────────────┘   │
 │   [ Maak een afspraak ]  Of bel 011 23 45 67               │
 ├───────────────────────────────────────────────────────────┤
-│  PRIJZEN — 4 blokken, harde rand 2px, geen schaduw         │
+│  PRIJZEN: 4 blokken, harde rand 2px, geen schaduw          │
 │  ┌──────────┐┌──────────┐┌──────────┐┌──────────┐          │
 │  │ Kleine   ││ Grote    ││ Keuring  ││ Banden   │          │
 │  │ beurt    ││ beurt    ││ vooraf   ││ wissel   │          │
@@ -61,19 +61,19 @@ Een werkplaatsbalie: alles wat je nodig hebt ligt op de toog, in blokken met har
 │  │ € 145    ││ € 289    ││ € 49     ││ € 60     │          │
 │  └──────────┘└──────────┘└──────────┘└──────────┘          │
 ├───────────────────────────────────────────────────────────┤
-│  MERKEN — logo-rij in grijstinten, 12 merken, één regel    │
+│  MERKEN: logo-rij in grijstinten, 12 merken, één regel     │
 ├───────────────────────────────────────────────────────────┤
-│  KEURING — wat we nakijken, checklist van 14 punten        │
+│  KEURING: wat we nakijken, checklist van 14 punten         │
 ├───────────────────────────────────────────────────────────┤
-│  OCCASIES — 6 wagens, foto + bouwjaar + km + prijs         │
+│  OCCASIES: 6 wagens, foto + bouwjaar + km + prijs          │
 ├───────────────────────────────────────────────────────────┤
-│  DE WERKPLAATS — foto's van het team, namen, openingsuren  │
+│  DE WERKPLAATS: foto's van het team, namen, openingsuren   │
 └───────────────────────────────────────────────────────────┘
 ```
 
-Ritme: secties zijn compact (`py-20`) en gescheiden door 2px randen in `#2A2D31`, niet door witruimte. Om de twee secties wisselt de grond van `#0E0F11` naar `#E9E5DF` — dat harde contrast is de vormtaal, niet een stijlfoutje. Radius is 2px of 0. Geen enkele schaduw op de hele site.
+Ritme: secties zijn compact (`py-20`) en gescheiden door 2px randen in `#2A2D31`, niet door witruimte. Om de twee secties wisselt de grond van `#0E0F11` naar `#E9E5DF`. Dat harde contrast is de vormtaal, niet een stijlfoutje. Radius is 2px of 0. Geen enkele schaduw op de hele site.
 
-Mobiel: de prijsblokken worden een verticale stapel op volle breedte, niet een carrousel — een carrousel verbergt drie van de vier prijzen. De telefoon- en afspraakknop staan in een vaste onderbalk over de volledige breedte, gesplitst 50/50, met de telefoon links (want een deel van je verkeer belt) en `Afspraak` rechts in `#C8102E`. De occasielijst krijgt mobiel één wagen per rij met de prijs als grootste element.
+Mobiel: de prijsblokken worden een verticale stapel op volle breedte, niet een carrousel. Een carrousel verbergt drie van de vier prijzen. De telefoon- en afspraakknop staan in een vaste onderbalk over de volledige breedte, gesplitst 50/50, met de telefoon links (want een deel van je verkeer belt) en `Afspraak` rechts in `#C8102E`. De occasielijst krijgt mobiel één wagen per rij met de prijs als grootste element.
 
 ## Signature-ideeën
 
@@ -110,17 +110,17 @@ Mobiel: de prijsblokken worden een verticale stapel op volle breedte, niet een c
 
 ## Conversie
 
-**Primair doel:** een vastgelegde afspraak in de agenda, met dienst en wagen erbij. Niet een telefoontje, niet een contactaanvraag — een bevestigde datum. Alles daarvoor is werk voor jouw balie in plaats van voor de site.
+**Primair doel:** een vastgelegde afspraak in de agenda, met dienst en wagen erbij. Niet een telefoontje, niet een contactaanvraag: een bevestigde datum. Alles daarvoor is werk voor jouw balie in plaats van voor de site.
 
 **Primaire CTA:** `Maak een afspraak`. Het formulier heeft vier stappen en niet meer: welke dienst (onderhoud, keuring nakijken, banden, herstelling, diagnose), welke wagen (merk, model, bouwjaar, of nummerplaat), welke dag en welk dagdeel, en de contactgegevens. Toon in stap 3 werkelijke beschikbaarheid, geen open kalender. Bevestig direct op het scherm en per sms met een concrete zin: `Dinsdag 18 augustus, 8u30. Breng je onderhoudsboekje mee.`
 
 **Secundaire acties:** het telefoonnummer als `tel:`-link met de openingsuren ernaast, en `Bekijk onze occasies →` voor het deel van het verkeer dat niet voor service komt. Occasies krijgen hun eigen CTA per wagen: `Plan een proefrit`.
 
-**Waar de CTA staat:** rechtsboven in de header in `#C8102E`, permanent zichtbaar. In de hero als gevulde knop met het telefoonnummer ernaast als tekst. Onderaan elk prijsblok als tekstlink met de dienst al voorgeselecteerd (`Onderhoud inplannen →`). Onderaan de keuringspagina. Mobiel in een vaste onderbalk over de volle breedte, gesplitst tussen `Bellen` en `Afspraak`. Nooit een zwevende chatbubbel — die suggereert dat er iemand meekijkt die er niet is.
+**Waar de CTA staat:** rechtsboven in de header in `#C8102E`, permanent zichtbaar. In de hero als gevulde knop met het telefoonnummer ernaast als tekst. Onderaan elk prijsblok als tekstlink met de dienst al voorgeselecteerd (`Onderhoud inplannen →`). Onderaan de keuringspagina. Mobiel in een vaste onderbalk over de volle breedte, gesplitst tussen `Bellen` en `Afspraak`. Nooit een zwevende chatbubbel. Die suggereert dat er iemand meekijkt die er niet is.
 
 ## Referenties
 
-- **https://www.boschcarservice.com/be/nl/** — "Garage zoeken" en "Afspraak" staan als aparte items op het hoogste navigatieniveau, en de dienstenlijst noemt meer dan dertig concrete handelingen bij naam (ADAS-kalibratie, koppeling vervangen, schokdempers). Bruikbaar model voor hoe je van een dienstenlijst een zoekingang maakt.
-- **https://www.123autoservice.be/nl** — De afspraakstroom is expliciet in drie stappen opgedeeld (type wagen en dienst → locatie → offerte of terugbelverzoek), en occasiewagens hebben een eigen navigatie-item naast de servicepagina's. Zo blijven de twee verkeersstromen gescheiden zonder twee sites te bouwen.
-- **https://www.autoveiligheid.be** — De achttien keuringsstations zijn per provincie opgesomd met een eigen pagina per station, en de keuringstypes staan als afzonderlijke ingangen naast "Plan je bezoek". Het laat zien hoe je een verplichte, weinig geliefde handeling planbaar maakt in plaats van uitlegbaar.
-- **https://www.singervehicledesign.com** — De pagina bestaat vrijwel volledig uit voertuigfotografie met minimale typografie eroverheen, en de primaire actie is `Inquire` in plaats van een aankoopknop. Het bewijst dat in automotive het beeld het argument is en de tekst er alleen bij hoeft te staan.
+- **https://www.boschcarservice.com/be/nl/**: "Garage zoeken" en "Afspraak" staan als aparte items op het hoogste navigatieniveau, en de dienstenlijst noemt meer dan dertig concrete handelingen bij naam (ADAS-kalibratie, koppeling vervangen, schokdempers). Bruikbaar model voor hoe je van een dienstenlijst een zoekingang maakt.
+- **https://www.123autoservice.be/nl**: De afspraakstroom is expliciet in drie stappen opgedeeld (type wagen en dienst → locatie → offerte of terugbelverzoek), en occasiewagens hebben een eigen navigatie-item naast de servicepagina's. Zo blijven de twee verkeersstromen gescheiden zonder twee sites te bouwen.
+- **https://www.autoveiligheid.be**: De achttien keuringsstations zijn per provincie opgesomd met een eigen pagina per station, en de keuringstypes staan als afzonderlijke ingangen naast "Plan je bezoek". Het laat zien hoe je een verplichte, weinig geliefde handeling planbaar maakt in plaats van uitlegbaar.
+- **https://www.singervehicledesign.com**: De pagina bestaat vrijwel volledig uit voertuigfotografie met minimale typografie eroverheen, en de primaire actie is `Inquire` in plaats van een aankoopknop. Het bewijst dat in automotive het beeld het argument is en de tekst er alleen bij hoeft te staan.

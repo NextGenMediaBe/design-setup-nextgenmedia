@@ -15,8 +15,8 @@
 
 ## De emotionele opdracht
 
-Twee angsten tegelijk. De koper is bang dat hij te laat is — dat het goede pand al weg is
-voor hij het zag — en tegelijk bang dat de foto's liegen en hij zijn zaterdag verspilt aan
+Twee angsten tegelijk. De koper is bang dat hij te laat is (dat het goede pand al weg is
+voor hij het zag) en tegelijk bang dat de foto's liegen en hij zijn zaterdag verspilt aan
 een bezichtiging van iets dat in het echt donker en klein blijkt. De verkoper is bang dat hij
 zijn huis onder de prijs weggeeft aan iemand die dat wel wist. Neem beide weg met
 volledigheid in plaats van enthousiasme: elke foto van elke ruimte, ook de berging; het
@@ -47,12 +47,12 @@ adres (17px), kenmerkenregel (14px). Alles daarboven vecht met de foto.
 | Kalksteen | `#E5E0D6` | Gezaagde blauwe hardsteen na verwering. Vullingen van kaarten en van de filterbalk. |
 
 **Vermijd:** kobaltblauw met goud. Dat is de standaarduitrusting van elk makelaarskantoor in
-België en het maakt je site inwisselbaar. Vermijd ook elke tweede accentkleur voor "nieuw" —
-gebruik daarvoor het mono-label, niet een kleur.
+België en het maakt je site inwisselbaar. Vermijd ook elke tweede accentkleur voor "nieuw".
+Gebruik daarvoor het mono-label, niet een kleur.
 
 **EPC-labels zijn geen ontwerpbeslissing.** In Vlaanderen is het label verplicht in elke
 advertentie, met het kengetal in kWh/m²jaar erbij. Neem de officiële kleurschijf van het VEKA
-over — A+ diepgroen, A groen, B lichtgroen, C geel, D oker, E oranje, F rood — en pas hem
+over (A+ diepgroen, A groen, B lichtgroen, C geel, D oker, E oranje, F rood) en pas hem
 niet aan je palet aan. Toon het label als een blokje van 44×24px met het kengetal ernaast in
 tabulaire cijfers: `EPC B · 178 kWh/m²jaar`. Kleur alleen is onvoldoende: zet de letter er
 altijd in, voor kleurenblinde bezoekers en voor de wet.
@@ -92,14 +92,14 @@ je niet filtert.
 ```
 
 Ritme: één crop-ratio voor het hele grid, 4:3, zonder uitzondering. Een pand met alleen
-staande foto's krijgt een 4:3-uitsnede, geen eigen kaartformaat — het moment dat één kaart
+staande foto's krijgt een 4:3-uitsnede, geen eigen kaartformaat. Het moment dat één kaart
 hoger is dan de rest, valt het grid uit elkaar. Kaartafstand 24px, radius 4px op de kaart en
 0px op de foto erbinnen. Geen schaduw: scheiding komt van de witruimte tussen kaarten.
 
 Mobiel: de filterbalk wordt één knop `Filter (3)` die een bottom sheet opent met de filters
 onder elkaar en een sticky `Toon 42 panden`-knop onderaan. Kaarten worden één kolom, foto
 volle breedte, en de kaart/lijst-toggle wordt een zwevende pil onderaan het scherm. Nooit een
-horizontaal scrollend grid voor zoekresultaten — dat verbergt hoeveel er is.
+horizontaal scrollend grid voor zoekresultaten. Dat verbergt hoeveel er is.
 
 **De detailpagina** heeft een vaste volgorde: fotogalerij (klikbaar naar fullscreen, met
 plattegrond als laatste beeld), dan prijs met EPC-blok en de kerncijfers in een tabel van
@@ -123,7 +123,7 @@ ontwikkelaar met een zoekbalk over vier projecten ziet er leeg uit.
 
 1. **De plattegrond als navigatie.** Toon op de detailpagina de plattegrond als SVG waarin
    elke ruimte hoverbaar is; klikken springt naar de foto van die ruimte in de galerij.
-   Bezoekers proberen altijd de foto's aan de plattegrond te koppelen — doe het voor hen.
+   Bezoekers proberen altijd de foto's aan de plattegrond te koppelen. Doe het voor hen.
 2. **Zonstand op de tuin.** Eén statisch diagram per pand: het perceel met de oriëntatie en
    een boog die aangeeft waar de zon om 9u, 14u en 19u staat in juni. Iedereen vraagt "ligt
    de tuin op het zuiden"; niemand beantwoordt het visueel.
@@ -158,12 +158,12 @@ ontwikkelaar met een zoekbalk over vier projecten ziet er leeg uit.
 
 ## Conversie
 
-**Primair doel:** een bezichtigingsaanvraag op een concreet pand. Alles daarboven — nieuws,
-team, blog — is ondergeschikt en mag nooit boven het zoekgrid staan.
+**Primair doel:** een bezichtigingsaanvraag op een concreet pand. Alles daarboven (nieuws,
+team, blog) is ondergeschikt en mag nooit boven het zoekgrid staan.
 
 **Primaire CTA:** `Bezichtiging aanvragen`. Op de detailpagina, gevuld in gebrande gevelsteen
 `#A6432E`, minimaal 48px hoog, sticky in de onderbalk zodra de galerij uit beeld is. Op
-mobiel volle breedte met daarnaast een tweede blokje `Bel 09 ...` van 56px breed — bij een
+mobiel volle breedte met daarnaast een tweede blokje `Bel 09 ...` van 56px breed. Bij een
 pand dat vandaag online kwam belt men liever dan te mailen.
 
 **Secundaire actie:** `Bewaar dit pand` als tekstlink met hartje in zink `#5B6467`, plus
@@ -175,20 +175,20 @@ en niets anders. Twee doelgroepen op één pagina overleven alleen als de tweede
 ingang krijgt.
 
 **Plaatsing:** filterbalk binnen de eerste 600px. Primaire CTA op de detailpagina zowel
-direct onder de prijs als in de sticky balk. Nooit een CTA in het zoekgrid zelf — daar is de
+direct onder de prijs als in de sticky balk. Nooit een CTA in het zoekgrid zelf. Daar is de
 kaart de knop.
 
 ## Referenties
 
-- **[dewaele.com](https://www.dewaele.com/nl)** — het EPC-label staat als gekleurde letter
+- **[dewaele.com](https://www.dewaele.com/nl)**: het EPC-label staat als gekleurde letter
   rechtstreeks in elke zoekkaart, naast prijs, oppervlakte en aantal slaapkamers, zodat je
   kunt filteren zonder ooit een detailpagina te openen; statuslabels als "Binnenkort online"
   en "In optie" houden de voorraad zichtbaar levend.
-- **[matexi.be](https://www.matexi.be/nl)** — een ontwikkelaarssite die geen zoekmachine
+- **[matexi.be](https://www.matexi.be/nl)**: een ontwikkelaarssite die geen zoekmachine
   probeert te zijn: drie projectkaarten met de startprijs voluit (`vanaf € 357.000`), het
   aantal beschikbare units, en een zoekingang die vraagt naar buurt in plaats van naar
   filters.
-- **[ion.be](https://www.ion.be/nl)** — projectteasers zijn volledige beeldvlakken met alleen
+- **[ion.be](https://www.ion.be/nl)**: projectteasers zijn volledige beeldvlakken met alleen
   projectnaam en stad eroverheen, en de navigatie splitst op projecttype (residentieel,
   commercieel, studentenhuisvesting) in plaats van op prijs; de cijfers `153 projecten` en
   `435.000 m²` staan als losse getallen in de pagina, niet in een badge.

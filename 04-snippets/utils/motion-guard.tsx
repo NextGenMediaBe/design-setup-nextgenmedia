@@ -1,5 +1,5 @@
 /**
- * motion-guard — reduced-motion vangnet voor componenten van derden.
+ * motion-guard: reduced-motion vangnet voor componenten van derden.
  *
  * Bron:      zelf geschreven
  * Licentie:  vrij te gebruiken
@@ -9,7 +9,7 @@
  *
  * Geen enkel component uit Magic UI, Vengeance UI of SmoothUI handelt
  * `prefers-reduced-motion` af. Niet één. Dat is geen kritiek op die
- * bibliotheken — het is een consequentie van hoe ze verspreid worden: je
+ * bibliotheken. Het is een consequentie van hoe ze verspreid worden: je
  * kopieert een .tsx en de auteur weet niet in welke context hij landt.
  *
  * Voor ons is het regel 7 uit CLAUDE.md, en die is niet onderhandelbaar.
@@ -30,7 +30,7 @@ const QUERY = "(prefers-reduced-motion: reduce)";
  * Start bewust op `false` en niet op `true`: tijdens SSR is de voorkeur
  * onbekend, en een hydration-mismatch op elk geanimeerd component is erger dan
  * één frame animatie. Wil je zeker geen enkele beweging tonen voor de
- * voorkeur bekend is, gebruik dan de CSS-variant hieronder — die werkt al
+ * voorkeur bekend is, gebruik dan de CSS-variant hieronder, die werkt al
  * voor de eerste render.
  */
 export function usePrefersReducedMotion(): boolean {

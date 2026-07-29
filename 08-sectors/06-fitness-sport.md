@@ -18,7 +18,7 @@
 Wegnemen: schaamte. De bezoeker stelt zich voor dat hij binnenkomt en niet weet hoe het
 toestel werkt terwijl iemand kijkt. Elk stockbeeld van een gebeeldhouwd model bevestigt die
 angst; elke foto van een lid van 48 met een normaal lichaam en zweet in zijn shirt neemt hem
-weg. Opwekken: het gevoel dat er een concreet, gepland eerste moment bestaat — een proefles
+weg. Opwekken: het gevoel dat er een concreet, gepland eerste moment bestaat: een proefles
 op donderdag om 19u30, met een naam erbij van wie hem opvangt. Energie is de toon, maar de
 functie is geruststelling. Hard type en zwarte vlakken maken de site sportief; echte gezichten
 maken hem betreedbaar. Je hebt beide nodig, en zonder het tweede werkt het eerste tegen je.
@@ -88,14 +88,14 @@ van er netjes in te passen.
 ```
 
 Ritme: secties wisselen hard tussen rubbervloer `#121415` en magnesiumkrijt `#F2EFE8`, zonder
-overgang, zonder gradiënt. Rooster en tarieven staan altijd op licht — dat zijn de twee
+overgang, zonder gradiënt. Rooster en tarieven staan altijd op licht. Dat zijn de twee
 secties die gelezen worden, niet gevoeld. Sectiepadding 96px desktop, 56px mobiel. Radius 4px
 op alles; ronde hoeken van 20px maken van een sportclub een app.
 
 Mobiel: het weekrooster wordt geen tabel maar een verticale lijst per dag met een horizontaal
 scrollende dagpicker bovenaan, waarbij vandaag geselecteerd is. Tariefkaarten stapelen, met
 de meest gekozen bovenaan in plaats van in het midden. De hero-kop klimt naar 44px en de foto
-krijgt `object-position: 60% center` zodat het gezicht in beeld blijft — hard uitgesneden
+krijgt `object-position: 60% center` zodat het gezicht in beeld blijft. Hard uitgesneden
 betekent op mobiel bewust kiezen welk deel sneuvelt.
 
 ## Signature-ideeën
@@ -104,7 +104,7 @@ betekent op mobiel bewust kiezen welk deel sneuvelt.
    maar de eerstvolgende drie lessen van vandaag met uur, coach en resterende plaatsen, direct
    boekbaar. Dat is wat iedereen zoekt en niemand toont op scherm één.
 2. **Een fotoreeks van hetzelfde uur, elke week.** Woensdag 19u30, twaalf weken lang, dezelfde
-   hoek. Het is geen before/after — het is bewijs dat er elke week gewoon mensen staan. Toon
+   hoek. Het is geen before/after: het is bewijs dat er elke week gewoon mensen staan. Toon
    ze als één horizontaal scrollende strook met de datum eronder.
 3. **De "eerste keer"-pagina, verteld per minuut.** `19:15 je komt binnen · 19:20 Sofie loopt
    met je mee · 19:30 opwarming · 20:25 einde, je krijgt water`. Neemt exact de angst weg die
@@ -140,17 +140,17 @@ betekent op mobiel bewust kiezen welk deel sneuvelt.
 ## Conversie
 
 **Primair doel:** een geboekte proefles of intakegesprek op een concreet tijdstip. Niet een
-"aanvraag", niet een brochure — een afspraak in de agenda. Het is het enige punt waarop
+"aanvraag", niet een brochure: een afspraak in de agenda. Het is het enige punt waarop
 twijfel omslaat in aanwezigheid.
 
 **Primaire CTA:** `Boek je proefles`. Gevuld `#E24E1B`, 52px hoog, `tracking-[0.02em]`
-uppercase in Archivo 600. Bij personal training wordt dat `Plan je kennismaking` — daar
+uppercase in Archivo 600. Bij personal training wordt dat `Plan je kennismaking`. Daar
 verkoop je een gesprek, niet een training. Bij een club met vaste lessen mag het per lesregel
 `Reserveer` heten, 36px hoog, in dezelfde kleur.
 
 **Secundaire actie:** `Bekijk het rooster →` als tekstlink in magnesiumkrijt met onderlijning
 op hover. Nooit als tweede gevulde knop. Tweede secundaire ingang onderaan: `Kom eens
-langskijken, zonder afspraak` met de openingsuren erbij — voor wie nog niets wil vastleggen.
+langskijken, zonder afspraak` met de openingsuren erbij, voor wie nog niets wil vastleggen.
 
 **Plaatsing:** in de header sticky vanaf scrollpositie 0, in de hero naast de kop, per
 lesregel in het rooster, onder elke tariefkaart, en één keer onderaan de coachpagina met de
@@ -159,14 +159,14 @@ met de primaire CTA vanaf het moment dat de hero uit beeld is.
 
 ## Referenties
 
-- **[ultimateperformance.com](https://www.ultimateperformance.com/)** — de homepage opent met
+- **[ultimateperformance.com](https://www.ultimateperformance.com/)**: de homepage opent met
   drie harde cijfers (`97%` doelen behaald, `91%` resultaat op lange termijn, `8.500+`
   Google-reviews) in plaats van met een claim, en elke klantcase draagt een naam, een leeftijd
   en een concreet getal (`Roy, 57, 40 kg`) zodat de bezoeker zichzelf kan matchen.
-- **[basic-fit.com/nl-be](https://www.basic-fit.com/nl-be/)** — drie tariefkaarten met het
+- **[basic-fit.com/nl-be](https://www.basic-fit.com/nl-be/)**: drie tariefkaarten met het
   bedrag per vier weken voluit, het inschrijvingsgeld apart vermeld, en een clubzoeker die
   het aantal clubs in het land als getal toont met directe stadslinks eronder; niets zit
   achter een formulier.
-- **[barrys.com](https://www.barrys.com/)** — één donkere achtergrond over de hele site met
+- **[barrys.com](https://www.barrys.com/)**: één donkere achtergrond over de hele site met
   rood als enige accent, en `Book Your First Class` staat identiek in de header en herhaald
   door de pagina, zodat er nooit een scherm is zonder de volgende stap.

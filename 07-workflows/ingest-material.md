@@ -1,6 +1,6 @@
 # Workflow: material toevoegen
 
-Wat te doen wanneer NextGenMedia nieuw materiaal aanlevert — een zip, een repo, een link
+Wat te doen wanneer NextGenMedia nieuw materiaal aanlevert: een zip, een repo, een link
 naar een component library, losse snippets, of een skill.
 
 ## 1. Bepaal wat het is
@@ -24,7 +24,7 @@ _inbox/  →  uitpakken  →  inventariseren  →  filteren  →  plaatsen  → 
 - **Uitpakken** naar de scratchpad, niet in de repo. Archieven zelf worden niet gecommit
   (staan in `.gitignore`).
 - **Inventariseren**: wat zit erin, wat doet het, waar hangt het van af.
-- **Filteren** — dit is de belangrijkste stap. Neem alleen over wat:
+- **Filteren**: dit is de belangrijkste stap. Neem alleen over wat:
   - we nog niet hebben (check eerst `04-snippets/INDEX.md`),
   - werkt zonder de rest van zijn originele project,
   - past bij de stack in `01-standards/stack.md`,
@@ -42,7 +42,7 @@ Elk overgenomen bestand begint met:
 
 ```
 /**
- * <naam> — <wat het doet in één zin>
+ * <naam>: <wat het doet in één zin>
  * Bron:    <url of zip-naam>
  * Licentie: <MIT / onbekend / ...>
  * Nodig:   <npm packages, tailwind config, css keyframes>
@@ -54,12 +54,12 @@ Zonder herkomst weten we later niet of we het mogen gebruiken.
 
 ## 4. Licenties
 
-- **MIT / Apache / ISC** — vrij te gebruiken, bronvermelding behouden.
-- **Geen licentie vermeld** — noteer `Licentie: onbekend`. Bruikbaar als inspiratie en
+- **MIT / Apache / ISC**: vrij te gebruiken, bronvermelding behouden.
+- **Geen licentie vermeld**: noteer `Licentie: onbekend`. Bruikbaar als inspiratie en
   als techniek, maar herschrijf het in plaats van letterlijk te kopiëren voor
   klantprojecten.
-- **Copyleft (GPL)** — niet opnemen.
-- **Betaalde templates** — niet opnemen, ook niet gedeeltelijk.
+- **Copyleft (GPL)**: niet opnemen.
+- **Betaalde templates**: niet opnemen, ook niet gedeeltelijk.
 
 ## 5. Dedupe
 
