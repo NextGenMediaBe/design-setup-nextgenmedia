@@ -195,9 +195,19 @@ anchors. On a content-heavy or accessibility-sensitive site, skip it.
 
 ---
 
-## 6. Magnetic button
+## 6. Magnetic button — discouraged, kept for the technique
 
-Cursor pulls the button toward it. One of the few hover effects worth the JS.
+> **Do not ship this.** Banned by
+> [`../../02-design-system/anti-patterns.md`](../../02-design-system/anti-patterns.md) §4.6:
+> it moves the target while the user is aiming at it, and it appears on so many sites that
+> it now reads as a default rather than a choice.
+>
+> It stays here because `gsap.quickTo` and the pointer maths are worth understanding, and
+> because the same pattern is correct for things that *should* track the cursor — a lens, a
+> spotlight over a map, a draggable handle. Overriding the ban needs `slop-check-ok:` and a
+> reason in `DESIGN.md`.
+
+Cursor pulls the button toward it.
 
 ```tsx
 useGSAP(() => {

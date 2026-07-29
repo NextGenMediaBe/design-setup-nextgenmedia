@@ -18,7 +18,9 @@ het hele resultaat. Sla het niet over omdat het "maar een landingspagina" is.
 
 ## Het proces
 
-Volg [`07-workflows/build-website.md`](../../07-workflows/build-website.md) letterlijk.
+Werk **[`AI-RUNBOOK.md`](../../AI-RUNBOOK.md)** van boven naar beneden af. Daar staan de
+tien fasen, plus achteraan de volledige lijst van wat verboden en wat verplicht is.
+
 Samengevat:
 
 | Stap | Wat | Gate |
@@ -38,21 +40,31 @@ De volledige lijst met redenen staat in
 [`02-design-system/anti-patterns.md`](../../02-design-system/anti-patterns.md). Lees die
 voor je begint. De twaalf die het vaakst terugkruipen:
 
-1. Paars-naar-blauw verloop, in welke vorm dan ook.
-2. Aurora-achtergrond: wazige gekleurde vlekken achter de hero.
-3. Tailwind-defaultkleuren: `indigo-600`, `violet-500`, `slate-900`, `#6366F1`, `#0F172A`.
-4. Inter, Geist, Poppins, Space Grotesk of Satoshi als displayfont.
-5. De standaardvolgorde hero → drie feature-kaarten → logo-balk → prijzen → FAQ → footer.
-6. Drie kaarten met een icoon bovenaan en twee abstracte zelfstandige naamwoorden als kop.
-7. Een zwevende pill boven de kop ("Vertrouwd door 200+ teams").
-8. `rounded-2xl shadow-lg` op elke kaart, en dezelfde radius op alles.
-9. `transition: all` en fade-in-up op elk element bij scroll.
-10. Stockfoto's, AI-illustraties, 3D-blobs, isometrische mensen.
-11. Em-dashes (—) en rechte apostrofs in Nederlandse tekst.
-12. Formulieren waar de afstand label→veld gelijk is aan veld→volgend veld.
+1. **Het eyebrow-label**: klein getrackt hoofdlettertje boven een kop. De duidelijkste
+   sjabloon-vingerafdruk die er is. Ook: een streepje onder een kop, en een gekleurde balk
+   langs de zijkant van een kaart.
+2. Paars-naar-blauw verloop, in welke vorm dan ook.
+3. Aurora-achtergrond: wazige gekleurde vlekken achter de hero.
+4. Tailwind-defaultkleuren: `indigo-600`, `violet-500`, `slate-900`, `#6366F1`, `#0F172A`.
+5. Inter, Geist, Poppins, Space Grotesk of Satoshi als **displayfont**.
+6. De standaardvolgorde hero → drie feature-kaarten → logo-balk → prijzen → FAQ → footer.
+7. Drie kaarten met een icoon bovenaan en twee abstracte zelfstandige naamwoorden als kop.
+8. Een zwevende pill boven de kop ("Vertrouwd door 200+ teams").
+9. `rounded-2xl shadow-lg` op elke kaart, en dezelfde radius op alles.
+10. Magnetische knoppen, en `scale(1.05)` bij hover met een harde kleurflip.
+11. `transition: all` en fade-in-up op elk element bij scroll.
+12. Stockfoto's, AI-illustraties, 3D-blobs, isometrische mensen. Iconen die niet bij hun
+    label horen.
+13. Em-dashes (—) en rechte apostrofs in Nederlandse tekst. Drie bijvoeglijke naamwoorden
+    op een rij.
+14. Zichtbare placeholder-tekst: "binnenkort beschikbaar", "wordt aangevuld", "(placeholder)".
+15. Formulieren waar de afstand label→veld gelijk is aan veld→volgend veld.
 
-Punt 12 is de meest gemiste. Controleer die expliciet: label→veld 4 tot 8px,
+Punt 15 is de meest gemiste. Controleer die expliciet: label→veld 4 tot 8px,
 veld→volgend veld 20 tot 28px.
+
+Punt 1 is de meest voorkomende. Als er ergens `SOFTWARE OP MAAT` in mini-caps boven een kop
+staat: weghalen, niet mooier maken.
 
 ## Naslag tijdens het bouwen
 

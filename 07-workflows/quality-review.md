@@ -3,6 +3,11 @@
 Forty binary checks and three written answers. Every box is yes or no — if it needs a
 "mostly", the answer is no. **Deliver the filled-in audit**, not a claim that it passed.
 
+This is the last step. Do the **AI-tell pass** and the **browser verification** first —
+[`../AI-RUNBOOK.md`](../AI-RUNBOOK.md) Phase 7 and Phase 8. They are separate passes on
+purpose: this list checks whether the work meets the standard, those check whether it reads
+as made by a person.
+
 Run the automated pass first; it clears about a third of this list for you.
 
 ```bash
@@ -35,7 +40,7 @@ Accessibility below 100 is a defect, not a score.
 
 - [ ] 9. The section order comes from the brief and the sector playbook, not the default order.
 - [ ] 10. Section rhythm varies — the most important section has visibly more air.
-- [ ] 11. At least one deliberate asymmetry or grid break. Exactly one, not five.
+- [ ] 11. No eyebrow labels above headings, no decorative rule under a heading, no coloured stripe down a card edge.
 - [ ] 12. Gaps inside a group are visibly smaller than the gaps around it.
 
 ## Components
@@ -62,7 +67,7 @@ Accessibility below 100 is a defect, not a score.
 ## Copy
 
 - [ ] 25. No banned words from `../02-design-system/anti-patterns.md` §7.2.
-- [ ] 26. Sentence lengths vary — at least one under five words and one over twenty.
+- [ ] 26. Sentence lengths vary — at least one under five words and one over twenty. No tricolons, no visible placeholder text.
 - [ ] 27. At least one concrete, checkable number, and at least one local anchor.
 - [ ] 28. Every button says what happens. No "Klik hier", "Lees meer", "Ontdek".
 

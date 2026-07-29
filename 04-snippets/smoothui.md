@@ -175,7 +175,7 @@ onder SSR.
 |---|---|---|
 | `smooth-button` | ✅ | De basis. CVA-varianten, `aria-busy` bij laden, druk naar 0.97. De `candy`-variant is een verloop — die niet |
 | `button-copy` | ✅ | Drietrapsmorph Copy → Loader → Check. **Raakt `navigator.clipboard` niet aan**, je levert `onCopy` zelf |
-| `magnetic-button` | ⚠️ | Uitgeschakeld op niet-hover-apparaten, wat correct is. Zie ook recept 6 in [`gsap/recipes.md`](./gsap/recipes.md) |
+| `magnetic-button` | 🚫 | §4.6 — verplaatst het doelwit terwijl de gebruiker erop mikt, en staat op zoveel sites dat het als default leest. Technisch netjes gebouwd (uit op niet-hover-apparaten), maar niet shippen. Zie recept 6 in [`gsap/recipes.md`](./gsap/recipes.md) |
 | `clip-corners-button` | ⚠️ | Hoekdriehoekjes springen 4px naar buiten |
 | `dot-morph-button` | ⚠️ | Punt morpht naar een pil |
 

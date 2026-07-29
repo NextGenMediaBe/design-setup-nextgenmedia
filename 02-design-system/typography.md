@@ -27,6 +27,14 @@ stay as a body face** if it genuinely fits the project — but then never also a
 heading. Enforced by `[font-overused]` in
 [`../tools/slop-check.mjs`](../tools/slop-check.mjs); lifting it needs a written reason.
 
+The ban is on **defaulting** to these, and specifically on using them for display. A face
+from this list chosen deliberately as the *text* companion to a distinctive display face is
+a different decision — Clash Display over Satoshi is a real pairing that has shipped and
+does not read as generated. Write the reason down and move on.
+
+**Self-host, always.** Not only for speed and GDPR, but because it forces a deliberate
+choice instead of reaching for the first Google Font in the list.
+
 ### Pairings by mood
 
 All open-licensed and self-hostable. Pick by what the sector needs, not by what is current.
@@ -110,6 +118,16 @@ These two settings do more for perceived quality than the font choice does.
 
 Rules of thumb: **as size goes up, line-height and tracking come down.** Uppercase always
 needs positive tracking. Body text below 1.6 line-height looks cramped at any size.
+
+> **On uppercase labels.** The tracking figure above tells you how to set them *if you use
+> them*. It is not permission to use them. The small tracked-caps "eyebrow" above a heading
+> is banned by default — see [`anti-patterns.md`](./anti-patterns.md) §3.7. It is the single
+> clearest template fingerprint there is.
+>
+> Tracked caps are legitimate in two places: as a **utility label inside an interface**
+> (table headers, metadata, status chips), and in a **visual direction that commits to them
+> system-wide** — luxury and technical do this deliberately. Both are decisions recorded in
+> `DESIGN.md`. Neither is a per-section reflex above every heading.
 
 ## Measure
 

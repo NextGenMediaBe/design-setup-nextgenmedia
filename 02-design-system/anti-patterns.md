@@ -254,7 +254,47 @@ section that matters most gets more air.
 **Instead.** A non-linear section scale (`--space-section-s/m/l/xl`) and a deliberate
 choice per section. See [`spacing-layout.md`](./spacing-layout.md).
 
-### 3.7 What to do instead — composition
+### 3.7 The eyebrow label
+
+**Banned.** The small tracked uppercase label sitting above a heading:
+
+```
+ONZE DIENSTEN
+Wat we voor je doen
+```
+
+**Why it is a tell.** This is the clearest single fingerprint there is. Every generated
+page and every bought template does it, on every section, without exception. It is applied
+because the heading looked lonely, not because the label carries information — and it
+almost never does, because it usually just restates the section it sits in.
+
+**Instead.** Delete it. If the heading needs context, put the context *in* the heading.
+Separate sections with whitespace or a background change, not with a label.
+
+**The one exception:** a visual direction that commits to tracked caps as a defining
+feature — luxury and editorial do this deliberately, see [`art-direction.md`](./art-direction.md).
+Then it is a system-wide decision recorded in `DESIGN.md`, used consistently, and correctly
+tracked (`+0.06em` to `+0.12em`). Not a reflex applied per section.
+
+### 3.8 Decorative rules and side bars
+
+**Banned.**
+
+- A short line or accent bar under a heading
+- A coloured stripe down the left edge of a card, quote or section
+- Icon tiles above every heading
+- Dot-grid and decorative raster backgrounds
+- Floating glass cards over a busy background
+
+**Why it is a tell.** All five are filler that survives from a template. The line under the
+heading in particular is a generator reflex — it appears because something had to separate
+the heading from the body, and whitespace was not trusted to do it.
+
+**Instead.** Whitespace separates. A background change separates. If a card genuinely needs
+to signal a category, use the whole card — its background, its border colour — not a stripe
+glued to one edge.
+
+### 3.9 What to do instead — composition
 
 - **Asymmetry costs five minutes and reads instantly as a human decision.** Offset the
   content column. Let an image run to the viewport edge. Use a 7/5 split, not 6/6.
@@ -335,7 +375,28 @@ their own input. It also fails for screen readers and for autofill.
 **Instead.** A visible `<label>` above the field. Placeholder is an example value or
 nothing.
 
-### 4.6 Missing states
+### 4.6 Magnetic buttons and hover theatre
+
+**Banned.** Buttons that displace toward the cursor. Also `scale(1.05)` on hover with a hard
+colour flip.
+
+**Why it is a tell.** The magnetic button is everywhere and functional nowhere — it moves
+the target while the user is aiming at it, which is actively worse than not moving. It
+signals "we saw this effect and used it", which is the definition of a default.
+
+`scale(1.05)` has the same problem in miniature: it is the hover state you get when nobody
+decided what hover should communicate.
+
+**Instead.** A hover state changes **two properties quietly**: border colour and background,
+or background and a 2px lift. 150–200ms, on a named curve. A card whose border brightens and
+shadow deepens reads as expensive; a card that grows reads as cheap.
+
+This ban is in tension with two things elsewhere in this repo, deliberately kept so you can
+see the reasoning: recipe 6 in [`../04-snippets/gsap/recipes.md`](../04-snippets/gsap/recipes.md)
+implements a magnetic button, and Vengeance UI ships one. Both are now marked as
+discouraged. The technique is worth understanding; the effect is not worth shipping.
+
+### 4.7 Missing states
 
 **Banned.** Shipping a component with only its default and hover state.
 
@@ -426,6 +487,35 @@ or work with colour fields — better empty and sharp than filled with stock.
 One image treatment repeated everywhere (grain, duotone, a fixed crop ratio, one grade) is
 cheap and reads immediately as brand. Full detail in [`imagery.md`](./imagery.md).
 
+### 6.1 Icons that do not mean their label
+
+**Banned.** An icon chosen because the slot needed filling. Letter placeholders (A / T / E)
+standing in for icons.
+
+**Why it is a tell.** If swapping two icons changes nothing, the icons carry no information.
+A row of identical coloured circles with a glyph inside is the most template-looking element
+in existence.
+
+**Instead.** Address is a pin. Phone is a handset. Email is an envelope. If a concept has no
+obvious icon, use a number, or nothing. See [`imagery.md`](./imagery.md) for the
+four-custom-icons approach.
+
+### 6.2 A rebuilt approximation of the brand mark
+
+**Banned.** Redrawing the client's logo element "close enough" instead of extracting it.
+
+**Why it is a tell.** It is never close enough, and the client sees it immediately. It also
+means the site and the printed material will not match.
+
+**Instead.** Cut the element out of the real logo file and use `currentColor` so it inherits
+its context. See [`../06-brand/README.md`](../06-brand/README.md).
+
+### 6.3 Crop discipline
+
+Cropped heads, awkward cut-offs and inconsistent crop ratios read as amateur or automatic.
+Fixed ratio across a set, `object-position` set deliberately per image — see
+[`craft.md`](./craft.md).
+
 ---
 
 ## 7. Copy
@@ -470,6 +560,27 @@ twee werelden · met passie voor ons vak · uniek in zijn soort · jarenlange er
   its own, and it is the fastest human signal available.
 - **Error and empty states**: say what went wrong and what the next step is. Never vague,
   never apologetic.
+- **Say what you do NOT do.** A section stating plainly what the company does not offer
+  ("we trainen geen eigen modellen", "we doen geen SEO", "we werken niet met onderaannemers")
+  wins more trust than ten promises. It works because **a generator never says no** — it only
+  ever offers more. An explicit refusal is unmistakably human and is evidence that real
+  choices were made. This is the single most effective trust device available and almost
+  nobody uses it.
+- **Sell the result, not the technology.** "Gemiddeld 10 uur per week bespaard" beats
+  "geavanceerde AI-oplossingen". Never put the technology in the headline.
+- **Never promise what you do not control.** No "meer omzet", no invented percentages.
+
+### 7.4 Visible placeholder and meta text `[banned-word]`
+
+**Banned.** Anything that betrays unfinishedness on a live page: "binnenkort beschikbaar",
+"wordt aangevuld", "(placeholder)", "voorbeeldtekst", "lorem ipsum", "coming soon".
+
+**Why it is a tell.** It says the page shipped before it was ready, and it makes a visitor
+wonder what else is unfinished. A visible "certificaten worden binnenkort aangevuld" is
+worse than having no certificates section at all.
+
+**Instead.** Leave the section out, or hide it, until there is real content. An honest gap
+is invisible; a labelled gap is not.
 
 Dutch tone of voice: [`../05-copy/copywriting.md`](../05-copy/copywriting.md).
 Dutch micro-typography: [`../05-copy/micro-typografie-nl.md`](../05-copy/micro-typografie-nl.md).

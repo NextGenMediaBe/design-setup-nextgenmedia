@@ -125,13 +125,24 @@ const BANNED_NL = [
   'kwaliteit staat voorop', 'naar een hoger niveau', 'ontdek de mogelijkheden',
   'in het huidige digitale landschap', 'transformeer', 'ontgrendel',
   'het beste van twee werelden', 'met passie voor ons vak', 'uniek in zijn soort',
+  'of het nu', 'in de wereld van', 'snel veranderende wereld', 'state-of-the-art',
+  'revolutionair', 'game-changer', 'gamechanger', 'next-level', 'empowering',
+  'geavanceerde oplossingen', 'binnenkort beschikbaar', 'wordt aangevuld',
+  'voorbeeldtekst', 'placeholder', 'lorem ipsum',
 ];
 const BANNED_EN = [
   'leverage', 'delve', 'seamless', 'unlock', 'transform', 'empower', 'elevate', 'robust',
   'cutting-edge', 'game-changing', 'best-in-class', 'streamline', 'harness', 'reimagine',
+  'state-of-the-art', 'next-level', 'revolutionary', 'coming soon', 'lorem ipsum',
+  'placeholder text',
+];
+/** Constructions with a variable gap in the middle; a literal string cannot express these. */
+const BANNED_LOOSE = [
+  'niet alleen\\b[^.!?\\n]{0,80}?\\bmaar ook',
+  'til(?:t|len)?\\s+(?:je|jij|jouw|u|uw|het|ons)\\b[^.!?\\n]{0,60}?\\bnaar een hoger niveau',
 ];
 const BANNED_RE = new RegExp(
-  `\\b(?:${[...BANNED_NL, ...BANNED_EN].map(escapeRe).join('|')})\\b`,
+  `\\b(?:${[...BANNED_NL, ...BANNED_EN].map(escapeRe).concat(BANNED_LOOSE).join('|')})\\b`,
   'i',
 );
 const BANNED_MSG = 'Verboden woord. Zie 05-copy/copywriting.md.';

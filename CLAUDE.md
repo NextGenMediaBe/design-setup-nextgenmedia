@@ -23,18 +23,24 @@ Most AI-built interfaces fail in the same three ways, and they are all avoidable
 
 Correctness is the floor. This kit exists for what sits above it.
 
-## The process is mandatory
+## Start here
 
-Follow [`07-workflows/build-website.md`](07-workflows/build-website.md) literally, on every
-project. Two of its eight steps are **gates**:
+> ### → [`AI-RUNBOOK.md`](AI-RUNBOOK.md)
+>
+> The step-by-step. What to do, in what order, what is forbidden, where to stop and check.
+> Open it before anything else and work through it top to bottom.
 
-> **No component code exists before the design plan (step 3) and the self-critique
-> (step 4) have been delivered.**
+Two of its ten phases are **gates**:
+
+> **No component code exists before the design plan (Phase 3) and the self-critique
+> (Phase 4) have been delivered as visible output.**
 
 If asked to start building immediately, deliver both first in the same turn, then build.
 It costs three minutes and it decides the entire result.
 
 The skill that enforces this is [`skills/anti-slop-design/`](skills/anti-slop-design/).
+The end-to-end process with timeboxes is
+[`07-workflows/build-website.md`](07-workflows/build-website.md).
 
 ## Reading order
 
@@ -42,17 +48,22 @@ The skill that enforces this is [`skills/anti-slop-design/`](skills/anti-slop-de
 
 | Step | Read | Why |
 |---|---|---|
-| 1 | `00-start/project-kickoff.md` | What to resolve before building |
-| 2 | `08-sectors/<sector>.md` | What the visitor actually came to do — usually not what the client thinks |
-| 3 | `02-design-system/art-direction.md` | **Choose the direction. Do not skip this.** |
-| 4 | `02-design-system/anti-patterns.md` | The tells that make output look generated, and why |
-| 5 | `02-design-system/principles.md` | The rules that make output look designed |
-| 6 | `01-standards/stack.md` | Default stack, and when to deviate |
-| 7 | `03-patterns/` | Section blueprints for the pages you need |
+| 1 | `AI-RUNBOOK.md` | The runbook. Everything below is what it sends you to |
+| 2 | `00-start/project-kickoff.md` | What to resolve before building |
+| 3 | `08-sectors/<sector>.md` | What the visitor actually came to do — usually not what the client thinks |
+| 4 | `02-design-system/art-direction.md` | **Choose the direction. Do not skip this.** |
+| 5 | `02-design-system/anti-patterns.md` | The tells that make output look generated, and why |
+| 6 | `02-design-system/principles.md` | The rules that make output look designed |
+| 7 | `01-standards/stack.md` | Default stack, and when to deviate |
+| 8 | `03-patterns/` | Section blueprints for the pages you need |
 
 Then, while building: [`02-design-system/craft.md`](02-design-system/craft.md) and the
-relevant standards. Everything else is reference — pull it in when the task touches it.
-Do not read the whole repo up front.
+relevant standards. Stuck on what "fully decided" looks like? Read
+[`02-design-system/worked-example.md`](02-design-system/worked-example.md) — one complete
+system, every value chosen.
+
+Everything else is reference — pull it in when the task touches it. Do not read the whole
+repo up front.
 
 ## Non-negotiable rules
 

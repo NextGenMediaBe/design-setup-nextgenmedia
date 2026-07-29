@@ -59,12 +59,19 @@ budgetten op.
 
 `CLAUDE.md` in de root is het instapdocument: leesvolgorde en de harde regels.
 
-## Het proces is verplicht
+## Het stappenplan
 
-Acht stappen, waarvan er twee een poort zijn: **er wordt geen componentcode geschreven voor
-het designplan en de zelfkritiek er zijn.** Dat staat in
-[`07-workflows/build-website.md`](07-workflows/build-website.md), en de skill
-`anti-slop-design` dwingt het af.
+**[`AI-RUNBOOK.md`](AI-RUNBOOK.md)** is het document waar de AI letterlijk doorheen loopt.
+Tien fasen, van "wat bouw ik eigenlijk" tot de oplevering, met daarin twee poorten:
+
+> Er wordt geen componentcode geschreven voordat het designplan en de zelfkritiek er zijn.
+
+Achteraan staan twee lijsten: **wat verboden is** en **wat verplicht is**, allebei
+scanbaar. Dat is het antwoord op "de AI moet exact weten wat wel en niet mag".
+
+De skill `anti-slop-design` dwingt het proces af,
+[`07-workflows/build-website.md`](07-workflows/build-website.md) geeft dezelfde stappen met
+tijdsinschattingen.
 
 ## De regels worden gehandhaafd, niet gehoopt
 
