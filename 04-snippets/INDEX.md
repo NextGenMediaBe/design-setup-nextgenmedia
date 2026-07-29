@@ -1,7 +1,7 @@
 # Snippets index
 
-Everything reusable, and where it came from. Check here before adding anything new —
-see [`../07-workflows/ingest-material.md`](../07-workflows/ingest-material.md).
+Everything reusable, and where it came from. Check here before adding anything new.
+See [`../07-workflows/ingest-material.md`](../07-workflows/ingest-material.md).
 
 ## Een catalogus is geen aanbeveling
 

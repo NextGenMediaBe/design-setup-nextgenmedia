@@ -55,7 +55,7 @@ puur zwart.
 
 **Vermijd:** `#00B4D8` en verwanten, het "medische cyaan" dat op elke tandartstemplate staat;
 tandpasta-mint met wit-glinstering; en elk verloop. Ook vermijden: rood voor iets anders dan de
-spoedlijn: als alles rood mag, betekent rood niets meer.
+spoedlijn. Als alles rood mag, betekent rood niets meer.
 
 ## Layoutprincipe
 

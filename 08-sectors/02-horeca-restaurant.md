@@ -16,8 +16,8 @@
 
 ## De emotionele opdracht
 
-Wegnemen: de vrees om verkeerd te kiezen: te duur, te stijf, te luidruchtig, of net te
-alledaags voor een gelegenheid die telt. Opwekken: de honger en het beeld van jezelf aan die
+Wegnemen: de vrees om verkeerd te kiezen (te duur, te stijf, te luidruchtig, of net te
+alledaags voor een gelegenheid die telt). Opwekken: de honger en het beeld van jezelf aan die
 tafel. De site is geen brochure maar een venster: één blik door het raam moet volstaan om te
 weten hoe het er ruikt en klinkt. Warmte zonder gezelligheidsretoriek. Als de bezoeker na tien
 seconden nog niet weet wat er op het bord ligt en wat dat kost, heb je verloren, hoe mooi de

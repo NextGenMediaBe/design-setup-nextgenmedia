@@ -1,5 +1,5 @@
 /**
- * theme-toggle — three-way theme switcher: auto → light → dark → auto.
+ * theme-toggle (three-way theme switcher): auto → light → dark → auto.
  *
  * Bron:      github.com/pbakaus/impeccable (site/scripts/utils/theme.js)
  * Licentie:  Apache-2.0
